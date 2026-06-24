@@ -224,6 +224,8 @@ em{font-style:normal}
 .info-row b{display:block;color:var(--wine-dark);font-size:.95rem}
 .info-row p{margin:.15rem 0 0;color:var(--muted);font-size:.92rem}
 .info-row a{color:var(--wine);font-weight:500}
+.contact-map{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-sm);height:220px;border:1px solid var(--line)}
+.contact-map iframe{width:100%;height:100%;border:0;display:block;filter:saturate(.9)}
 
 /* ===== FOOTER ===== */
 .footer{background:linear-gradient(160deg,var(--wine),var(--wine-dark));color:var(--cream);padding:clamp(3rem,6vw,4.5rem) clamp(1.2rem,4vw,2.5rem) 2rem;margin-top:2rem}
