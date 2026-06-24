@@ -289,6 +289,23 @@ em{font-style:normal}
 .nav-links a.active{color:var(--wine);opacity:1}
 .nav-links a.nav-cta.active{color:#fff!important}
 
+/* ===== INSTAGRAM CTA ===== */
+.ig-cta{width:min(1180px,100%);margin:0 auto;padding:clamp(2rem,5vw,4rem) clamp(1.2rem,4vw,2.5rem)}
+.ig-card{position:relative;overflow:hidden;background:linear-gradient(150deg,var(--wine),var(--wine-dark));color:#fff;border-radius:var(--radius-lg);box-shadow:var(--shadow);padding:clamp(2rem,5vw,3.5rem);text-align:center}
+.ig-card:before{content:"";position:absolute;width:34rem;height:34rem;border-radius:50%;background:radial-gradient(circle,rgba(192,133,82,.28),transparent 62%);right:-12rem;top:-14rem;pointer-events:none}
+.ig-card-head{display:inline-flex;align-items:center;gap:.9rem;text-align:left;margin-bottom:1.4rem}
+.ig-card-ico{width:62px;height:62px;flex-shrink:0}
+.ig-handle{display:block;font-family:var(--serif);font-size:1.5rem;line-height:1.1}
+.ig-tag{font-size:.85rem;color:rgba(255,255,255,.72)}
+.ig-card h2{font-size:clamp(1.8rem,3.4vw,3rem);margin:0 auto;max-width:18ch}
+.ig-card h2 em{color:var(--gold-soft)}
+.ig-card>p{color:rgba(255,255,255,.8);max-width:34rem;margin:1rem auto 0}
+.ig-stats{display:flex;flex-wrap:wrap;justify-content:center;gap:clamp(1.5rem,5vw,4rem);margin:2rem 0}
+.ig-stats b{display:block;font-family:var(--serif);font-size:clamp(2rem,3.6vw,2.8rem);color:var(--gold-soft);line-height:1}
+.ig-stats small{font-size:.85rem;color:rgba(255,255,255,.72);text-transform:uppercase;letter-spacing:.08em}
+.ig-btn{background:#fff;color:var(--wine);position:relative;z-index:2}
+.ig-btn:hover{background:var(--cream)}
+
 /* ===== SCROLL PROGRESS ===== */
 .scroll-progress{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--wine),var(--gold));z-index:100;transition:width .1s linear}
 

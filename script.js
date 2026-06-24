@@ -84,7 +84,7 @@ const countObs = new IntersectionObserver(entries => entries.forEach(entry => {
   (function tick(now) {
     const p = Math.min((now - start) / dur, 1);
     const eased = 1 - Math.pow(1 - p, 3);
-    el.textContent = prefix + Math.round(target * eased) + suffix;
+    el.textContent = prefix + Math.round(target * eased).toLocaleString('es-AR') + suffix;
     if (p < 1) requestAnimationFrame(tick);
   })(start);
   countObs.unobserve(el);
