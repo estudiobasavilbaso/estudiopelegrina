@@ -49,7 +49,6 @@
   .gallery-grid figure:last-child{aspect-ratio:4/5}
 
   .about-media{max-width:24rem}
-  .about-media-float{width:38%;right:-.6rem;bottom:-1rem}
   .about-media-tag{font-size:.78rem}
 
   .testi-head{flex-direction:column;align-items:flex-start}

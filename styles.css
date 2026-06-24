@@ -251,7 +251,6 @@ em{font-style:normal}
 .about-media{position:relative}
 .about-media-main{position:relative;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow);background:var(--wine)}
 .about-media-main img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/5}
-.about-media-float{position:absolute;right:-1.4rem;bottom:-1.4rem;width:42%;aspect-ratio:3/4;object-fit:cover;border-radius:22px;border:5px solid var(--paper);box-shadow:var(--shadow);background:var(--wine)}
 .about-sign{display:flex;align-items:center;gap:.9rem;margin:1.6rem 0 .4rem}
 .about-sign img{width:54px;height:54px;border-radius:50%;object-fit:cover;border:2px solid var(--gold)}
 .about-sign b{display:block;font-family:var(--serif);font-size:1.2rem;color:var(--wine-dark)}
