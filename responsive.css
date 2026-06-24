@@ -56,6 +56,7 @@
   .service-list button{grid-template-columns:2.2rem 1fr auto;gap:.6rem}
 
   .contact-form .two{grid-template-columns:1fr}
+  .consulta-card{grid-template-columns:1fr}
 
   .footer-grid{grid-template-columns:1fr;gap:2rem}
   .footer-bottom{flex-direction:column;text-align:center;gap:.6rem}
