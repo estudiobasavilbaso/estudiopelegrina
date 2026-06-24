@@ -54,7 +54,7 @@ document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
 // Formulario -> WhatsApp
 const form = document.querySelector('#form');
-const WHATSAPP = '5491157253942';
+const WHATSAPP = '5491154036933';
 form.addEventListener('submit', event => {
   event.preventDefault();
   if (!form.checkValidity()) { form.reportValidity(); return; }
@@ -71,6 +71,66 @@ form.addEventListener('submit', event => {
   form.querySelector('.form-status').textContent = 'Abriendo WhatsApp para enviar tu consulta…';
   window.open(`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(lines.join('\n'))}`, '_blank', 'noopener,noreferrer');
 });
+
+// Contadores animados
+const counters = document.querySelectorAll('[data-count]');
+const countObs = new IntersectionObserver(entries => entries.forEach(entry => {
+  if (!entry.isIntersecting) return;
+  const el = entry.target;
+  const target = +el.dataset.count;
+  const prefix = el.dataset.prefix || '';
+  const suffix = el.dataset.suffix || '';
+  const dur = 1400, start = performance.now();
+  (function tick(now) {
+    const p = Math.min((now - start) / dur, 1);
+    const eased = 1 - Math.pow(1 - p, 3);
+    el.textContent = prefix + Math.round(target * eased) + suffix;
+    if (p < 1) requestAnimationFrame(tick);
+  })(start);
+  countObs.unobserve(el);
+}), { threshold: .5 });
+counters.forEach(c => countObs.observe(c));
+
+// Carrusel de testimonios
+const track = document.getElementById('testiTrack');
+if (track) {
+  const cards = [...track.children];
+  const dotsWrap = document.getElementById('testiDots');
+  cards.forEach((_, i) => {
+    const d = document.createElement('button');
+    d.setAttribute('aria-label', 'Ir al caso ' + (i + 1));
+    d.addEventListener('click', () => scrollToCard(i));
+    dotsWrap.appendChild(d);
+  });
+  const dots = [...dotsWrap.children];
+  const step = () => cards[0].getBoundingClientRect().width + 16;
+  const current = () => Math.round(track.scrollLeft / step());
+  const scrollToCard = i => track.scrollTo({ left: i * step(), behavior: 'smooth' });
+  const syncDots = () => { const c = current(); dots.forEach((d, i) => d.classList.toggle('active', i === c)); };
+  track.addEventListener('scroll', () => requestAnimationFrame(syncDots), { passive: true });
+  document.querySelectorAll('.testi-arrow').forEach(btn => btn.addEventListener('click', () => {
+    const next = Math.max(0, Math.min(cards.length - 1, current() + (+btn.dataset.dir)));
+    scrollToCard(next);
+  }));
+  syncDots();
+}
+
+// Resaltar link de nav según la sección visible
+const navAnchors = [...document.querySelectorAll('.nav-links a')].filter(a => a.getAttribute('href') && a.getAttribute('href').startsWith('#'));
+const navObs = new IntersectionObserver(entries => entries.forEach(e => {
+  if (e.isIntersecting) {
+    navAnchors.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + e.target.id));
+  }
+}), { rootMargin: '-45% 0px -50% 0px' });
+document.querySelectorAll('main section[id], header[id]').forEach(s => navObs.observe(s));
+
+// Barra de progreso de scroll
+const progress = document.getElementById('scrollProgress');
+window.addEventListener('scroll', () => {
+  const h = document.documentElement;
+  const ratio = h.scrollTop / (h.scrollHeight - h.clientHeight || 1);
+  progress.style.width = (ratio * 100) + '%';
+}, { passive: true });
 
 // Año footer
 document.querySelector('#year').textContent = new Date().getFullYear();

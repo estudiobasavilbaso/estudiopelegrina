@@ -9,8 +9,16 @@
   .services-head{position:static}
   .stats-grid{grid-template-columns:repeat(2,1fr)}
   .steps{grid-template-columns:repeat(2,1fr)}
-  .testi-grid{grid-template-columns:1fr}
-  .testi-card{max-width:34rem;margin:0 auto;width:100%}
+  .gallery-grid{grid-template-columns:1fr 1fr}
+  .gallery-grid figure:last-child{grid-column:1/-1;aspect-ratio:16/9}
+
+  /* carrusel testimonios */
+  .testi-nav{display:flex}
+  .testi-grid{display:flex;grid-template-columns:none;overflow-x:auto;scroll-snap-type:x mandatory;gap:1rem;padding-bottom:.5rem;scrollbar-width:none}
+  .testi-grid::-webkit-scrollbar{display:none}
+  .testi-card{flex:0 0 min(82%,360px);max-width:none;margin:0}
+  .testi-dots{display:flex}
+
   .faq{grid-template-columns:1fr;gap:2rem}
   .faq-left{position:static}
   .faq-media{max-width:34rem}
@@ -37,8 +45,14 @@
 
   .stats-grid{grid-template-columns:1fr}
   .steps{grid-template-columns:1fr}
+  .gallery-grid{grid-template-columns:1fr}
+  .gallery-grid figure:last-child{aspect-ratio:4/5}
 
+  .about-media{max-width:24rem}
+  .about-media-float{width:38%;right:-.6rem;bottom:-1rem}
   .about-media-tag{font-size:.78rem}
+
+  .testi-head{flex-direction:column;align-items:flex-start}
 
   .service-list button{grid-template-columns:2.2rem 1fr auto;gap:.6rem}
 
