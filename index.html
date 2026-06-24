@@ -10,8 +10,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=2">
-  <link rel="stylesheet" href="responsive.css?v=2">
+  <link rel="stylesheet" href="styles.css?v=3">
+  <link rel="stylesheet" href="responsive.css?v=3">
 </head>
 <body>
 
@@ -44,7 +44,7 @@
         <a href="#metodo">Cómo trabajamos</a>
         <a href="#faq">Preguntas</a>
         <a href="#contacto">Contacto</a>
-        <a class="nav-cta" href="#contacto">Agendá tu consulta</a>
+        <a class="nav-cta" href="https://calendly.com/estudiopelegrina" target="_blank" rel="noopener">Agendá tu consulta</a>
       </nav>
       <button class="menu-btn" aria-expanded="false" aria-label="Abrir menú">
         <span></span><span></span><span></span>
@@ -63,7 +63,7 @@
           <h1>Te ayudamos con tu <em>ciudadanía, visa</em> y trámites legales</h1>
           <p class="hero-lead">Ciudadanías, sucesiones y derecho migratorio, con asesoramiento jurídico claro y acompañamiento en cada etapa para llegar adonde querés estar.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#contacto">Agendá tu consulta</a>
+            <a class="btn btn-primary" href="https://calendly.com/estudiopelegrina" target="_blank" rel="noopener">Agendá tu consulta</a>
             <a class="btn btn-whatsapp" href="https://wa.me/5491154036933" target="_blank" rel="noopener">
               <img src="icono-whatsapp.png" class="wa-ico" alt=""> WhatsApp
             </a>
@@ -80,13 +80,19 @@
             </div>
           </details>
           <details class="acc-card">
-            <summary><span class="acc-ico img"><img src="icono-visa.png" alt=""></span><strong>Visados y migratorio</strong><b class="chev">⌃</b></summary>
+            <summary><span class="acc-ico img"><img src="icono-visa.png" alt=""></span><strong>Visados</strong><b class="chev">⌃</b></summary>
             <div class="acc-body">
-              <a href="#contacto"><span>🛂</span> Visado americano <em>→</em></a>
-              <a href="#contacto"><span>🗂️</span> Residencias y extranjería <em>→</em></a>
+              <a href="#contacto"><span>🇺🇸</span> Visa B1-B2 EEUU <em>→</em></a>
+              <a href="#contacto"><span>🇺🇸</span> E.S.T.A. EEUU <em>→</em></a>
             </div>
           </details>
-          <a class="acc-card simple" href="#contacto"><span class="acc-ico img"><img src="icono-pasaporte.png" alt=""></span><strong>Pasaportes</strong><b>→</b></a>
+          <details class="acc-card">
+            <summary><span class="acc-ico img"><img src="icono-pasaporte.png" alt=""></span><strong>Pasaportes</strong><b class="chev">⌃</b></summary>
+            <div class="acc-body">
+              <a href="#contacto"><span>🇮🇹</span> Pasaporte italiano <em>→</em></a>
+              <a href="#contacto"><span>🇪🇸</span> Pasaporte español <em>→</em></a>
+            </div>
+          </details>
           <a class="acc-card simple" href="#contacto"><span class="acc-ico">📜</span><strong>Sucesiones</strong><b>→</b></a>
           <a class="acc-card simple" href="#contacto"><span class="acc-ico">🗃️</span><strong>Rectificación de actas</strong><b>→</b></a>
         </aside>
@@ -239,6 +245,24 @@
           <p>Juan Manuel y Clara se presentaron por Anexo 1 ante el Consulado de España, como nietos de una abuela que recuperó la nacionalidad en 1993. Preparamos la carpeta hasta el bisabuelo español en 4 meses, con partida de España y firma digital válida.</p>
           <div class="testi-person"><b>Familia Costa</b><small>Ciudadanía española · Ley de Nietos</small></div>
         </article>
+        <article class="testi-card reveal">
+          <div class="testi-photo"><img src="cliente-galan.png" alt="Familia Galán con su Carpeta de Ciudadanía"></div>
+          <div class="quote">“</div>
+          <p>Se presentó por Anexo 1 como hija de argentino nacionalizado español de origen, y su hija por Anexo 3. Recuperamos el usuario y la cita consular que había vencido: hoy, con turno y carpeta en mano, solo resta presentarla.</p>
+          <div class="testi-person"><b>Familia Galán</b><small>Ciudadanía española · Ley de Nietos</small></div>
+        </article>
+        <article class="testi-card reveal">
+          <div class="testi-photo"><img src="cliente-batageli.png" alt="Familia Batageli Kohan con su Carpeta de Ciudadanía"></div>
+          <div class="quote">“</div>
+          <p>Le habían anulado la nacionalidad tras 10 años por un error. Siendo nieta de españoles e hija de argentina naturalizada española de origen, subsanamos el expediente y obtuvimos las 3 partidas en España.</p>
+          <div class="testi-person"><b>Familia Batageli Kohan</b><small>Ciudadanía española · Ley de Nietos</small></div>
+        </article>
+        <article class="testi-card reveal">
+          <div class="testi-photo"><img src="cliente-marquez.png" alt="Familia Marquez con su Carpeta de Ciudadanía"></div>
+          <div class="quote">“</div>
+          <p>Carpeta de 4 solicitantes, nietos y bisnietos de española no naturalizada argentina. Rastreamos la fe de bautismo de la abuela y, tras 5 meses de armado, se presentan ante el Consulado de España.</p>
+          <div class="testi-person"><b>Familia Marquez</b><small>Ciudadanía española · Ley de Nietos</small></div>
+        </article>
       </div>
       <div class="testi-dots" id="testiDots" aria-hidden="true"></div>
     </section>
@@ -333,7 +357,7 @@
 
         <aside class="contact-aside reveal">
           <div class="contact-photo">
-            <img src="oficina-1.jpg" alt="Sala de reuniones del Estudio Jurídico Pelegrina">
+            <img src="paloma-frente.jpg" alt="Paloma Eugenia Pelegrina, abogada del Estudio Jurídico Pelegrina">
           </div>
           <a class="contact-cta wa" href="https://wa.me/5491154036933" target="_blank" rel="noopener">
             <img src="icono-whatsapp.png" class="wa-ico" alt="">
@@ -343,7 +367,7 @@
           <div class="contact-info">
             <div class="info-row"><span>📍</span><div><b>Sede</b><p>Talcahuano 736, Planta Baja al fondo<br>Ciudad Autónoma de Buenos Aires<br><a href="https://www.google.com/maps/search/?api=1&query=Talcahuano+736+CABA" target="_blank" rel="noopener">Ver en Google Maps →</a></p></div></div>
             <div class="info-row"><span>🕐</span><div><b>Horarios de atención</b><p><strong>Presencial:</strong> martes y jueves de 10 a 18 h<br><strong>Virtual:</strong> resto de la semana, de 10 a 18 h</p></div></div>
-            <div class="info-row"><span>✉️</span><div><b>Email</b><p><a href="mailto:palomapelegrina@gmail.com">palomapelegrina@gmail.com</a></p></div></div>
+            <div class="info-row"><span>✉️</span><div><b>Email</b><p><a href="mailto:legales.pelegrina@gmail.com">legales.pelegrina@gmail.com</a></p></div></div>
             <div class="info-row"><img class="ico-inline" src="icono-instagram.png" alt=""><div><b>Instagram</b><p><a href="https://www.instagram.com/estudiopelegrina/" target="_blank" rel="noopener">@estudiopelegrina</a></p></div></div>
           </div>
           <div class="contact-map">
@@ -383,7 +407,7 @@
       <div class="footer-col">
         <h4>Contacto</h4>
         <a href="https://wa.me/5491154036933" target="_blank" rel="noopener">WhatsApp +54 9 11 5403 6933</a>
-        <a href="mailto:palomapelegrina@gmail.com">palomapelegrina@gmail.com</a>
+        <a href="mailto:legales.pelegrina@gmail.com">legales.pelegrina@gmail.com</a>
         <a href="https://www.instagram.com/estudiopelegrina/" target="_blank" rel="noopener">Instagram @estudiopelegrina</a>
         <a href="https://www.google.com/maps/search/?api=1&query=Talcahuano+736+CABA" target="_blank" rel="noopener">Talcahuano 736, PB al fondo · CABA</a>
       </div>
@@ -402,6 +426,6 @@
   <!-- Barra de progreso de scroll -->
   <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
 
-  <script src="script.js?v=2"></script>
+  <script src="script.js?v=3"></script>
 </body>
 </html>
