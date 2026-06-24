@@ -138,6 +138,7 @@ em{font-style:normal}
 .stats-head h2 em{color:var(--gold)}
 .stats-head p{color:var(--muted);margin:0}
 .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.3rem}
+.stats-3{grid-template-columns:repeat(3,1fr)}
 .stat-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm);padding:1.9rem 1.5rem;text-align:left}
 .stat-ico{display:grid;place-items:center;width:48px;height:48px;border-radius:14px;background:linear-gradient(140deg,var(--cream),#fff);font-size:1.3rem;margin-bottom:1.1rem}
 .stat-card b{display:block;font-family:var(--serif);font-size:clamp(2.6rem,4vw,3.4rem);color:var(--wine);line-height:1}
@@ -213,7 +214,10 @@ em{font-style:normal}
 .contact-head h2{font-size:clamp(2.2rem,4vw,3.6rem);color:var(--wine-dark);margin:.3rem 0 1rem}
 .contact-head h2 em{color:var(--gold)}
 .contact-head p{color:var(--muted);margin:0}
-/* Bloque consulta + pago */
+/* Sección + bloque consulta + pago */
+.consulta-section{width:min(1180px,100%);margin:0 auto;padding:clamp(2rem,5vw,4rem) clamp(1.2rem,4vw,2.5rem)}
+.consulta-section .consulta-card{margin-bottom:0}
+.faq-intro{color:var(--muted);line-height:1.7;margin:0 0 1.6rem;max-width:34ch}
 .consulta-card{display:grid;grid-template-columns:1.3fr .7fr;gap:clamp(1.5rem,3vw,2.5rem);background:linear-gradient(150deg,var(--wine),var(--wine-dark));color:#fff;border-radius:var(--radius-lg);box-shadow:var(--shadow);padding:clamp(1.8rem,4vw,2.8rem);margin-bottom:1.6rem}
 .consulta-info h3{font-family:var(--serif);font-size:clamp(1.5rem,2.6vw,2.1rem);margin:.3rem 0 .8rem}
 .consulta-info>p{color:rgba(255,255,255,.82);margin:0 0 1rem;line-height:1.65}
