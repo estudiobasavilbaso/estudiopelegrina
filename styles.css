@@ -216,6 +216,8 @@ em{font-style:normal}
 .contact-head p{color:var(--muted);margin:0}
 /* Sección + bloque consulta + pago */
 .consulta-section{width:min(1180px,100%);margin:0 auto;padding:clamp(2rem,5vw,4rem) clamp(1.2rem,4vw,2.5rem)}
+section[id],div[id="cal"]{scroll-margin-top:6rem}
+.calendly-wrap{margin-top:1.6rem;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-sm);background:var(--paper);min-height:680px}
 .consulta-section .consulta-card{margin-bottom:0}
 .faq-intro{color:var(--muted);line-height:1.7;margin:0 0 1.6rem;max-width:34ch}
 .consulta-card{display:grid;grid-template-columns:1.3fr .7fr;gap:clamp(1.5rem,3vw,2.5rem);background:linear-gradient(150deg,var(--wine),var(--wine-dark));color:#fff;border-radius:var(--radius-lg);box-shadow:var(--shadow);padding:clamp(1.8rem,4vw,2.8rem);margin-bottom:1.6rem}
