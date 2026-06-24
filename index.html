@@ -10,24 +10,24 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=6">
-  <link rel="stylesheet" href="responsive.css?v=6">
+  <link rel="stylesheet" href="styles.css?v=7">
+  <link rel="stylesheet" href="responsive.css?v=7">
 </head>
 <body>
 
   <!-- TICKER -->
   <div class="ticker" aria-hidden="true">
     <div class="ticker-track">
-      <span>Ciudadanía española e italiana</span><i></i>
-      <span>Acompañamiento de principio a fin</span><i></i>
-      <span>Atención a argentinos en el exterior</span><i></i>
-      <span>Asesoramiento personalizado</span><i></i>
-      <span>Seguridad jurídica en cada paso</span><i></i>
-      <span>Ciudadanía española e italiana</span><i></i>
-      <span>Acompañamiento de principio a fin</span><i></i>
-      <span>Atención a argentinos en el exterior</span><i></i>
-      <span>Asesoramiento personalizado</span><i></i>
-      <span>Seguridad jurídica en cada paso</span><i></i>
+      <span data-i18n="tk.1">Ciudadanía española e italiana</span><i></i>
+      <span data-i18n="tk.2">Acompañamiento de principio a fin</span><i></i>
+      <span data-i18n="tk.3">Atención a argentinos en el exterior</span><i></i>
+      <span data-i18n="tk.4">Asesoramiento personalizado</span><i></i>
+      <span data-i18n="tk.5">Seguridad jurídica en cada paso</span><i></i>
+      <span data-i18n="tk.1">Ciudadanía española e italiana</span><i></i>
+      <span data-i18n="tk.2">Acompañamiento de principio a fin</span><i></i>
+      <span data-i18n="tk.3">Atención a argentinos en el exterior</span><i></i>
+      <span data-i18n="tk.4">Asesoramiento personalizado</span><i></i>
+      <span data-i18n="tk.5">Seguridad jurídica en cada paso</span><i></i>
     </div>
   </div>
 
@@ -36,19 +36,32 @@
     <div class="nav-shell">
       <a class="brand" href="#inicio" aria-label="Estudio Jurídico Pelegrina · Inicio">
         <img src="logo.png" alt="Estudio Jurídico Pelegrina" class="brand-logo">
-        <span class="brand-text"><b>Estudio Jurídico</b><small>Pelegrina</small></span>
+        <span class="brand-text"><b data-i18n="brand.sub">Estudio Jurídico</b><small>Pelegrina</small></span>
       </a>
       <nav class="nav-links" aria-label="Navegación principal">
-        <a href="#servicios">Servicios</a>
-        <a href="#estudio">¿Quiénes somos?</a>
-        <a href="#metodo">Cómo trabajamos</a>
-        <a href="#faq">Preguntas</a>
-        <a href="#contacto">Contacto</a>
-        <a class="nav-cta" href="https://calendly.com/estudiopelegrina" target="_blank" rel="noopener">Agendá tu consulta</a>
+        <a href="#servicios" data-i18n="nav.servicios">Servicios</a>
+        <a href="#estudio" data-i18n="nav.quienes">¿Quiénes somos?</a>
+        <a href="#metodo" data-i18n="nav.metodo">Cómo trabajamos</a>
+        <a href="#faq" data-i18n="nav.faq">Preguntas</a>
+        <a href="#contacto" data-i18n="nav.contacto">Contacto</a>
+        <a class="nav-cta" href="https://calendly.com/estudiopelegrina" target="_blank" rel="noopener" data-i18n="nav.cta">Agendá tu consulta</a>
       </nav>
-      <button class="menu-btn" aria-expanded="false" aria-label="Abrir menú">
-        <span></span><span></span><span></span>
-      </button>
+      <div class="nav-right">
+        <div class="lang-switch">
+          <button class="lang-btn" aria-haspopup="true" aria-expanded="false" aria-label="Cambiar idioma / Change language">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.8 5.7 3.8 9S14.5 18.5 12 21C9.5 18.5 8.2 15.3 8.2 12S9.5 5.5 12 3z"/></svg>
+            <span class="lang-current">ES</span>
+          </button>
+          <div class="lang-menu" role="menu">
+            <button data-lang="es" role="menuitem">🇪🇸 Español</button>
+            <button data-lang="en" role="menuitem">🇬🇧 English</button>
+            <button data-lang="it" role="menuitem">🇮🇹 Italiano</button>
+          </div>
+        </div>
+        <button class="menu-btn" aria-expanded="false" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </header>
 
@@ -59,11 +72,11 @@
       <div class="hero-bg" aria-hidden="true"></div>
       <div class="hero-inner">
         <div class="hero-copy reveal">
-          <p class="hero-pill"><i></i> España · Italia · Argentina · y trámites en el exterior</p>
-          <h1>Te ayudamos con tu <em>ciudadanía, visa</em> y trámites legales</h1>
-          <p class="hero-lead">Ciudadanías, sucesiones y derecho migratorio, con asesoramiento jurídico claro y acompañamiento en cada etapa para llegar adonde querés estar.</p>
+          <p class="hero-pill"><i></i> <span data-i18n="hero.pill">España · Italia · Argentina · y trámites en el exterior</span></p>
+          <h1 data-i18n="hero.h1">Te ayudamos con tu <em>ciudadanía, visa</em> y trámites legales</h1>
+          <p class="hero-lead" data-i18n="hero.lead">Ciudadanías, sucesiones y derecho migratorio, con asesoramiento jurídico claro y acompañamiento en cada etapa para llegar adonde querés estar.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="https://calendly.com/estudiopelegrina" target="_blank" rel="noopener">Agendá tu consulta</a>
+            <a class="btn btn-primary" href="https://calendly.com/estudiopelegrina" target="_blank" rel="noopener" data-i18n="hero.cta">Agendá tu consulta</a>
             <a class="btn btn-whatsapp" href="https://wa.me/5491154036933" target="_blank" rel="noopener">
               <img src="icono-whatsapp.png" class="wa-ico" alt=""> WhatsApp
             </a>
@@ -72,38 +85,38 @@
 
         <aside class="hero-panel reveal" aria-label="Áreas de práctica">
           <details class="acc-card" open>
-            <summary><span class="acc-ico">🌎</span><strong>Ciudadanías</strong><b class="chev">⌃</b></summary>
+            <summary><span class="acc-ico">🌎</span><strong data-i18n="acc.ciud">Ciudadanías</strong><b class="chev">⌃</b></summary>
             <div class="acc-body">
-              <a href="#contacto"><span>🇪🇸</span> Ciudadanía española <em>→</em></a>
-              <a href="#contacto"><span>🇮🇹</span> Ciudadanía italiana <em>→</em></a>
-              <a href="#contacto"><span>🇦🇷</span> Nacionalidad argentina <em>→</em></a>
+              <a href="#contacto"><span>🇪🇸</span> <span data-i18n="acc.ciud.esp">Ciudadanía española</span> <em>→</em></a>
+              <a href="#contacto"><span>🇮🇹</span> <span data-i18n="acc.ciud.ita">Ciudadanía italiana</span> <em>→</em></a>
+              <a href="#contacto"><span>🇦🇷</span> <span data-i18n="acc.ciud.arg">Nacionalidad argentina</span> <em>→</em></a>
             </div>
           </details>
           <details class="acc-card">
-            <summary><span class="acc-ico img"><img src="icono-visa.png" alt=""></span><strong>Visados</strong><b class="chev">⌃</b></summary>
+            <summary><span class="acc-ico img"><img src="icono-visa.png" alt=""></span><strong data-i18n="acc.visa">Visados</strong><b class="chev">⌃</b></summary>
             <div class="acc-body">
-              <a href="#contacto"><span>🇺🇸</span> Visa B1-B2 EEUU <em>→</em></a>
-              <a href="#contacto"><span>🇺🇸</span> E.S.T.A. EEUU <em>→</em></a>
+              <a href="#contacto"><span>🇺🇸</span> <span data-i18n="acc.visa.b1b2">Visa B1-B2 EEUU</span> <em>→</em></a>
+              <a href="#contacto"><span>🇺🇸</span> <span data-i18n="acc.visa.esta">E.S.T.A. EEUU</span> <em>→</em></a>
             </div>
           </details>
           <details class="acc-card">
-            <summary><span class="acc-ico img"><img src="icono-pasaporte.png" alt=""></span><strong>Pasaportes</strong><b class="chev">⌃</b></summary>
+            <summary><span class="acc-ico img"><img src="icono-pasaporte.png" alt=""></span><strong data-i18n="acc.pas">Pasaportes</strong><b class="chev">⌃</b></summary>
             <div class="acc-body">
-              <a href="#contacto"><span>🇮🇹</span> Pasaporte italiano <em>→</em></a>
-              <a href="#contacto"><span>🇪🇸</span> Pasaporte español <em>→</em></a>
+              <a href="#contacto"><span>🇮🇹</span> <span data-i18n="acc.pas.ita">Pasaporte italiano</span> <em>→</em></a>
+              <a href="#contacto"><span>🇪🇸</span> <span data-i18n="acc.pas.esp">Pasaporte español</span> <em>→</em></a>
             </div>
           </details>
-          <a class="acc-card simple" href="#contacto"><span class="acc-ico">📜</span><strong>Sucesiones</strong><b>→</b></a>
-          <a class="acc-card simple" href="#contacto"><span class="acc-ico">🗃️</span><strong>Rectificación de actas</strong><b>→</b></a>
+          <a class="acc-card simple" href="#contacto"><span class="acc-ico">📜</span><strong data-i18n="acc.suc">Sucesiones</strong><b>→</b></a>
+          <a class="acc-card simple" href="#contacto"><span class="acc-ico">🗃️</span><strong data-i18n="acc.rect">Rectificación de actas</strong><b>→</b></a>
         </aside>
       </div>
     </section>
 
     <!-- TRUST STRIP -->
     <div class="trust">
-      <span>Atención personalizada</span><i></i>
-      <span>Estrategia clara</span><i></i>
-      <span>Alcance internacional</span>
+      <span data-i18n="trust.1">Atención personalizada</span><i></i>
+      <span data-i18n="trust.2">Estrategia clara</span><i></i>
+      <span data-i18n="trust.3">Alcance internacional</span>
     </div>
 
     <!-- QUIÉNES SOMOS -->
@@ -111,26 +124,26 @@
       <div class="about-media reveal">
         <div class="about-media-main">
           <img src="paloma-ejecutiva.jpg" alt="Paloma Eugenia Pelegrina, abogada del Estudio Jurídico Pelegrina">
-          <div class="about-media-tag">Asesoramiento legal para ciudadanías, sucesiones y trámites migratorios</div>
+          <div class="about-media-tag" data-i18n="about.tag">Asesoramiento legal para ciudadanías, sucesiones y trámites migratorios</div>
         </div>
       </div>
       <div class="about-copy reveal">
-        <p class="eyebrow">Quiénes somos</p>
-        <h2>Detrás de cada trámite, hay <em>una historia que merece avanzar</em></h2>
-        <p class="lead-dark">Soy <strong>Paloma Eugenia Pelegrina</strong>, abogada (UNLZ), matriculada en CPACF, CAFLP y CALZ. Al frente del Estudio Jurídico Pelegrina acompaño a personas y familias en Argentina y en el exterior.</p>
-        <p>Con más de diez años de experiencia en derecho civil, sucesorio y migratorio, combino criterio técnico con un trato cercano: analizo cada caso en profundidad, explico las alternativas en lenguaje claro y trazo un camino concreto para resolverlo.</p>
+        <p class="eyebrow" data-i18n="about.eyebrow">Quiénes somos</p>
+        <h2 data-i18n="about.h2">Detrás de cada trámite, hay <em>una historia que merece avanzar</em></h2>
+        <p class="lead-dark" data-i18n="about.p1">Soy <strong>Paloma Eugenia Pelegrina</strong>, abogada (UNLZ), matriculada en CPACF, CAFLP y CALZ. Al frente del Estudio Jurídico Pelegrina acompaño a personas y familias en Argentina y en el exterior.</p>
+        <p data-i18n="about.p2">Con más de diez años de experiencia en derecho civil, sucesorio y migratorio, combino criterio técnico con un trato cercano: analizo cada caso en profundidad, explico las alternativas en lenguaje claro y trazo un camino concreto para resolverlo.</p>
         <div class="about-badges">
-          <span class="badge">⚖️ Mirada legal</span>
-          <span class="badge">🌐 Experiencia migratoria</span>
-          <span class="badge">🤝 Acompañamiento real</span>
+          <span class="badge" data-i18n="about.badge1">⚖️ Mirada legal</span>
+          <span class="badge" data-i18n="about.badge2">🌐 Experiencia migratoria</span>
+          <span class="badge" data-i18n="about.badge3">🤝 Acompañamiento real</span>
         </div>
         <div class="about-sign">
           <img src="paloma-selfie.png" alt="Paloma Eugenia Pelegrina">
-          <div><b>Paloma Eugenia Pelegrina</b><small>Abogada · Titular del estudio</small></div>
+          <div><b>Paloma Eugenia Pelegrina</b><small data-i18n="about.role">Abogada · Titular del estudio</small></div>
         </div>
         <div class="about-links">
-          <a class="btn btn-outline-wine" href="https://www.instagram.com/estudiopelegrina/" target="_blank" rel="noopener"><img class="btn-ico" src="icono-instagram.png" alt=""> Seguinos en Instagram</a>
-          <a class="under" href="#metodo">Cómo trabajamos →</a>
+          <a class="btn btn-outline-wine" href="https://www.instagram.com/estudiopelegrina/" target="_blank" rel="noopener"><img class="btn-ico" src="icono-instagram.png" alt=""> <span data-i18n="about.iglink">Seguinos en Instagram</span></a>
+          <a class="under" href="#metodo" data-i18n="about.metlink">Cómo trabajamos →</a>
         </div>
       </div>
     </section>
@@ -138,49 +151,49 @@
     <!-- STATS -->
     <section class="stats">
       <div class="stats-head reveal">
-        <p class="eyebrow">Nuestros números</p>
-        <h2>Lo que dicen nuestros <em>resultados</em></h2>
-        <p>Cada caso refleja el trabajo, la experiencia y la confianza que construimos acompañando a cada persona y familia.</p>
+        <p class="eyebrow" data-i18n="stats.eyebrow">Nuestros números</p>
+        <h2 data-i18n="stats.h2">Lo que dicen nuestros <em>resultados</em></h2>
+        <p data-i18n="stats.p">Cada caso refleja el trabajo, la experiencia y la confianza que construimos acompañando a cada persona y familia.</p>
       </div>
       <div class="stats-grid">
-        <article class="stat-card reveal"><span class="stat-ico">🏛️</span><b data-count="10" data-prefix="+">+10</b><h3>Años de experiencia</h3><p>Más de una década en derecho civil, sucesorio y migratorio.</p></article>
-        <article class="stat-card reveal"><span class="stat-ico">📁</span><b data-count="500" data-prefix="+">+500</b><h3>Trámites gestionados</h3><p>Ciudadanías, sucesiones y trámites resueltos con seguimiento profesional.</p></article>
-        <article class="stat-card reveal"><span class="stat-ico">🌍</span><b data-count="3">3</b><h3>Ciudadanías</h3><p>Española, italiana y argentina, con armado de carpeta y seguimiento.</p></article>
-        <article class="stat-card reveal"><span class="stat-ico">🤝</span><b data-count="100" data-suffix="%">100%</b><h3>Atención personalizada</h3><p>Cada consulta la atiende una abogada, de principio a fin.</p></article>
+        <article class="stat-card reveal"><span class="stat-ico">🏛️</span><b data-count="10" data-prefix="+">+10</b><h3 data-i18n="stat1.h3">Años de experiencia</h3><p data-i18n="stat1.p">Más de una década en derecho civil, sucesorio y migratorio.</p></article>
+        <article class="stat-card reveal"><span class="stat-ico">📁</span><b data-count="500" data-prefix="+">+500</b><h3 data-i18n="stat2.h3">Trámites gestionados</h3><p data-i18n="stat2.p">Ciudadanías, sucesiones y trámites resueltos con seguimiento profesional.</p></article>
+        <article class="stat-card reveal"><span class="stat-ico">🌍</span><b data-count="3">3</b><h3 data-i18n="stat3.h3">Ciudadanías</h3><p data-i18n="stat3.p">Española, italiana y argentina, con armado de carpeta y seguimiento.</p></article>
+        <article class="stat-card reveal"><span class="stat-ico">🤝</span><b data-count="100" data-suffix="%">100%</b><h3 data-i18n="stat4.h3">Atención personalizada</h3><p data-i18n="stat4.p">Cada consulta la atiende una abogada, de principio a fin.</p></article>
       </div>
     </section>
 
     <!-- SERVICIOS -->
     <section class="services" id="servicios">
       <div class="services-head reveal">
-        <p class="eyebrow light">Áreas de práctica</p>
-        <h2>Soluciones jurídicas para <em>avanzar con confianza</em></h2>
-        <p>Asesoramiento integral para personas y familias, en Argentina y para argentinos en el exterior. Estas son las áreas en las que más te podemos ayudar.</p>
+        <p class="eyebrow light" data-i18n="svc.eyebrow">Áreas de práctica</p>
+        <h2 data-i18n="svc.h2">Soluciones jurídicas para <em>avanzar con confianza</em></h2>
+        <p data-i18n="svc.p">Asesoramiento integral para personas y familias, en Argentina y para argentinos en el exterior. Estas son las áreas en las que más te podemos ayudar.</p>
         <div class="carpeta-feature">
           <div class="carpeta-img"><img src="icono-carpeta.png" alt="Carpeta de Ciudadanía del Estudio Jurídico Pelegrina"></div>
           <div class="carpeta-text">
-            <span class="carpeta-badge">★ Nuestro sello distintivo</span>
-            <b>Carpeta de Ciudadanía</b>
-            <span class="carpeta-desc">Armamos y te entregamos tu carpeta completa, prolija y lista para presentar ante el Consulado.</span>
+            <span class="carpeta-badge" data-i18n="carpeta.badge">★ Nuestro sello distintivo</span>
+            <b data-i18n="carpeta.title">Carpeta de Ciudadanía</b>
+            <span class="carpeta-desc" data-i18n="carpeta.desc">Armamos y te entregamos tu carpeta completa, prolija y lista para presentar ante el Consulado.</span>
           </div>
         </div>
       </div>
       <div class="service-list">
         <article class="reveal">
-          <button aria-expanded="false"><small>01</small><span>Ciudadanías</span><b>+</b></button>
-          <div class="svc-panel"><p>Ciudadanía española e italiana y nacionalidad argentina: análisis de viabilidad, búsqueda y reunión de documentación, armado de carpeta y seguimiento por vía administrativa, consular o judicial.</p></div>
+          <button aria-expanded="false"><small>01</small><span data-i18n="svc1.title">Ciudadanías</span><b>+</b></button>
+          <div class="svc-panel"><p data-i18n="svc1.desc">Ciudadanía española e italiana y nacionalidad argentina: análisis de viabilidad, búsqueda y reunión de documentación, armado de carpeta y seguimiento por vía administrativa, consular o judicial.</p></div>
         </article>
         <article class="reveal">
-          <button aria-expanded="false"><small>02</small><span>Visados y derecho migratorio</span><b>+</b></button>
-          <div class="svc-panel"><p>Visado americano, residencias, radicaciones y regularización migratoria. Trámites de extranjería, pasaportes y expedientes ante organismos y consulados, según tu destino y proyecto.</p></div>
+          <button aria-expanded="false"><small>02</small><span data-i18n="svc2.title">Visados y derecho migratorio</span><b>+</b></button>
+          <div class="svc-panel"><p data-i18n="svc2.desc">Visado americano, residencias, radicaciones y regularización migratoria. Trámites de extranjería, pasaportes y expedientes ante organismos y consulados, según tu destino y proyecto.</p></div>
         </article>
         <article class="reveal">
-          <button aria-expanded="false"><small>03</small><span>Sucesiones</span><b>+</b></button>
-          <div class="svc-panel"><p>Inicio y seguimiento de procesos sucesorios: demanda, testimonios, planillas, oficios y escritos. Planificación para ordenar y proteger el patrimonio familiar.</p></div>
+          <button aria-expanded="false"><small>03</small><span data-i18n="svc3.title">Sucesiones</span><b>+</b></button>
+          <div class="svc-panel"><p data-i18n="svc3.desc">Inicio y seguimiento de procesos sucesorios: demanda, testimonios, planillas, oficios y escritos. Planificación para ordenar y proteger el patrimonio familiar.</p></div>
         </article>
         <article class="reveal">
-          <button aria-expanded="false"><small>04</small><span>Rectificación de actas y documentación</span><b>+</b></button>
-          <div class="svc-panel"><p>Corrección de errores en partidas y documentos (nombres, fechas, datos), gestión de testimonios y trámites necesarios para que tu carpeta avance sin demoras.</p></div>
+          <button aria-expanded="false"><small>04</small><span data-i18n="svc4.title">Rectificación de actas y documentación</span><b>+</b></button>
+          <div class="svc-panel"><p data-i18n="svc4.desc">Corrección de errores en partidas y documentos (nombres, fechas, datos), gestión de testimonios y trámites necesarios para que tu carpeta avance sin demoras.</p></div>
         </article>
       </div>
     </section>
@@ -188,29 +201,29 @@
     <!-- CÓMO TRABAJAMOS -->
     <section class="process" id="metodo">
       <div class="process-head reveal">
-        <p class="eyebrow">Cómo trabajamos</p>
-        <h2>Claridad desde la <em>primera consulta</em></h2>
-        <p>Un proceso simple y ordenado para que sepas, en cada momento, en qué etapa está tu trámite.</p>
+        <p class="eyebrow" data-i18n="proc.eyebrow">Cómo trabajamos</p>
+        <h2 data-i18n="proc.h2">Claridad desde la <em>primera consulta</em></h2>
+        <p data-i18n="proc.p">Un proceso simple y ordenado para que sepas, en cada momento, en qué etapa está tu trámite.</p>
       </div>
       <ol class="steps">
-        <li class="step-card reveal"><span class="step-num">1</span><h3>Escuchamos</h3><p>Conocemos tu situación, tus objetivos y los antecedentes de tu caso.</p></li>
-        <li class="step-card reveal"><span class="step-num">2</span><h3>Diagnosticamos</h3><p>Evaluamos la viabilidad y te explicamos las alternativas en lenguaje claro.</p></li>
-        <li class="step-card reveal"><span class="step-num">3</span><h3>Diseñamos la estrategia</h3><p>Definimos un plan concreto, los pasos y la documentación necesaria.</p></li>
-        <li class="step-card reveal"><span class="step-num">4</span><h3>Acompañamos</h3><p>Gestionamos cada etapa y te mantenemos informado hasta la resolución.</p></li>
+        <li class="step-card reveal"><span class="step-num">1</span><h3 data-i18n="step1.h3">Escuchamos</h3><p data-i18n="step1.p">Conocemos tu situación, tus objetivos y los antecedentes de tu caso.</p></li>
+        <li class="step-card reveal"><span class="step-num">2</span><h3 data-i18n="step2.h3">Diagnosticamos</h3><p data-i18n="step2.p">Evaluamos la viabilidad y te explicamos las alternativas en lenguaje claro.</p></li>
+        <li class="step-card reveal"><span class="step-num">3</span><h3 data-i18n="step3.h3">Diseñamos la estrategia</h3><p data-i18n="step3.p">Definimos un plan concreto, los pasos y la documentación necesaria.</p></li>
+        <li class="step-card reveal"><span class="step-num">4</span><h3 data-i18n="step4.h3">Acompañamos</h3><p data-i18n="step4.p">Gestionamos cada etapa y te mantenemos informado hasta la resolución.</p></li>
       </ol>
     </section>
 
     <!-- GALERÍA ESTUDIO -->
     <section class="gallery">
       <div class="gallery-head reveal">
-        <p class="eyebrow">Nuestro estudio</p>
-        <h2>Un espacio pensado para <em>recibirte</em></h2>
-        <p>Te esperamos en nuestras oficinas en el corazón de Buenos Aires, con atención presencial y a distancia.</p>
+        <p class="eyebrow" data-i18n="gal.eyebrow">Nuestro estudio</p>
+        <h2 data-i18n="gal.h2">Un espacio pensado para <em>recibirte</em></h2>
+        <p data-i18n="gal.p">Te esperamos en nuestras oficinas en el corazón de Buenos Aires, con atención presencial y a distancia.</p>
       </div>
       <div class="gallery-grid">
-        <figure class="reveal"><img src="oficina-1.jpg" alt="Sala de reuniones del estudio"><figcaption>Sala de reuniones</figcaption></figure>
-        <figure class="reveal"><img src="oficina-2.jpg" alt="Despacho privado del estudio"><figcaption>Despacho privado</figcaption></figure>
-        <figure class="reveal"><img src="oficina-3.jpg" alt="Sala de espera del estudio"><figcaption>Sala de espera</figcaption></figure>
+        <figure class="reveal"><img src="oficina-1.jpg" alt="Sala de reuniones del estudio"><figcaption data-i18n="gal.cap1">Sala de reuniones</figcaption></figure>
+        <figure class="reveal"><img src="oficina-2.jpg" alt="Despacho privado del estudio"><figcaption data-i18n="gal.cap2">Despacho privado</figcaption></figure>
+        <figure class="reveal"><img src="oficina-3.jpg" alt="Sala de espera del estudio"><figcaption data-i18n="gal.cap3">Sala de espera</figcaption></figure>
       </div>
     </section>
 
@@ -218,9 +231,9 @@
     <section class="testi">
       <div class="testi-head reveal">
         <div>
-          <p class="eyebrow light">Casos reales</p>
-          <h2>Familias que ya <em>confiaron en nosotros</em></h2>
-          <p>Historias reales de personas que obtuvieron su ciudadanía con acompañamiento, claridad y un equipo que se ocupa de cada detalle.</p>
+          <p class="eyebrow light" data-i18n="testi.eyebrow">Casos reales</p>
+          <h2 data-i18n="testi.h2">Familias que ya <em>confiaron en nosotros</em></h2>
+          <p data-i18n="testi.p">Historias reales de personas que obtuvieron su ciudadanía con acompañamiento, claridad y un equipo que se ocupa de cada detalle.</p>
         </div>
         <div class="testi-nav">
           <button class="testi-arrow" data-dir="-1" aria-label="Anterior">‹</button>
@@ -231,38 +244,38 @@
         <article class="testi-card reveal">
           <div class="testi-photo"><img src="cliente-desarro.png" alt="Familia De Sarro con su Carpeta de Ciudadanía"></div>
           <div class="quote">“</div>
-          <p>Ethel se presentó como nieta de abuelo materno español por Anexo 1, y sus 3 hijos mayores por Anexo 3. El Consulado permitió el ingreso de todo el grupo familiar pese a tener distintos horarios de cita.</p>
-          <div class="testi-person"><b>Familia De Sarro</b><small>Ciudadanía española · Ley de Nietos</small></div>
+          <p data-i18n="case1">Ethel se presentó como nieta de abuelo materno español por Anexo 1, y sus 3 hijos mayores por Anexo 3. El Consulado permitió el ingreso de todo el grupo familiar pese a tener distintos horarios de cita.</p>
+          <div class="testi-person"><b>Familia De Sarro</b><small data-i18n="testi.role">Ciudadanía española · Ley de Nietos</small></div>
         </article>
         <article class="testi-card reveal">
           <div class="testi-photo"><img src="cliente-promizio.png" alt="Cliente de la Familia Promizio con sus Carpetas de Ciudadanía"></div>
           <div class="quote">“</div>
-          <p>Una carpeta de 13 solicitantes —nietos y bisnietos— por Anexo 1 y 3. Conseguimos en España las partidas de nacimiento y matrimonio, e incluso apostillamos la documentación que faltaba.</p>
-          <div class="testi-person"><b>Familia Promizio</b><small>Ciudadanía española · Ley de Nietos</small></div>
+          <p data-i18n="case2">Una carpeta de 13 solicitantes —nietos y bisnietos— por Anexo 1 y 3. Conseguimos en España las partidas de nacimiento y matrimonio, e incluso apostillamos la documentación que faltaba.</p>
+          <div class="testi-person"><b>Familia Promizio</b><small data-i18n="testi.role">Ciudadanía española · Ley de Nietos</small></div>
         </article>
         <article class="testi-card reveal">
           <div class="testi-photo"><img src="cliente-costa.png" alt="Familia Costa con su Carpeta de Ciudadanía"></div>
           <div class="quote">“</div>
-          <p>Juan Manuel y Clara se presentaron por Anexo 1 ante el Consulado de España, como nietos de una abuela que recuperó la nacionalidad en 1993. Preparamos la carpeta hasta el bisabuelo español en 4 meses, con partida de España y firma digital válida.</p>
-          <div class="testi-person"><b>Familia Costa</b><small>Ciudadanía española · Ley de Nietos</small></div>
+          <p data-i18n="case3">Juan Manuel y Clara se presentaron por Anexo 1 ante el Consulado de España, como nietos de una abuela que recuperó la nacionalidad en 1993. Preparamos la carpeta hasta el bisabuelo español en 4 meses, con partida de España y firma digital válida.</p>
+          <div class="testi-person"><b>Familia Costa</b><small data-i18n="testi.role">Ciudadanía española · Ley de Nietos</small></div>
         </article>
         <article class="testi-card reveal">
           <div class="testi-photo"><img src="cliente-galan.png" alt="Familia Galán con su Carpeta de Ciudadanía"></div>
           <div class="quote">“</div>
-          <p>Se presentó por Anexo 1 como hija de argentino nacionalizado español de origen, y su hija por Anexo 3. Recuperamos el usuario y la cita consular que había vencido: hoy, con turno y carpeta en mano, solo resta presentarla.</p>
-          <div class="testi-person"><b>Familia Galán</b><small>Ciudadanía española · Ley de Nietos</small></div>
+          <p data-i18n="case4">Se presentó por Anexo 1 como hija de argentino nacionalizado español de origen, y su hija por Anexo 3. Recuperamos el usuario y la cita consular que había vencido: hoy, con turno y carpeta en mano, solo resta presentarla.</p>
+          <div class="testi-person"><b>Familia Galán</b><small data-i18n="testi.role">Ciudadanía española · Ley de Nietos</small></div>
         </article>
         <article class="testi-card reveal">
           <div class="testi-photo"><img src="cliente-batageli.png" alt="Familia Batageli Kohan con su Carpeta de Ciudadanía"></div>
           <div class="quote">“</div>
-          <p>Le habían anulado la nacionalidad tras 10 años por un error. Siendo nieta de españoles e hija de argentina naturalizada española de origen, subsanamos el expediente y obtuvimos las 3 partidas en España.</p>
-          <div class="testi-person"><b>Familia Batageli Kohan</b><small>Ciudadanía española · Ley de Nietos</small></div>
+          <p data-i18n="case5">Le habían anulado la nacionalidad tras 10 años por un error. Siendo nieta de españoles e hija de argentina naturalizada española de origen, subsanamos el expediente y obtuvimos las 3 partidas en España.</p>
+          <div class="testi-person"><b>Familia Batageli Kohan</b><small data-i18n="testi.role">Ciudadanía española · Ley de Nietos</small></div>
         </article>
         <article class="testi-card reveal">
           <div class="testi-photo"><img src="cliente-marquez.png" alt="Familia Marquez con su Carpeta de Ciudadanía"></div>
           <div class="quote">“</div>
-          <p>Carpeta de 4 solicitantes, nietos y bisnietos de española no naturalizada argentina. Rastreamos la fe de bautismo de la abuela y, tras 5 meses de armado, se presentan ante el Consulado de España.</p>
-          <div class="testi-person"><b>Familia Marquez</b><small>Ciudadanía española · Ley de Nietos</small></div>
+          <p data-i18n="case6">Carpeta de 4 solicitantes, nietos y bisnietos de española no naturalizada argentina. Rastreamos la fe de bautismo de la abuela y, tras 5 meses de armado, se presentan ante el Consulado de España.</p>
+          <div class="testi-person"><b>Familia Marquez</b><small data-i18n="testi.role">Ciudadanía española · Ley de Nietos</small></div>
         </article>
       </div>
       <div class="testi-dots" id="testiDots" aria-hidden="true"></div>
@@ -275,18 +288,18 @@
           <img class="ig-card-ico" src="icono-instagram.png" alt="">
           <div>
             <a class="ig-handle" href="https://www.instagram.com/estudiopelegrina/" target="_blank" rel="noopener">@estudiopelegrina</a>
-            <span class="ig-tag">Estudio Jurídico · Derecho Migratorio y Sucesorio</span>
+            <span class="ig-tag" data-i18n="ig.tag">Estudio Jurídico · Derecho Migratorio y Sucesorio</span>
           </div>
         </div>
-        <h2>Seguinos y mirá los <em>casos reales</em> del estudio</h2>
-        <p>Ciudadanías aprobadas, novedades de visados y trámites, y todo lo que hacemos día a día. Sumate a nuestra comunidad.</p>
+        <h2 data-i18n="ig.h2">Seguinos y mirá los <em>casos reales</em> del estudio</h2>
+        <p data-i18n="ig.p">Ciudadanías aprobadas, novedades de visados y trámites, y todo lo que hacemos día a día. Sumate a nuestra comunidad.</p>
         <div class="ig-stats">
-          <div><b data-count="39800" data-prefix="+">+39.800</b><small>Seguidores</small></div>
-          <div><b data-count="167">167</b><small>Publicaciones</small></div>
-          <div><b>100%</b><small>Casos reales</small></div>
+          <div><b data-count="39800" data-prefix="+">+39.800</b><small data-i18n="ig.stat1">Seguidores</small></div>
+          <div><b data-count="167">167</b><small data-i18n="ig.stat2">Publicaciones</small></div>
+          <div><b>100%</b><small data-i18n="ig.stat3">Casos reales</small></div>
         </div>
         <a class="btn ig-btn" href="https://www.instagram.com/estudiopelegrina/" target="_blank" rel="noopener">
-          <img class="wa-ico" src="icono-instagram.png" alt=""> Seguinos en Instagram
+          <img class="wa-ico" src="icono-instagram.png" alt=""> <span data-i18n="ig.btn">Seguinos en Instagram</span>
         </a>
       </div>
     </section>
@@ -294,33 +307,33 @@
     <!-- FAQ -->
     <section class="faq" id="faq">
       <div class="faq-left reveal">
-        <p class="eyebrow">Preguntas frecuentes</p>
-        <h2>Respuestas claras y <em>sin vueltas</em></h2>
+        <p class="eyebrow" data-i18n="faq.eyebrow">Preguntas frecuentes</p>
+        <h2 data-i18n="faq.h2">Respuestas claras y <em>sin vueltas</em></h2>
         <div class="faq-media">
           <img src="oficina-2.jpg" alt="Despacho del Estudio Jurídico Pelegrina">
-          <span class="faq-media-tag">Atención personalizada y respuestas rápidas</span>
+          <span class="faq-media-tag" data-i18n="faq.mediatag">Atención personalizada y respuestas rápidas</span>
         </div>
       </div>
       <div class="faq-list reveal">
         <article class="faq-item open">
-          <button aria-expanded="true"><small>01</small><span>¿Qué servicios ofrecen?</span><b>−</b></button>
-          <div class="faq-panel"><p>Brindamos asistencia integral en <strong>ciudadanía española e italiana</strong>, nacionalidad argentina, <strong>visados y derecho migratorio</strong>, <strong>sucesiones</strong>, pasaportes y rectificación de actas y documentos. Te guiamos en cada paso, revisamos los requisitos y acompañamos todo el proceso.</p></div>
+          <button aria-expanded="true"><small>01</small><span data-i18n="faq1.q">¿Qué servicios ofrecen?</span><b>−</b></button>
+          <div class="faq-panel"><p data-i18n="faq1.a">Brindamos asistencia integral en <strong>ciudadanía española e italiana</strong>, nacionalidad argentina, <strong>visados y derecho migratorio</strong>, <strong>sucesiones</strong>, pasaportes y rectificación de actas y documentos. Te guiamos en cada paso, revisamos los requisitos y acompañamos todo el proceso.</p></div>
         </article>
         <article class="faq-item">
-          <button aria-expanded="false"><small>02</small><span>¿Atienden a argentinos en el exterior?</span><b>+</b></button>
-          <div class="faq-panel"><p>Sí. Trabajamos con clientes dentro y fuera del país. Coordinamos la consulta por videollamada o WhatsApp y gestionamos la documentación a distancia, con seguimiento permanente.</p></div>
+          <button aria-expanded="false"><small>02</small><span data-i18n="faq2.q">¿Atienden a argentinos en el exterior?</span><b>+</b></button>
+          <div class="faq-panel"><p data-i18n="faq2.a">Sí. Trabajamos con clientes dentro y fuera del país. Coordinamos la consulta por videollamada o WhatsApp y gestionamos la documentación a distancia, con seguimiento permanente.</p></div>
         </article>
         <article class="faq-item">
-          <button aria-expanded="false"><small>03</small><span>¿Dónde está el estudio?</span><b>+</b></button>
-          <div class="faq-panel"><p>El estudio está en <strong>Talcahuano 736, Planta Baja al fondo</strong>, en la Ciudad Autónoma de Buenos Aires. La consulta puede ser presencial o a distancia, según lo que te resulte más cómodo.</p></div>
+          <button aria-expanded="false"><small>03</small><span data-i18n="faq3.q">¿Dónde está el estudio?</span><b>+</b></button>
+          <div class="faq-panel"><p data-i18n="faq3.a">El estudio está en <strong>Talcahuano 736, Planta Baja al fondo</strong>, en la Ciudad Autónoma de Buenos Aires. La consulta puede ser presencial o a distancia, según lo que te resulte más cómodo.</p></div>
         </article>
         <article class="faq-item">
-          <button aria-expanded="false"><small>04</small><span>¿Cómo es la primera consulta?</span><b>+</b></button>
-          <div class="faq-panel"><p>En la primera consulta escuchamos tu caso, evaluamos la viabilidad y te explicamos las alternativas y los pasos a seguir. A partir de ahí definimos juntos una estrategia concreta.</p></div>
+          <button aria-expanded="false"><small>04</small><span data-i18n="faq4.q">¿Cómo es la primera consulta?</span><b>+</b></button>
+          <div class="faq-panel"><p data-i18n="faq4.a">En la primera consulta escuchamos tu caso, evaluamos la viabilidad y te explicamos las alternativas y los pasos a seguir. A partir de ahí definimos juntos una estrategia concreta.</p></div>
         </article>
         <article class="faq-item">
-          <button aria-expanded="false"><small>05</small><span>¿Cuánto demora un trámite?</span><b>+</b></button>
-          <div class="faq-panel"><p>Depende del tipo de trámite y del organismo interviniente. En la consulta te damos una estimación realista y, durante el proceso, te mantenemos informado de cada avance.</p></div>
+          <button aria-expanded="false"><small>05</small><span data-i18n="faq5.q">¿Cuánto demora un trámite?</span><b>+</b></button>
+          <div class="faq-panel"><p data-i18n="faq5.a">Depende del tipo de trámite y del organismo interviniente. En la consulta te damos una estimación realista y, durante el proceso, te mantenemos informado de cada avance.</p></div>
         </article>
       </div>
     </section>
@@ -328,23 +341,23 @@
     <!-- CONTACTO -->
     <section class="contact" id="contacto">
       <div class="contact-head reveal">
-        <p class="eyebrow light">Hablemos</p>
-        <h2>Contactá con <em>nosotros</em></h2>
-        <p>Contanos brevemente tu caso y coordinamos una consulta para orientarte con una respuesta personalizada.</p>
+        <p class="eyebrow light" data-i18n="contact.eyebrow">Hablemos</p>
+        <h2 data-i18n="contact.h2">Contactá con <em>nosotros</em></h2>
+        <p data-i18n="contact.p">Contanos brevemente tu caso y coordinamos una consulta para orientarte con una respuesta personalizada.</p>
       </div>
 
       <div class="consulta-card reveal">
         <div class="consulta-info">
-          <p class="eyebrow light">Consulta profesional</p>
-          <h3>Consulta con la Dra. Paloma Pelegrina</h3>
-          <p>Sesión de 1 hora. Reservá tu día y horario, aboná la consulta y enviá el comprobante por WhatsApp para confirmar el turno. La atención presencial es solo martes y jueves en Talcahuano 736 (frente a Plaza Lavalle); el resto de la semana, virtual.</p>
-          <p class="consulta-note">⚠️ Si no enviás el comprobante de pago al <a href="https://wa.me/5491154036933" target="_blank" rel="noopener">11 5403 6933</a>, la consulta no queda confirmada y se da de baja automáticamente.</p>
+          <p class="eyebrow light" data-i18n="consulta.eyebrow">Consulta profesional</p>
+          <h3 data-i18n="consulta.h3">Consulta con la Dra. Paloma Pelegrina</h3>
+          <p data-i18n="consulta.p">Sesión de 1 hora. Reservá tu día y horario, aboná la consulta y enviá el comprobante por WhatsApp para confirmar el turno. La atención presencial es solo martes y jueves en Talcahuano 736 (frente a Plaza Lavalle); el resto de la semana, virtual.</p>
+          <p class="consulta-note" data-i18n="consulta.note">⚠️ Si no enviás el comprobante de pago al <a href="https://wa.me/5491154036933" target="_blank" rel="noopener">11 5403 6933</a>, la consulta no queda confirmada y se da de baja automáticamente.</p>
         </div>
         <div class="consulta-side">
-          <div class="consulta-price"><small>Honorarios</small><b>$50.000</b><span>por consulta · 1 hora</span></div>
-          <a class="btn btn-primary block" href="https://calendly.com/estudiopelegrina" target="_blank" rel="noopener">1. Agendá tu día y hora →</a>
-          <a class="btn btn-pago block" href="https://mpago.la/2AJY2kn" target="_blank" rel="noopener">2. Pagar la consulta →</a>
-          <a class="btn btn-whatsapp block" href="https://wa.me/5491154036933" target="_blank" rel="noopener"><img src="icono-whatsapp.png" class="wa-ico" alt=""> 3. Enviá el comprobante</a>
+          <div class="consulta-price"><small data-i18n="consulta.price.label">Honorarios</small><b>$50.000</b><span data-i18n="consulta.price.span">por consulta · 1 hora</span></div>
+          <a class="btn btn-primary block" href="https://calendly.com/estudiopelegrina" target="_blank" rel="noopener" data-i18n="consulta.btn1">1. Agendá tu día y hora →</a>
+          <a class="btn btn-pago block" href="https://mpago.la/2AJY2kn" target="_blank" rel="noopener" data-i18n="consulta.btn2">2. Pagar la consulta →</a>
+          <a class="btn btn-whatsapp block" href="https://wa.me/5491154036933" target="_blank" rel="noopener"><img src="icono-whatsapp.png" class="wa-ico" alt=""> <span data-i18n="consulta.btn3">3. Enviá el comprobante</span></a>
         </div>
       </div>
 
@@ -353,28 +366,28 @@
         <div class="contact-form-wrap reveal">
           <form id="form" class="contact-form">
             <div class="two">
-              <label>Nombre y apellido<input name="nombre" placeholder="Ingresá tu nombre" required></label>
-              <label>Teléfono<input name="telefono" placeholder="+54 9 11 ..." inputmode="tel"></label>
+              <label><span data-i18n="form.nombre">Nombre y apellido</span><input name="nombre" placeholder="Ingresá tu nombre" data-i18n-ph="ph.nombre" required></label>
+              <label><span data-i18n="form.tel">Teléfono</span><input name="telefono" placeholder="+54 9 11 ..." inputmode="tel"></label>
             </div>
-            <label>Email<input type="email" name="email" placeholder="tucorreo@ejemplo.com" required></label>
-            <label>Motivo de la consulta<select name="area" required>
-              <option value="">Seleccioná una opción</option>
-              <option>Ciudadanía española</option>
-              <option>Ciudadanía italiana</option>
-              <option>Nacionalidad argentina</option>
-              <option>Visados y migratorio</option>
-              <option>Sucesiones</option>
-              <option>Rectificación de actas</option>
-              <option>Otro</option>
+            <label><span data-i18n="form.email">Email</span><input type="email" name="email" placeholder="tucorreo@ejemplo.com" required></label>
+            <label><span data-i18n="form.area">Motivo de la consulta</span><select name="area" required>
+              <option value="" data-i18n="form.opt0">Seleccioná una opción</option>
+              <option data-i18n="form.opt1">Ciudadanía española</option>
+              <option data-i18n="form.opt2">Ciudadanía italiana</option>
+              <option data-i18n="form.opt3">Nacionalidad argentina</option>
+              <option data-i18n="form.opt4">Visados y migratorio</option>
+              <option data-i18n="form.opt5">Sucesiones</option>
+              <option data-i18n="form.opt6">Rectificación de actas</option>
+              <option data-i18n="form.opt7">Otro</option>
             </select></label>
-            <label>Contanos tu caso<textarea name="mensaje" rows="4" placeholder="Escribí tu mensaje (opcional)"></textarea></label>
-            <button class="btn btn-primary block" type="submit">Enviar consulta por WhatsApp →</button>
+            <label><span data-i18n="form.mensaje">Contanos tu caso</span><textarea name="mensaje" rows="4" placeholder="Escribí tu mensaje (opcional)" data-i18n-ph="ph.mensaje"></textarea></label>
+            <button class="btn btn-primary block" type="submit" data-i18n="form.submit">Enviar consulta por WhatsApp →</button>
             <p class="form-status" aria-live="polite"></p>
           </form>
         </div>
         <figure class="contact-pass reveal">
           <img src="pasaporte-carpeta.png" alt="Pasaportes españoles obtenidos junto a la Carpeta de Ciudadanía del estudio">
-          <figcaption>El resultado: tu pasaporte europeo, con la Carpeta de Ciudadanía que armamos para vos.</figcaption>
+          <figcaption data-i18n="pass.caption">El resultado: tu pasaporte europeo, con la Carpeta de Ciudadanía que armamos para vos.</figcaption>
         </figure>
         </div>
 
@@ -384,13 +397,13 @@
           </div>
           <a class="contact-cta wa" href="https://wa.me/5491154036933" target="_blank" rel="noopener">
             <img src="icono-whatsapp.png" class="wa-ico" alt="">
-            <span><small>Escribinos por WhatsApp</small><b>+54 9 11 5403 6933</b></span>
+            <span><small data-i18n="contact.cta.small">Escribinos por WhatsApp</small><b>+54 9 11 5403 6933</b></span>
             <em>↗</em>
           </a>
           <div class="contact-info">
-            <div class="info-row"><span>📍</span><div><b>Sede</b><p>Talcahuano 736, Planta Baja al fondo<br>Ciudad Autónoma de Buenos Aires<br><a href="https://www.google.com/maps/search/?api=1&query=Talcahuano+736+CABA" target="_blank" rel="noopener">Ver en Google Maps →</a></p></div></div>
-            <div class="info-row"><span>🕐</span><div><b>Horarios de atención</b><p><strong>Presencial:</strong> martes y jueves de 10 a 18 h<br><strong>Virtual:</strong> resto de la semana, de 10 a 18 h</p></div></div>
-            <div class="info-row"><span>✉️</span><div><b>Email</b><p><a href="mailto:legales.pelegrina@gmail.com">legales.pelegrina@gmail.com</a></p></div></div>
+            <div class="info-row"><span>📍</span><div><b data-i18n="info.sede">Sede</b><p data-i18n="info.sede.addr">Talcahuano 736, Planta Baja al fondo<br>Ciudad Autónoma de Buenos Aires<br><a href="https://www.google.com/maps/search/?api=1&query=Talcahuano+736+CABA" target="_blank" rel="noopener">Ver en Google Maps →</a></p></div></div>
+            <div class="info-row"><span>🕐</span><div><b data-i18n="info.horarios">Horarios de atención</b><p data-i18n="info.horarios.text"><strong>Presencial:</strong> martes y jueves de 10 a 18 h<br><strong>Virtual:</strong> resto de la semana, de 10 a 18 h</p></div></div>
+            <div class="info-row"><span>✉️</span><div><b data-i18n="info.email">Email</b><p><a href="mailto:legales.pelegrina@gmail.com">legales.pelegrina@gmail.com</a></p></div></div>
             <div class="info-row"><img class="ico-inline" src="icono-instagram.png" alt=""><div><b>Instagram</b><p><a href="https://www.instagram.com/estudiopelegrina/" target="_blank" rel="noopener">@estudiopelegrina</a></p></div></div>
           </div>
           <div class="contact-map">
@@ -407,28 +420,28 @@
       <div class="footer-brand">
         <a class="brand" href="#inicio">
           <img src="logo.png" alt="Estudio Jurídico Pelegrina" class="brand-logo">
-          <span class="brand-text"><b>Estudio Jurídico</b><small>Pelegrina</small></span>
+          <span class="brand-text"><b data-i18n="brand.sub">Estudio Jurídico</b><small>Pelegrina</small></span>
         </a>
-        <p>Ciudadanías, visados, derecho migratorio y sucesiones. Asesoramiento legal cercano para vos y tu familia.</p>
+        <p data-i18n="footer.desc">Ciudadanías, visados, derecho migratorio y sucesiones. Asesoramiento legal cercano para vos y tu familia.</p>
       </div>
       <div class="footer-col">
-        <h4>Navegación</h4>
-        <a href="#estudio">¿Quiénes somos?</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#metodo">Cómo trabajamos</a>
-        <a href="#faq">Preguntas frecuentes</a>
-        <a href="#contacto">Contacto</a>
+        <h4 data-i18n="footer.nav">Navegación</h4>
+        <a href="#estudio" data-i18n="nav.quienes">¿Quiénes somos?</a>
+        <a href="#servicios" data-i18n="nav.servicios">Servicios</a>
+        <a href="#metodo" data-i18n="nav.metodo">Cómo trabajamos</a>
+        <a href="#faq" data-i18n="footer.faq">Preguntas frecuentes</a>
+        <a href="#contacto" data-i18n="nav.contacto">Contacto</a>
       </div>
       <div class="footer-col">
-        <h4>Servicios</h4>
-        <a href="#contacto">Ciudadanía española</a>
-        <a href="#contacto">Ciudadanía italiana</a>
-        <a href="#contacto">Visados y migratorio</a>
-        <a href="#contacto">Sucesiones</a>
-        <a href="#contacto">Rectificación de actas</a>
+        <h4 data-i18n="footer.serv">Servicios</h4>
+        <a href="#contacto" data-i18n="acc.ciud.esp">Ciudadanía española</a>
+        <a href="#contacto" data-i18n="acc.ciud.ita">Ciudadanía italiana</a>
+        <a href="#contacto" data-i18n="svc2.title">Visados y migratorio</a>
+        <a href="#contacto" data-i18n="acc.suc">Sucesiones</a>
+        <a href="#contacto" data-i18n="acc.rect">Rectificación de actas</a>
       </div>
       <div class="footer-col">
-        <h4>Contacto</h4>
+        <h4 data-i18n="nav.contacto">Contacto</h4>
         <a href="https://wa.me/5491154036933" target="_blank" rel="noopener">WhatsApp +54 9 11 5403 6933</a>
         <a href="mailto:legales.pelegrina@gmail.com">legales.pelegrina@gmail.com</a>
         <a href="https://www.instagram.com/estudiopelegrina/" target="_blank" rel="noopener">Instagram @estudiopelegrina</a>
@@ -436,8 +449,8 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© <span id="year"></span> Estudio Jurídico Pelegrina. Todos los derechos reservados.</p>
-      <a href="#inicio">Volver arriba ↑</a>
+      <p>© <span id="year"></span> <span data-i18n="footer.copy">Estudio Jurídico Pelegrina. Todos los derechos reservados.</span></p>
+      <a href="#inicio" data-i18n="footer.top">Volver arriba ↑</a>
     </div>
   </footer>
 
@@ -449,6 +462,7 @@
   <!-- Barra de progreso de scroll -->
   <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
 
-  <script src="script.js?v=6"></script>
+  <script src="i18n.js?v=7"></script>
+  <script src="script.js?v=7"></script>
 </body>
 </html>
