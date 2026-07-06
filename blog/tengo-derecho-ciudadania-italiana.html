@@ -114,40 +114,51 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../styles.css?v=10">
-  <link rel="stylesheet" href="../responsive.css?v=10">
-  <link rel="stylesheet" href="blog.css?v=1">
+  <link rel="stylesheet" href="../styles.css?v=11">
+  <link rel="stylesheet" href="../responsive.css?v=11">
+  <link rel="stylesheet" href="blog.css?v=2">
 </head>
 <body>
   <div class="ticker" aria-hidden="true">
     <div class="ticker-track">
-      <span>Ciudadanía española e italiana</span><i></i>
-      <span>Acompañamiento de principio a fin</span><i></i>
-      <span>Atención a argentinos en el exterior</span><i></i>
-      <span>Asesoramiento personalizado</span><i></i>
-      <span>Seguridad jurídica en cada paso</span><i></i>
-      <span>Ciudadanía española e italiana</span><i></i>
-      <span>Acompañamiento de principio a fin</span><i></i>
-      <span>Atención a argentinos en el exterior</span><i></i>
-      <span>Asesoramiento personalizado</span><i></i>
-      <span>Seguridad jurídica en cada paso</span><i></i>
+      <span data-i18n="tk.1">Ciudadanía española e italiana</span><i></i>
+      <span data-i18n="tk.2">Acompañamiento de principio a fin</span><i></i>
+      <span data-i18n="tk.3">Atención a argentinos en el exterior</span><i></i>
+      <span data-i18n="tk.4">Asesoramiento personalizado</span><i></i>
+      <span data-i18n="tk.5">Seguridad jurídica en cada paso</span><i></i>
+      <span data-i18n="tk.1">Ciudadanía española e italiana</span><i></i>
+      <span data-i18n="tk.2">Acompañamiento de principio a fin</span><i></i>
+      <span data-i18n="tk.3">Atención a argentinos en el exterior</span><i></i>
+      <span data-i18n="tk.4">Asesoramiento personalizado</span><i></i>
+      <span data-i18n="tk.5">Seguridad jurídica en cada paso</span><i></i>
     </div>
   </div>
   <header class="nav-wrap">
     <div class="nav-shell">
       <a class="brand" href="/" aria-label="Estudio Jurídico Pelegrina · Inicio">
         <img src="../logo.png" alt="Estudio Jurídico Pelegrina" class="brand-logo">
-        <span class="brand-text"><b>Estudio Jurídico</b><small>Pelegrina</small></span>
+        <span class="brand-text"><b data-i18n="brand.sub">Estudio Jurídico</b><small>Pelegrina</small></span>
       </a>
       <nav class="nav-links" aria-label="Navegación principal">
-        <a href="/#servicios">Servicios</a>
-        <a href="/#estudio">¿Quiénes somos?</a>
-        <a href="/blog/" class="active">Blog</a>
-        <a href="/#faq">Preguntas</a>
-        <a href="/#contacto">Contacto</a>
-        <a class="nav-cta" href="/#consulta">Agendá tu consulta</a>
+        <a href="/#servicios" data-i18n="nav.servicios">Servicios</a>
+        <a href="/#estudio" data-i18n="nav.quienes">¿Quiénes somos?</a>
+        <a href="/blog/" class="active" data-i18n="nav.blog">Blog</a>
+        <a href="/#faq" data-i18n="nav.faq">Preguntas</a>
+        <a href="/#contacto" data-i18n="nav.contacto">Contacto</a>
+        <a class="nav-cta" href="/#consulta" data-i18n="nav.cta">Agendá tu consulta</a>
       </nav>
       <div class="nav-right">
+        <div class="lang-switch">
+          <button class="lang-btn" aria-haspopup="true" aria-expanded="false" aria-label="Cambiar idioma / Change language">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.8 5.7 3.8 9S14.5 18.5 12 21C9.5 18.5 8.2 15.3 8.2 12S9.5 5.5 12 3z"/></svg>
+            <span class="lang-current">ES</span>
+          </button>
+          <div class="lang-menu" role="menu">
+            <button data-lang="es" role="menuitem">🇪🇸 Español</button>
+            <button data-lang="en" role="menuitem">🇬🇧 English</button>
+            <button data-lang="it" role="menuitem">🇮🇹 Italiano</button>
+          </div>
+        </div>
         <button class="menu-btn" aria-expanded="false" aria-label="Abrir menú">
           <span></span><span></span><span></span>
         </button>
@@ -160,17 +171,18 @@
       <header class="article-hero">
         <img class="hero-photo" src="../oficina-1.jpg" alt="" aria-hidden="true">
         <div class="article-hero-inner">
-          <span class="article-cat">Ciudadanía italiana</span>
-          <h1>¿Tengo derecho a la ciudadanía italiana? Cómo saberlo paso a paso</h1>
-          <p class="article-meta"><span>20 de mayo de 2026</span><i></i><span>7 min de lectura</span></p>
+          <span class="article-cat" data-i18n="blog.cat.italiana">Ciudadanía italiana</span>
+          <h1 data-i18n="post.h1">¿Tengo derecho a la ciudadanía italiana? Cómo saberlo paso a paso</h1>
+          <p class="article-meta" data-i18n="post.meta"><span>20 de mayo de 2026</span><i></i><span>7 min de lectura</span></p>
         </div>
+        <div class="hero-fade" aria-hidden="true"></div>
       </header>
 
       <nav class="breadcrumb" aria-label="Ruta de navegación">
-        <a href="/">Inicio</a><span>›</span><a href="/blog/">Blog</a><span>›</span>¿Tengo derecho a la ciudadanía italiana? Cómo saberlo paso a paso
+        <a href="/" data-i18n="blog.bc.home">Inicio</a><span>›</span><a href="/blog/">Blog</a><span>›</span><span class="bc-here" data-i18n="post.bc">¿Tengo derecho a la ciudadanía italiana? Cómo saberlo paso a paso</span>
       </nav>
 
-      <div class="article-body">
+      <div class="article-body" data-i18n="post.body">
         <p>La pregunta que más recibimos es también la más lógica: "tengo un bisabuelo italiano, ¿me corresponde la ciudadanía?". La respuesta ya no es tan automática como antes, porque en 2025 Italia modificó de fondo las reglas de la ciudadanía por descendencia. Por eso conviene analizarlo con cuidado.</p>
 <p>Vamos paso a paso para que puedas ubicar tu caso.</p>
 
@@ -215,80 +227,92 @@
 <div class="callout"><span class="callout-ico">⚖️</span><p><strong>Nota:</strong> este artículo es informativo y general. Cada caso tiene particularidades que pueden cambiar el resultado. Antes de iniciar cualquier trámite, consultá con una abogada para analizar tu situación concreta.</p></div>
       </div>
 
+      <div class="article-author-wrap">
+        <div class="article-author reveal">
+          <img src="../paloma-selfie.png" alt="Paloma Eugenia Pelegrina">
+          <div class="article-author-info">
+            <small data-i18n="blog.author.wrote">Escribió esta nota</small>
+            <b>Paloma Eugenia Pelegrina</b>
+            <span data-i18n="blog.author.role">Abogada · Titular del estudio</span>
+          </div>
+          <a class="btn btn-outline-wine" href="/#estudio" data-i18n="blog.author.more">Conocé el estudio →</a>
+        </div>
+      </div>
+
       <section class="article-faq">
-        <h2>Preguntas frecuentes</h2>
-        <div class="afaq-item">
-        <button aria-expanded="false"><span>¿Sigue existiendo la ciudadanía italiana por descendencia?</span><b>+</b></button>
-        <div class="afaq-panel"><div><p>Sí, pero con reglas que cambiaron en 2025. La reforma restringió el acceso automático y puso el foco en los vínculos más cercanos. Por eso cada caso debe analizarse con la normativa vigente antes de iniciar el trámite.</p></div></div>
+        <h2 data-i18n="blog.faq.h2">Preguntas frecuentes</h2>
+        <div class="afaq-item reveal">
+        <button aria-expanded="false"><span data-i18n="p.tengo-derecho-ciudadania-italiana.faq0.q">¿Sigue existiendo la ciudadanía italiana por descendencia?</span><b>+</b></button>
+        <div class="afaq-panel"><div><p data-i18n="p.tengo-derecho-ciudadania-italiana.faq0.a">Sí, pero con reglas que cambiaron en 2025. La reforma restringió el acceso automático y puso el foco en los vínculos más cercanos. Por eso cada caso debe analizarse con la normativa vigente antes de iniciar el trámite.</p></div></div>
       </div>
-      <div class="afaq-item">
-        <button aria-expanded="false"><span>¿Hasta qué generación puedo reclamar la ciudadanía italiana?</span><b>+</b></button>
-        <div class="afaq-panel"><div><p>Antes no había límite de generaciones; hoy el panorama es distinto según la reforma reciente. Lo prudente es hacer un análisis de viabilidad de tu árbol genealógico para determinar si tu caso encuadra.</p></div></div>
+      <div class="afaq-item reveal">
+        <button aria-expanded="false"><span data-i18n="p.tengo-derecho-ciudadania-italiana.faq1.q">¿Hasta qué generación puedo reclamar la ciudadanía italiana?</span><b>+</b></button>
+        <div class="afaq-panel"><div><p data-i18n="p.tengo-derecho-ciudadania-italiana.faq1.a">Antes no había límite de generaciones; hoy el panorama es distinto según la reforma reciente. Lo prudente es hacer un análisis de viabilidad de tu árbol genealógico para determinar si tu caso encuadra.</p></div></div>
       </div>
-      <div class="afaq-item">
-        <button aria-expanded="false"><span>¿Qué pasa si el vínculo pasa por una mujer antes de 1948?</span><b>+</b></button>
-        <div class="afaq-panel"><div><p>Esos casos suelen requerir un proceso judicial en Italia, porque antes de 1948 las mujeres no podían transmitir la ciudadanía por la vía administrativa. Son viables, pero con un procedimiento diferente.</p></div></div>
+      <div class="afaq-item reveal">
+        <button aria-expanded="false"><span data-i18n="p.tengo-derecho-ciudadania-italiana.faq2.q">¿Qué pasa si el vínculo pasa por una mujer antes de 1948?</span><b>+</b></button>
+        <div class="afaq-panel"><div><p data-i18n="p.tengo-derecho-ciudadania-italiana.faq2.a">Esos casos suelen requerir un proceso judicial en Italia, porque antes de 1948 las mujeres no podían transmitir la ciudadanía por la vía administrativa. Son viables, pero con un procedimiento diferente.</p></div></div>
       </div>
-      <div class="afaq-item">
-        <button aria-expanded="false"><span>¿Una partida con errores me impide tramitar?</span><b>+</b></button>
-        <div class="afaq-panel"><div><p>No necesariamente. Los errores en partidas (nombres, fechas) suelen poder rectificarse. Lo que no conviene es presentar la documentación sin corregir esas diferencias, porque frenan el expediente.</p></div></div>
+      <div class="afaq-item reveal">
+        <button aria-expanded="false"><span data-i18n="p.tengo-derecho-ciudadania-italiana.faq3.q">¿Una partida con errores me impide tramitar?</span><b>+</b></button>
+        <div class="afaq-panel"><div><p data-i18n="p.tengo-derecho-ciudadania-italiana.faq3.a">No necesariamente. Los errores en partidas (nombres, fechas) suelen poder rectificarse. Lo que no conviene es presentar la documentación sin corregir esas diferencias, porque frenan el expediente.</p></div></div>
       </div>
       </section>
 
       <section class="article-cta">
         <div class="article-cta-card reveal">
-          <p class="eyebrow">Sin compromiso</p>
-          <h2>¿Querés saber cómo sería tu caso en concreto?</h2>
-          <p>Cada situación es distinta. Te explicamos con claridad qué pasos corresponden en tu caso, sin tecnicismos y sin apuros.</p>
+          <p class="eyebrow" data-i18n="blog.cta.eyebrow">Sin compromiso</p>
+          <h2 data-i18n="blog.cta.h2">¿Querés saber cómo sería tu caso en concreto?</h2>
+          <p data-i18n="blog.cta.p">Cada situación es distinta. Te explicamos con claridad qué pasos corresponden en tu caso, sin tecnicismos y sin apuros.</p>
           <div class="article-cta-actions">
-            <a class="btn btn-whatsapp" href="https://wa.me/5491154036933" target="_blank" rel="noopener"><img src="../icono-whatsapp.png" class="wa-ico" alt=""> Consultar por WhatsApp</a>
-            <a class="btn btn-primary" href="/#consulta">Agendá tu consulta →</a>
+            <a class="btn btn-whatsapp" href="https://wa.me/5491154036933" target="_blank" rel="noopener"><img src="../icono-whatsapp.png" class="wa-ico" alt=""> <span data-i18n="blog.cta.wa">Consultar por WhatsApp</span></a>
+            <a class="btn btn-primary" href="/#consulta" data-i18n="blog.cta.btn">Agendá tu consulta →</a>
           </div>
-          <p class="note">Te respondemos a la brevedad · Consulta confidencial</p>
+          <p class="note" data-i18n="blog.cta.note">Te respondemos a la brevedad · Consulta confidencial</p>
         </div>
       </section>
 
       <section class="article-share">
         <div class="share-card reveal">
-          <h2>¿Conocés a alguien que le pueda servir esta nota?</h2>
-          <p>Compartila: a veces una lectura llega justo en el momento indicado.</p>
+          <h2 data-i18n="blog.share.h2">¿Conocés a alguien que le pueda servir esta nota?</h2>
+          <p data-i18n="blog.share.p">Compartila: a veces una lectura llega justo en el momento indicado.</p>
           <div class="share-actions">
-            <button class="share-btn wa" data-share="whatsapp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.8 14.01c-.24.68-1.42 1.32-1.95 1.36-.5.05-.95.24-3.2-.67-2.7-1.06-4.42-3.8-4.55-3.98-.13-.18-1.1-1.46-1.1-2.78 0-1.32.69-1.97.94-2.24.24-.27.53-.34.71-.34.18 0 .35 0 .5.01.16.01.38-.06.59.45.24.58.79 2 .86 2.14.07.14.12.31.02.5-.09.18-.14.29-.28.45-.14.16-.29.36-.42.48-.14.14-.28.29-.12.57.16.27.72 1.18 1.54 1.91 1.06.95 1.96 1.24 2.24 1.38.28.14.44.12.6-.07.16-.18.7-.81.88-1.09.18-.27.37-.23.62-.14.25.09 1.6.76 1.87.9.28.14.46.21.53.32.07.12.07.68-.17 1.36z"/></svg> Compartir por WhatsApp</button>
-            <button class="share-btn" data-share="copy"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg> <span>Copiar link</span></button>
-            <button class="share-btn" data-share="more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg> Más opciones</button>
+            <button class="share-btn wa" data-share="whatsapp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.8 14.01c-.24.68-1.42 1.32-1.95 1.36-.5.05-.95.24-3.2-.67-2.7-1.06-4.42-3.8-4.55-3.98-.13-.18-1.1-1.46-1.1-2.78 0-1.32.69-1.97.94-2.24.24-.27.53-.34.71-.34.18 0 .35 0 .5.01.16.01.38-.06.59.45.24.58.79 2 .86 2.14.07.14.12.31.02.5-.09.18-.14.29-.28.45-.14.16-.29.36-.42.48-.14.14-.28.29-.12.57.16.27.72 1.18 1.54 1.91 1.06.95 1.96 1.24 2.24 1.38.28.14.44.12.6-.07.16-.18.7-.81.88-1.09.18-.27.37-.23.62-.14.25.09 1.6.76 1.87.9.28.14.46.21.53.32.07.12.07.68-.17 1.36z"/></svg> <span data-i18n="blog.share.wa">Compartir por WhatsApp</span></button>
+            <button class="share-btn" data-share="copy"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg> <span data-i18n="blog.share.copy">Copiar link</span></button>
+            <button class="share-btn" data-share="more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg> <span data-i18n="blog.share.more">Más opciones</span></button>
           </div>
         </div>
       </section>
     </article>
 
     <section class="article-related">
-      <h2>Seguí leyendo</h2>
+      <h2 data-i18n="blog.related">Seguí leyendo</h2>
       <div class="related-grid">
       <a class="post-card reveal" href="errores-comunes-ciudadania-italiana.html" data-cat="italiana">
-        <div class="post-card-media"><span class="post-tag">Ciudadanía italiana</span><img src="../oficina-3.jpg" alt="Los 8 errores más comunes que retrasan una ciudadanía italiana" loading="lazy"></div>
+        <div class="post-card-media"><span class="post-tag" data-i18n="blog.cat.italiana">Ciudadanía italiana</span><img src="../oficina-3.jpg" alt="Los 8 errores más comunes que retrasan una ciudadanía italiana" loading="lazy"></div>
         <div class="post-card-body">
-          <p class="post-meta">6 de mayo de 2026 · 6 min de lectura</p>
-          <h3>Los 8 errores más comunes que retrasan una ciudadanía italiana</h3>
-          <p>La mayoría de las demoras en una ciudadanía italiana no vienen de Italia: vienen de errores en la documentación que se podían prevenir desde el primer día.</p>
-          <span class="post-more">Leer artículo</span>
+          <p class="post-meta" data-i18n="p.errores-comunes-ciudadania-italiana.meta">6 de mayo de 2026 · 6 min de lectura</p>
+          <h3 data-i18n="p.errores-comunes-ciudadania-italiana.title">Los 8 errores más comunes que retrasan una ciudadanía italiana</h3>
+          <p data-i18n="p.errores-comunes-ciudadania-italiana.excerpt">La mayoría de las demoras en una ciudadanía italiana no vienen de Italia: vienen de errores en la documentación que se podían prevenir desde el primer día.</p>
+          <span class="post-more" data-i18n="blog.read">Leer artículo</span>
         </div>
       </a>
       <a class="post-card reveal" href="pasaporte-italiano-espanol-antes-de-viajar.html" data-cat="pasaportes">
-        <div class="post-card-media"><span class="post-tag">Pasaportes</span><img src="../pasaporte-carpeta.jpg" alt="Pasaporte italiano o español: 10 cosas que deberías revisar antes de viajar" loading="lazy"></div>
+        <div class="post-card-media"><span class="post-tag" data-i18n="blog.cat.pasaportes">Pasaportes</span><img src="../pasaporte-carpeta.jpg" alt="Pasaporte italiano o español: 10 cosas que deberías revisar antes de viajar" loading="lazy"></div>
         <div class="post-card-body">
-          <p class="post-meta">2 de julio de 2026 · 7 min de lectura</p>
-          <h3>Pasaporte italiano o español: 10 cosas que deberías revisar antes de viajar</h3>
-          <p>Tener el pasaporte europeo en la mano no alcanza: hay requisitos de vigencia, hojas libres y detalles que, si no revisás a tiempo, pueden frenarte en el aeropuerto.</p>
-          <span class="post-more">Leer artículo</span>
+          <p class="post-meta" data-i18n="p.pasaporte-italiano-espanol-antes-de-viajar.meta">2 de julio de 2026 · 7 min de lectura</p>
+          <h3 data-i18n="p.pasaporte-italiano-espanol-antes-de-viajar.title">Pasaporte italiano o español: 10 cosas que deberías revisar antes de viajar</h3>
+          <p data-i18n="p.pasaporte-italiano-espanol-antes-de-viajar.excerpt">Tener el pasaporte europeo en la mano no alcanza: hay requisitos de vigencia, hojas libres y detalles que, si no revisás a tiempo, pueden frenarte en el aeropuerto.</p>
+          <span class="post-more" data-i18n="blog.read">Leer artículo</span>
         </div>
       </a>
       <a class="post-card reveal" href="ciudadania-espanola-quien-puede-hoy.html" data-cat="espanola">
-        <div class="post-card-media"><span class="post-tag">Ciudadanía española</span><img src="../pasaporte-carpeta.jpg" alt="Ciudadanía española: qué vías siguen abiertas hoy para argentinos" loading="lazy"></div>
+        <div class="post-card-media"><span class="post-tag" data-i18n="blog.cat.espanola">Ciudadanía española</span><img src="../pasaporte-carpeta.jpg" alt="Ciudadanía española: qué vías siguen abiertas hoy para argentinos" loading="lazy"></div>
         <div class="post-card-body">
-          <p class="post-meta">22 de abril de 2026 · 7 min de lectura</p>
-          <h3>Ciudadanía española: qué vías siguen abiertas hoy para argentinos</h3>
-          <p>La ventana de la Ley de Memoria Democrática ya cerró, pero la ciudadanía española sigue siendo posible por otras vías. Te explicamos cuáles siguen vigentes.</p>
-          <span class="post-more">Leer artículo</span>
+          <p class="post-meta" data-i18n="p.ciudadania-espanola-quien-puede-hoy.meta">22 de abril de 2026 · 7 min de lectura</p>
+          <h3 data-i18n="p.ciudadania-espanola-quien-puede-hoy.title">Ciudadanía española: qué vías siguen abiertas hoy para argentinos</h3>
+          <p data-i18n="p.ciudadania-espanola-quien-puede-hoy.excerpt">La ventana de la Ley de Memoria Democrática ya cerró, pero la ciudadanía española sigue siendo posible por otras vías. Te explicamos cuáles siguen vigentes.</p>
+          <span class="post-more" data-i18n="blog.read">Leer artículo</span>
         </div>
       </a>
       </div>
@@ -300,28 +324,28 @@
       <div class="footer-brand">
         <a class="brand" href="/">
           <img src="../logo.png" alt="Estudio Jurídico Pelegrina" class="brand-logo">
-          <span class="brand-text"><b>Estudio Jurídico</b><small>Pelegrina</small></span>
+          <span class="brand-text"><b data-i18n="brand.sub">Estudio Jurídico</b><small>Pelegrina</small></span>
         </a>
-        <p>Ciudadanías, visados, derecho migratorio y sucesiones. Asesoramiento legal cercano para vos y tu familia.</p>
+        <p data-i18n="footer.desc">Ciudadanías, visados, derecho migratorio y sucesiones. Asesoramiento legal cercano para vos y tu familia.</p>
       </div>
       <div class="footer-col">
-        <h4>Navegación</h4>
-        <a href="/#estudio">¿Quiénes somos?</a>
-        <a href="/#servicios">Servicios</a>
-        <a href="/blog/">Blog</a>
-        <a href="/#faq">Preguntas frecuentes</a>
-        <a href="/#contacto">Contacto</a>
+        <h4 data-i18n="footer.nav">Navegación</h4>
+        <a href="/#estudio" data-i18n="nav.quienes">¿Quiénes somos?</a>
+        <a href="/#servicios" data-i18n="nav.servicios">Servicios</a>
+        <a href="/blog/" data-i18n="nav.blog">Blog</a>
+        <a href="/#faq" data-i18n="footer.faq">Preguntas frecuentes</a>
+        <a href="/#contacto" data-i18n="nav.contacto">Contacto</a>
       </div>
       <div class="footer-col">
-        <h4>Servicios</h4>
-        <a href="/#contacto">Ciudadanía española</a>
-        <a href="/#contacto">Ciudadanía italiana</a>
-        <a href="/#contacto">Visados y migratorio</a>
-        <a href="/#contacto">Sucesiones</a>
-        <a href="/#contacto">Rectificación de actas</a>
+        <h4 data-i18n="footer.serv">Servicios</h4>
+        <a href="/#contacto" data-i18n="acc.ciud.esp">Ciudadanía española</a>
+        <a href="/#contacto" data-i18n="acc.ciud.ita">Ciudadanía italiana</a>
+        <a href="/#contacto" data-i18n="svc2.title">Visados y migratorio</a>
+        <a href="/#contacto" data-i18n="acc.suc">Sucesiones</a>
+        <a href="/#contacto" data-i18n="acc.rect">Rectificación de actas</a>
       </div>
       <div class="footer-col">
-        <h4>Contacto</h4>
+        <h4 data-i18n="nav.contacto">Contacto</h4>
         <a href="https://wa.me/5491154036933" target="_blank" rel="noopener">WhatsApp +54 9 11 5403 6933</a>
         <a href="mailto:legales.pelegrina@gmail.com">legales.pelegrina@gmail.com</a>
         <a href="https://www.instagram.com/estudiopelegrina/" target="_blank" rel="noopener">Instagram @estudiopelegrina</a>
@@ -329,8 +353,8 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© <span id="year"></span> Estudio Jurídico Pelegrina. Todos los derechos reservados.</p>
-      <a href="#inicio">Volver arriba ↑</a>
+      <p>© <span id="year"></span> <span data-i18n="footer.copy">Estudio Jurídico Pelegrina. Todos los derechos reservados.</span></p>
+      <a href="#inicio" data-i18n="footer.top">Volver arriba ↑</a>
     </div>
   </footer>
 
@@ -339,6 +363,8 @@
     <span class="float-wa-pulse"></span>
   </a>
   <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
-  <script src="blog.js?v=1"></script>
+  <script>window.PAGE_I18N={"en":{"p.tengo-derecho-ciudadania-italiana.title":"Am I entitled to Italian citizenship? How to find out, step by step","post.h1":"Am I entitled to Italian citizenship? How to find out, step by step","post.bc":"Am I entitled to Italian citizenship? How to find out, step by step","post.meta":"<span>May 20, 2026</span><i></i><span>7 min read</span>","post.body":"<p>The question we get most often is also the most logical one: \"my great-grandfather was Italian — am I entitled to citizenship?\". The answer is no longer as automatic as it used to be, because in 2025 Italy profoundly changed the rules of citizenship by descent. That is why it deserves careful analysis.</p>\n<p>Let's go step by step so you can place your own case.</p>\n\n<h2>Who passes citizenship down</h2>\n<p>Italian citizenship is based on the <em>iure sanguinis</em> principle: it is transmitted by bloodline, generation after generation, from an Italian ancestor. For decades, that principle applied without any generational limit: it was enough to reconstruct the chain back to the Italian who emigrated, no matter how many generations in between.</p>\n\n<div class=\"callout\"><span class=\"callout-ico\">⚠️</span><p><strong>Important change (2025):</strong> Italy reformed the citizenship-by-descent regime. The new rules restricted automatic access, focusing on the closest generations (for example, those with an Italian parent or grandparent). This changed the picture for many families, which is why today it is essential to analyze each case under the rules in force before getting your hopes up — or ruling yourself out.</p></div>\n\n<h2>The most common cases</h2>\n<p>In practice, most consultations fall into a few typical scenarios:</p>\n<ul>\n  <li><strong>Child or grandchild of an Italian:</strong> these are the closest bonds and, in general, the ones with the clearest path under the new rules.</li>\n  <li><strong>Great-grandchild or beyond:</strong> before the reform this was a common route; today it requires a specific analysis to know whether the case still qualifies.</li>\n  <li><strong>Maternal line before 1948:</strong> a chapter of its own, explained below.</li>\n</ul>\n\n<h2>The family tree</h2>\n<p>Everything starts with reconstructing the chain: from the Italian ancestor down to you, without any broken link. Each bond is proven with birth, marriage and death certificates. A single missing detail or a certificate that cannot be found can stall the whole file, so this reconstruction work is the backbone of the process.</p>\n\n<h2>Required documentation</h2>\n<p>Broadly, you will need:</p>\n<ul>\n  <li>The Italian ancestor's birth certificate (issued in Italy).</li>\n  <li>Birth, marriage and death certificates for every link in the chain.</li>\n  <li>A certificate proving the Italian ancestor did not naturalize before the birth of the next link (or the date on which they did).</li>\n  <li>All documents translated and legalized/apostilled as required.</li>\n</ul>\n\n<h2>The maternal line before 1948</h2>\n<p>Historically, Italian women could not pass citizenship to children born before 1948. When the bond runs through a woman and her child was born before that date, recognition is not resolved through the ordinary administrative route but usually requires a <strong>judicial proceeding in Italy</strong>. These cases are perfectly viable, but with a different procedure.</p>\n\n<h2>Common mistakes</h2>\n<ul>\n  <li>Assuming \"the Italian great-grandfather\" is enough without checking the current rules.</li>\n  <li>Not verifying whether the ancestor naturalized, and when.</li>\n  <li>Stalling the process over a certificate with errors instead of rectifying it.</li>\n  <li>Not considering the judicial route when the case requires it.</li>\n</ul>\n\n<p>The best way to know whether you qualify is a viability analysis: reviewing your tree, the key dates and the available documentation in light of the rules in force. With that, you know with certainty whether your case qualifies — and through which route.</p>\n\n<div class=\"callout\"><span class=\"callout-ico\">⚖️</span><p><strong>Note:</strong> this article is general information only. Every case has particularities that can change the outcome. Before starting any procedure, consult a lawyer to analyze your specific situation.</p></div>","p.tengo-derecho-ciudadania-italiana.faq0.q":"Does Italian citizenship by descent still exist?","p.tengo-derecho-ciudadania-italiana.faq0.a":"Yes, but under rules that changed in 2025. The reform restricted automatic access and focused on the closest bonds. That is why every case must be analyzed under the rules in force before starting the process.","p.tengo-derecho-ciudadania-italiana.faq1.q":"Up to which generation can I claim Italian citizenship?","p.tengo-derecho-ciudadania-italiana.faq1.a":"There used to be no generational limit; today the picture is different under the recent reform. The prudent step is a viability analysis of your family tree to determine whether your case qualifies.","p.tengo-derecho-ciudadania-italiana.faq2.q":"What if the bond runs through a woman before 1948?","p.tengo-derecho-ciudadania-italiana.faq2.a":"Those cases usually require a judicial proceeding in Italy, because before 1948 women could not pass citizenship down through the administrative route. They are viable, but follow a different procedure.","p.tengo-derecho-ciudadania-italiana.faq3.q":"Does a certificate with errors prevent me from applying?","p.tengo-derecho-ciudadania-italiana.faq3.a":"Not necessarily. Errors in certificates (names, dates) can usually be rectified. What you should not do is file the documentation without fixing those discrepancies, because they stall the file.","p.errores-comunes-ciudadania-italiana.title":"The 8 most common mistakes that delay an Italian citizenship application","p.errores-comunes-ciudadania-italiana.excerpt":"Most delays in an Italian citizenship case don't come from Italy: they come from documentation errors that could have been prevented from day one.","p.errores-comunes-ciudadania-italiana.meta":"May 6, 2026 · 6 min read","p.pasaporte-italiano-espanol-antes-de-viajar.title":"Italian or Spanish passport: 10 things to check before you travel","p.pasaporte-italiano-espanol-antes-de-viajar.excerpt":"Holding your European passport is not enough: there are validity rules, blank-page requirements and details that, if you don't check them in time, can stop you at the airport.","p.pasaporte-italiano-espanol-antes-de-viajar.meta":"July 2, 2026 · 7 min read","p.ciudadania-espanola-quien-puede-hoy.title":"Spanish citizenship: which routes are still open today for Argentines","p.ciudadania-espanola-quien-puede-hoy.excerpt":"The Democratic Memory Law window has closed, but Spanish citizenship is still possible through other routes. We explain which ones remain in force.","p.ciudadania-espanola-quien-puede-hoy.meta":"April 22, 2026 · 7 min read"},"it":{"p.tengo-derecho-ciudadania-italiana.title":"Ho diritto alla cittadinanza italiana? Come scoprirlo passo dopo passo","post.h1":"Ho diritto alla cittadinanza italiana? Come scoprirlo passo dopo passo","post.bc":"Ho diritto alla cittadinanza italiana? Come scoprirlo passo dopo passo","post.meta":"<span>20 maggio 2026</span><i></i><span>7 min di lettura</span>","post.body":"<p>La domanda che riceviamo più spesso è anche la più logica: \"ho un bisnonno italiano, mi spetta la cittadinanza?\". La risposta non è più così automatica come prima, perché nel 2025 l'Italia ha modificato in profondità le regole della cittadinanza per discendenza. Per questo conviene analizzarla con attenzione.</p>\n<p>Andiamo passo dopo passo perché possiate inquadrare il vostro caso.</p>\n\n<h2>Chi trasmette la cittadinanza</h2>\n<p>La cittadinanza italiana si basa sul principio dello <em>iure sanguinis</em>: si trasmette per legame di sangue, di generazione in generazione, a partire da un antenato italiano. Per decenni quel principio si è applicato senza limiti di generazioni: bastava ricostruire la catena fino all'italiano emigrato, non importa quante generazioni ci fossero in mezzo.</p>\n\n<div class=\"callout\"><span class=\"callout-ico\">⚠️</span><p><strong>Cambiamento importante (2025):</strong> l'Italia ha riformato il regime della cittadinanza per discendenza. Le nuove regole hanno ristretto l'accesso automatico, concentrandosi sulle generazioni più vicine (ad esempio, chi ha un genitore o un nonno italiano). Questo ha cambiato il panorama per molte famiglie, e per questo oggi è indispensabile analizzare ogni caso con la normativa vigente prima di illudersi o di scartare.</p></div>\n\n<h2>I casi più comuni</h2>\n<p>In pratica, le consulenze rientrano di solito in alcuni scenari tipici:</p>\n<ul>\n  <li><strong>Figlio o nipote di italiano:</strong> sono i legami più vicini e, in generale, quelli con il percorso più chiaro sotto le nuove regole.</li>\n  <li><strong>Pronipote o oltre:</strong> prima della riforma era una via abituale; oggi richiede un'analisi specifica per sapere se il caso rientra ancora.</li>\n  <li><strong>Linea materna prima del 1948:</strong> un capitolo a parte, che spieghiamo sotto.</li>\n</ul>\n\n<h2>L'albero genealogico</h2>\n<p>Tutto comincia dalla ricostruzione della catena: dall'antenato italiano fino a voi, senza che si interrompa nessun anello. Ogni legame si prova con atti di nascita, matrimonio e morte. Un solo dato mancante o un atto introvabile può bloccare l'intero fascicolo, quindi questo lavoro di ricostruzione è la colonna vertebrale della pratica.</p>\n\n<h2>Documentazione necessaria</h2>\n<p>Servirà, in linea generale:</p>\n<ul>\n  <li>Atto di nascita dell'antenato italiano (emesso in Italia).</li>\n  <li>Atti di nascita, matrimonio e morte di ogni anello della catena.</li>\n  <li>Un certificato che attesti che l'antenato italiano non si è naturalizzato prima della nascita dell'anello successivo (o la data in cui lo ha fatto).</li>\n  <li>La documentazione tradotta e legalizzata/apostillata secondo il caso.</li>\n</ul>\n\n<h2>Il caso della linea materna prima del 1948</h2>\n<p>Storicamente, le donne italiane non potevano trasmettere la cittadinanza ai figli nati prima del 1948. Quando il legame passa per una donna e il figlio è nato prima di quella data, il riconoscimento non si risolve per la via amministrativa comune, ma richiede di solito un <strong>procedimento giudiziario in Italia</strong>. Sono casi perfettamente percorribili, ma con una procedura diversa.</p>\n\n<h2>Errori frequenti</h2>\n<ul>\n  <li>Dare per scontato che \"il bisnonno italiano\" basti senza verificare la normativa attuale.</li>\n  <li>Non verificare se l'antenato si è naturalizzato e in quale data.</li>\n  <li>Bloccare la pratica per un atto con errori invece di rettificarlo.</li>\n  <li>Non considerare la via giudiziaria quando il caso lo richiede.</li>\n</ul>\n\n<p>Il modo migliore per sapere se vi spetta è un'analisi di fattibilità: esaminare il vostro albero, le date chiave e la documentazione disponibile alla luce delle regole vigenti. Così saprete, con certezza, se il vostro caso rientra e per quale via.</p>\n\n<div class=\"callout\"><span class=\"callout-ico\">⚖️</span><p><strong>Nota:</strong> questo articolo è informativo e generale. Ogni caso presenta particolarità che possono cambiare il risultato. Prima di avviare qualsiasi pratica, consultate un avvocato per analizzare la vostra situazione concreta.</p></div>","p.tengo-derecho-ciudadania-italiana.faq0.q":"Esiste ancora la cittadinanza italiana per discendenza?","p.tengo-derecho-ciudadania-italiana.faq0.a":"Sì, ma con regole cambiate nel 2025. La riforma ha ristretto l'accesso automatico e ha messo al centro i legami più vicini. Per questo ogni caso va analizzato con la normativa vigente prima di avviare la pratica.","p.tengo-derecho-ciudadania-italiana.faq1.q":"Fino a quale generazione posso richiedere la cittadinanza italiana?","p.tengo-derecho-ciudadania-italiana.faq1.a":"Prima non c'era limite di generazioni; oggi il panorama è diverso con la riforma recente. La cosa prudente è un'analisi di fattibilità del vostro albero genealogico per determinare se il caso rientra.","p.tengo-derecho-ciudadania-italiana.faq2.q":"Cosa succede se il legame passa per una donna prima del 1948?","p.tengo-derecho-ciudadania-italiana.faq2.a":"Quei casi richiedono di solito un procedimento giudiziario in Italia, perché prima del 1948 le donne non potevano trasmettere la cittadinanza per via amministrativa. Sono percorribili, ma con una procedura diversa.","p.tengo-derecho-ciudadania-italiana.faq3.q":"Un atto con errori mi impedisce la pratica?","p.tengo-derecho-ciudadania-italiana.faq3.a":"Non necessariamente. Gli errori negli atti (nomi, date) si possono di solito rettificare. Ciò che non conviene è presentare la documentazione senza correggere quelle differenze, perché bloccano il fascicolo.","p.errores-comunes-ciudadania-italiana.title":"Gli 8 errori più comuni che ritardano una cittadinanza italiana","p.errores-comunes-ciudadania-italiana.excerpt":"La maggior parte dei ritardi in una cittadinanza italiana non viene dall'Italia: viene da errori nella documentazione che si potevano prevenire dal primo giorno.","p.errores-comunes-ciudadania-italiana.meta":"6 maggio 2026 · 6 min di lettura","p.pasaporte-italiano-espanol-antes-de-viajar.title":"Passaporto italiano o spagnolo: 10 cose da controllare prima di viaggiare","p.pasaporte-italiano-espanol-antes-de-viajar.excerpt":"Avere il passaporto europeo in mano non basta: ci sono requisiti di validità, pagine libere e dettagli che, se non controllati in tempo, possono fermarvi in aeroporto.","p.pasaporte-italiano-espanol-antes-de-viajar.meta":"2 luglio 2026 · 7 min di lettura","p.ciudadania-espanola-quien-puede-hoy.title":"Cittadinanza spagnola: quali vie restano aperte oggi per gli argentini","p.ciudadania-espanola-quien-puede-hoy.excerpt":"La finestra della Legge di Memoria Democratica si è chiusa, ma la cittadinanza spagnola resta possibile per altre vie. Vi spieghiamo quali sono ancora in vigore.","p.ciudadania-espanola-quien-puede-hoy.meta":"22 aprile 2026 · 7 min di lettura"}};</script>
+  <script src="../i18n.js?v=11"></script>
+  <script src="blog.js?v=2"></script>
 </body>
 </html>

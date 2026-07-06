@@ -11,6 +11,8 @@
   .steps{grid-template-columns:repeat(2,1fr)}
   .gallery-grid{grid-template-columns:1fr 1fr}
   .gallery-grid figure:last-child{grid-column:1/-1;aspect-ratio:16/9}
+  .home-blog-grid{grid-template-columns:1fr 1fr}
+  .home-blog-grid .hb-card:last-child{grid-column:1/-1}
 
   /* carrusel testimonios */
   .testi-nav{display:flex}
@@ -46,6 +48,8 @@
   .stats-grid{grid-template-columns:1fr}
   .steps{grid-template-columns:1fr}
   .gallery-grid{grid-template-columns:1fr}
+  .home-blog-grid{grid-template-columns:1fr}
+  .home-blog-grid .hb-card:last-child{grid-column:auto}
   .gallery-grid figure:last-child{aspect-ratio:4/5}
 
   .about-media{max-width:24rem}

@@ -114,40 +114,51 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../styles.css?v=10">
-  <link rel="stylesheet" href="../responsive.css?v=10">
-  <link rel="stylesheet" href="blog.css?v=1">
+  <link rel="stylesheet" href="../styles.css?v=11">
+  <link rel="stylesheet" href="../responsive.css?v=11">
+  <link rel="stylesheet" href="blog.css?v=2">
 </head>
 <body>
   <div class="ticker" aria-hidden="true">
     <div class="ticker-track">
-      <span>Ciudadanía española e italiana</span><i></i>
-      <span>Acompañamiento de principio a fin</span><i></i>
-      <span>Atención a argentinos en el exterior</span><i></i>
-      <span>Asesoramiento personalizado</span><i></i>
-      <span>Seguridad jurídica en cada paso</span><i></i>
-      <span>Ciudadanía española e italiana</span><i></i>
-      <span>Acompañamiento de principio a fin</span><i></i>
-      <span>Atención a argentinos en el exterior</span><i></i>
-      <span>Asesoramiento personalizado</span><i></i>
-      <span>Seguridad jurídica en cada paso</span><i></i>
+      <span data-i18n="tk.1">Ciudadanía española e italiana</span><i></i>
+      <span data-i18n="tk.2">Acompañamiento de principio a fin</span><i></i>
+      <span data-i18n="tk.3">Atención a argentinos en el exterior</span><i></i>
+      <span data-i18n="tk.4">Asesoramiento personalizado</span><i></i>
+      <span data-i18n="tk.5">Seguridad jurídica en cada paso</span><i></i>
+      <span data-i18n="tk.1">Ciudadanía española e italiana</span><i></i>
+      <span data-i18n="tk.2">Acompañamiento de principio a fin</span><i></i>
+      <span data-i18n="tk.3">Atención a argentinos en el exterior</span><i></i>
+      <span data-i18n="tk.4">Asesoramiento personalizado</span><i></i>
+      <span data-i18n="tk.5">Seguridad jurídica en cada paso</span><i></i>
     </div>
   </div>
   <header class="nav-wrap">
     <div class="nav-shell">
       <a class="brand" href="/" aria-label="Estudio Jurídico Pelegrina · Inicio">
         <img src="../logo.png" alt="Estudio Jurídico Pelegrina" class="brand-logo">
-        <span class="brand-text"><b>Estudio Jurídico</b><small>Pelegrina</small></span>
+        <span class="brand-text"><b data-i18n="brand.sub">Estudio Jurídico</b><small>Pelegrina</small></span>
       </a>
       <nav class="nav-links" aria-label="Navegación principal">
-        <a href="/#servicios">Servicios</a>
-        <a href="/#estudio">¿Quiénes somos?</a>
-        <a href="/blog/" class="active">Blog</a>
-        <a href="/#faq">Preguntas</a>
-        <a href="/#contacto">Contacto</a>
-        <a class="nav-cta" href="/#consulta">Agendá tu consulta</a>
+        <a href="/#servicios" data-i18n="nav.servicios">Servicios</a>
+        <a href="/#estudio" data-i18n="nav.quienes">¿Quiénes somos?</a>
+        <a href="/blog/" class="active" data-i18n="nav.blog">Blog</a>
+        <a href="/#faq" data-i18n="nav.faq">Preguntas</a>
+        <a href="/#contacto" data-i18n="nav.contacto">Contacto</a>
+        <a class="nav-cta" href="/#consulta" data-i18n="nav.cta">Agendá tu consulta</a>
       </nav>
       <div class="nav-right">
+        <div class="lang-switch">
+          <button class="lang-btn" aria-haspopup="true" aria-expanded="false" aria-label="Cambiar idioma / Change language">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.8 5.7 3.8 9S14.5 18.5 12 21C9.5 18.5 8.2 15.3 8.2 12S9.5 5.5 12 3z"/></svg>
+            <span class="lang-current">ES</span>
+          </button>
+          <div class="lang-menu" role="menu">
+            <button data-lang="es" role="menuitem">🇪🇸 Español</button>
+            <button data-lang="en" role="menuitem">🇬🇧 English</button>
+            <button data-lang="it" role="menuitem">🇮🇹 Italiano</button>
+          </div>
+        </div>
         <button class="menu-btn" aria-expanded="false" aria-label="Abrir menú">
           <span></span><span></span><span></span>
         </button>
@@ -160,17 +171,18 @@
       <header class="article-hero">
         <img class="hero-photo" src="../pasaporte-carpeta.jpg" alt="" aria-hidden="true">
         <div class="article-hero-inner">
-          <span class="article-cat">Ciudadanía española</span>
-          <h1>Ciudadanía española: qué vías siguen abiertas hoy para argentinos</h1>
-          <p class="article-meta"><span>22 de abril de 2026</span><i></i><span>7 min de lectura</span></p>
+          <span class="article-cat" data-i18n="blog.cat.espanola">Ciudadanía española</span>
+          <h1 data-i18n="post.h1">Ciudadanía española: qué vías siguen abiertas hoy para argentinos</h1>
+          <p class="article-meta" data-i18n="post.meta"><span>22 de abril de 2026</span><i></i><span>7 min de lectura</span></p>
         </div>
+        <div class="hero-fade" aria-hidden="true"></div>
       </header>
 
       <nav class="breadcrumb" aria-label="Ruta de navegación">
-        <a href="/">Inicio</a><span>›</span><a href="/blog/">Blog</a><span>›</span>Ciudadanía española: qué vías siguen abiertas hoy para argentinos
+        <a href="/" data-i18n="blog.bc.home">Inicio</a><span>›</span><a href="/blog/">Blog</a><span>›</span><span class="bc-here" data-i18n="post.bc">Ciudadanía española: qué vías siguen abiertas hoy para argentinos</span>
       </nav>
 
-      <div class="article-body">
+      <div class="article-body" data-i18n="post.body">
         <p>Durante los últimos años, la Ley de Memoria Democrática —conocida popularmente como "la ley de nietos"— fue la gran protagonista de las consultas por ciudadanía española. Abrió un camino excepcional para hijos, nietos y bisnietos de españoles. Pero esa ventana tenía fecha de cierre, y ya pasó.</p>
 <p>La buena noticia es que la Memoria Democrática no era la única vía. La ciudadanía española sigue siendo posible por otros caminos que están plenamente vigentes. Veamos el panorama real, hoy.</p>
 
@@ -199,80 +211,92 @@
 <div class="callout"><span class="callout-ico">⚖️</span><p><strong>Nota:</strong> este artículo es informativo y general. Cada caso tiene particularidades que pueden cambiar el resultado. Antes de iniciar cualquier trámite, consultá con una abogada para analizar tu situación concreta.</p></div>
       </div>
 
+      <div class="article-author-wrap">
+        <div class="article-author reveal">
+          <img src="../paloma-selfie.png" alt="Paloma Eugenia Pelegrina">
+          <div class="article-author-info">
+            <small data-i18n="blog.author.wrote">Escribió esta nota</small>
+            <b>Paloma Eugenia Pelegrina</b>
+            <span data-i18n="blog.author.role">Abogada · Titular del estudio</span>
+          </div>
+          <a class="btn btn-outline-wine" href="/#estudio" data-i18n="blog.author.more">Conocé el estudio →</a>
+        </div>
+      </div>
+
       <section class="article-faq">
-        <h2>Preguntas frecuentes</h2>
-        <div class="afaq-item">
-        <button aria-expanded="false"><span>¿Todavía puedo pedir la ciudadanía por la Ley de Memoria Democrática?</span><b>+</b></button>
-        <div class="afaq-panel"><div><p>El plazo especial de esa ley (la &quot;ley de nietos&quot;) ya venció. Por eso hoy hay que analizar tu caso con las vías que siguen vigentes: nacionalidad de origen, por opción, por residencia y demás supuestos previstos por la ley.</p></div></div>
+        <h2 data-i18n="blog.faq.h2">Preguntas frecuentes</h2>
+        <div class="afaq-item reveal">
+        <button aria-expanded="false"><span data-i18n="p.ciudadania-espanola-quien-puede-hoy.faq0.q">¿Todavía puedo pedir la ciudadanía por la Ley de Memoria Democrática?</span><b>+</b></button>
+        <div class="afaq-panel"><div><p data-i18n="p.ciudadania-espanola-quien-puede-hoy.faq0.a">El plazo especial de esa ley (la &quot;ley de nietos&quot;) ya venció. Por eso hoy hay que analizar tu caso con las vías que siguen vigentes: nacionalidad de origen, por opción, por residencia y demás supuestos previstos por la ley.</p></div></div>
       </div>
-      <div class="afaq-item">
-        <button aria-expanded="false"><span>¿Es cierto que los argentinos tienen un plazo menor por residencia?</span><b>+</b></button>
-        <div class="afaq-panel"><div><p>Sí. El plazo general de residencia para nacionalizarse es prolongado, pero para nacionales de países iberoamericanos —Argentina incluida— se reduce a dos años de residencia legal y continuada en España.</p></div></div>
+      <div class="afaq-item reveal">
+        <button aria-expanded="false"><span data-i18n="p.ciudadania-espanola-quien-puede-hoy.faq1.q">¿Es cierto que los argentinos tienen un plazo menor por residencia?</span><b>+</b></button>
+        <div class="afaq-panel"><div><p data-i18n="p.ciudadania-espanola-quien-puede-hoy.faq1.a">Sí. El plazo general de residencia para nacionalizarse es prolongado, pero para nacionales de países iberoamericanos —Argentina incluida— se reduce a dos años de residencia legal y continuada en España.</p></div></div>
       </div>
-      <div class="afaq-item">
-        <button aria-expanded="false"><span>Cerró la ley de nietos, ¿perdí la posibilidad de ser español?</span><b>+</b></button>
-        <div class="afaq-panel"><div><p>No necesariamente. La Memoria Democrática era una de varias vías. Según tu descendencia y tu situación, pueden corresponderte la nacionalidad de origen, la opción u otras vías vigentes. Conviene analizarlo caso por caso.</p></div></div>
+      <div class="afaq-item reveal">
+        <button aria-expanded="false"><span data-i18n="p.ciudadania-espanola-quien-puede-hoy.faq2.q">Cerró la ley de nietos, ¿perdí la posibilidad de ser español?</span><b>+</b></button>
+        <div class="afaq-panel"><div><p data-i18n="p.ciudadania-espanola-quien-puede-hoy.faq2.a">No necesariamente. La Memoria Democrática era una de varias vías. Según tu descendencia y tu situación, pueden corresponderte la nacionalidad de origen, la opción u otras vías vigentes. Conviene analizarlo caso por caso.</p></div></div>
       </div>
-      <div class="afaq-item">
-        <button aria-expanded="false"><span>¿Puedo tener ciudadanía española y argentina a la vez?</span><b>+</b></button>
-        <div class="afaq-panel"><div><p>Por el Convenio de doble nacionalidad entre Argentina y España, en general es posible mantener ambas. Cada situación conviene revisarla, pero la doble nacionalidad hispano-argentina está contemplada.</p></div></div>
+      <div class="afaq-item reveal">
+        <button aria-expanded="false"><span data-i18n="p.ciudadania-espanola-quien-puede-hoy.faq3.q">¿Puedo tener ciudadanía española y argentina a la vez?</span><b>+</b></button>
+        <div class="afaq-panel"><div><p data-i18n="p.ciudadania-espanola-quien-puede-hoy.faq3.a">Por el Convenio de doble nacionalidad entre Argentina y España, en general es posible mantener ambas. Cada situación conviene revisarla, pero la doble nacionalidad hispano-argentina está contemplada.</p></div></div>
       </div>
       </section>
 
       <section class="article-cta">
         <div class="article-cta-card reveal">
-          <p class="eyebrow">Sin compromiso</p>
-          <h2>¿Querés saber cómo sería tu caso en concreto?</h2>
-          <p>Cada situación es distinta. Te explicamos con claridad qué pasos corresponden en tu caso, sin tecnicismos y sin apuros.</p>
+          <p class="eyebrow" data-i18n="blog.cta.eyebrow">Sin compromiso</p>
+          <h2 data-i18n="blog.cta.h2">¿Querés saber cómo sería tu caso en concreto?</h2>
+          <p data-i18n="blog.cta.p">Cada situación es distinta. Te explicamos con claridad qué pasos corresponden en tu caso, sin tecnicismos y sin apuros.</p>
           <div class="article-cta-actions">
-            <a class="btn btn-whatsapp" href="https://wa.me/5491154036933" target="_blank" rel="noopener"><img src="../icono-whatsapp.png" class="wa-ico" alt=""> Consultar por WhatsApp</a>
-            <a class="btn btn-primary" href="/#consulta">Agendá tu consulta →</a>
+            <a class="btn btn-whatsapp" href="https://wa.me/5491154036933" target="_blank" rel="noopener"><img src="../icono-whatsapp.png" class="wa-ico" alt=""> <span data-i18n="blog.cta.wa">Consultar por WhatsApp</span></a>
+            <a class="btn btn-primary" href="/#consulta" data-i18n="blog.cta.btn">Agendá tu consulta →</a>
           </div>
-          <p class="note">Te respondemos a la brevedad · Consulta confidencial</p>
+          <p class="note" data-i18n="blog.cta.note">Te respondemos a la brevedad · Consulta confidencial</p>
         </div>
       </section>
 
       <section class="article-share">
         <div class="share-card reveal">
-          <h2>¿Conocés a alguien que le pueda servir esta nota?</h2>
-          <p>Compartila: a veces una lectura llega justo en el momento indicado.</p>
+          <h2 data-i18n="blog.share.h2">¿Conocés a alguien que le pueda servir esta nota?</h2>
+          <p data-i18n="blog.share.p">Compartila: a veces una lectura llega justo en el momento indicado.</p>
           <div class="share-actions">
-            <button class="share-btn wa" data-share="whatsapp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.8 14.01c-.24.68-1.42 1.32-1.95 1.36-.5.05-.95.24-3.2-.67-2.7-1.06-4.42-3.8-4.55-3.98-.13-.18-1.1-1.46-1.1-2.78 0-1.32.69-1.97.94-2.24.24-.27.53-.34.71-.34.18 0 .35 0 .5.01.16.01.38-.06.59.45.24.58.79 2 .86 2.14.07.14.12.31.02.5-.09.18-.14.29-.28.45-.14.16-.29.36-.42.48-.14.14-.28.29-.12.57.16.27.72 1.18 1.54 1.91 1.06.95 1.96 1.24 2.24 1.38.28.14.44.12.6-.07.16-.18.7-.81.88-1.09.18-.27.37-.23.62-.14.25.09 1.6.76 1.87.9.28.14.46.21.53.32.07.12.07.68-.17 1.36z"/></svg> Compartir por WhatsApp</button>
-            <button class="share-btn" data-share="copy"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg> <span>Copiar link</span></button>
-            <button class="share-btn" data-share="more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg> Más opciones</button>
+            <button class="share-btn wa" data-share="whatsapp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.8 14.01c-.24.68-1.42 1.32-1.95 1.36-.5.05-.95.24-3.2-.67-2.7-1.06-4.42-3.8-4.55-3.98-.13-.18-1.1-1.46-1.1-2.78 0-1.32.69-1.97.94-2.24.24-.27.53-.34.71-.34.18 0 .35 0 .5.01.16.01.38-.06.59.45.24.58.79 2 .86 2.14.07.14.12.31.02.5-.09.18-.14.29-.28.45-.14.16-.29.36-.42.48-.14.14-.28.29-.12.57.16.27.72 1.18 1.54 1.91 1.06.95 1.96 1.24 2.24 1.38.28.14.44.12.6-.07.16-.18.7-.81.88-1.09.18-.27.37-.23.62-.14.25.09 1.6.76 1.87.9.28.14.46.21.53.32.07.12.07.68-.17 1.36z"/></svg> <span data-i18n="blog.share.wa">Compartir por WhatsApp</span></button>
+            <button class="share-btn" data-share="copy"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg> <span data-i18n="blog.share.copy">Copiar link</span></button>
+            <button class="share-btn" data-share="more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg> <span data-i18n="blog.share.more">Más opciones</span></button>
           </div>
         </div>
       </section>
     </article>
 
     <section class="article-related">
-      <h2>Seguí leyendo</h2>
+      <h2 data-i18n="blog.related">Seguí leyendo</h2>
       <div class="related-grid">
       <a class="post-card reveal" href="errores-comunes-ciudadania-espanola.html" data-cat="espanola">
-        <div class="post-card-media"><span class="post-tag">Ciudadanía española</span><img src="../oficina-2.jpg" alt="Ciudadanía española: los errores más frecuentes que pueden hacer fracasar tu trámite" loading="lazy"></div>
+        <div class="post-card-media"><span class="post-tag" data-i18n="blog.cat.espanola">Ciudadanía española</span><img src="../oficina-2.jpg" alt="Ciudadanía española: los errores más frecuentes que pueden hacer fracasar tu trámite" loading="lazy"></div>
         <div class="post-card-body">
-          <p class="post-meta">8 de abril de 2026 · 6 min de lectura</p>
-          <h3>Ciudadanía española: los errores más frecuentes que pueden hacer fracasar tu trámite</h3>
-          <p>Actas con errores, documentación incompleta, plazos vencidos y turnos perdidos. Los tropiezos más comunes en una ciudadanía española casi siempre son evitables.</p>
-          <span class="post-more">Leer artículo</span>
+          <p class="post-meta" data-i18n="p.errores-comunes-ciudadania-espanola.meta">8 de abril de 2026 · 6 min de lectura</p>
+          <h3 data-i18n="p.errores-comunes-ciudadania-espanola.title">Ciudadanía española: los errores más frecuentes que pueden hacer fracasar tu trámite</h3>
+          <p data-i18n="p.errores-comunes-ciudadania-espanola.excerpt">Actas con errores, documentación incompleta, plazos vencidos y turnos perdidos. Los tropiezos más comunes en una ciudadanía española casi siempre son evitables.</p>
+          <span class="post-more" data-i18n="blog.read">Leer artículo</span>
         </div>
       </a>
       <a class="post-card reveal" href="tengo-derecho-ciudadania-italiana.html" data-cat="italiana">
-        <div class="post-card-media"><span class="post-tag">Ciudadanía italiana</span><img src="../oficina-1.jpg" alt="¿Tengo derecho a la ciudadanía italiana? Cómo saberlo paso a paso" loading="lazy"></div>
+        <div class="post-card-media"><span class="post-tag" data-i18n="blog.cat.italiana">Ciudadanía italiana</span><img src="../oficina-1.jpg" alt="¿Tengo derecho a la ciudadanía italiana? Cómo saberlo paso a paso" loading="lazy"></div>
         <div class="post-card-body">
-          <p class="post-meta">20 de mayo de 2026 · 7 min de lectura</p>
-          <h3>¿Tengo derecho a la ciudadanía italiana? Cómo saberlo paso a paso</h3>
-          <p>La ciudadanía italiana se transmite por sangre, pero las reglas cambiaron en 2025. Te explicamos cómo saber, paso a paso, si tu caso encuadra hoy.</p>
-          <span class="post-more">Leer artículo</span>
+          <p class="post-meta" data-i18n="p.tengo-derecho-ciudadania-italiana.meta">20 de mayo de 2026 · 7 min de lectura</p>
+          <h3 data-i18n="p.tengo-derecho-ciudadania-italiana.title">¿Tengo derecho a la ciudadanía italiana? Cómo saberlo paso a paso</h3>
+          <p data-i18n="p.tengo-derecho-ciudadania-italiana.excerpt">La ciudadanía italiana se transmite por sangre, pero las reglas cambiaron en 2025. Te explicamos cómo saber, paso a paso, si tu caso encuadra hoy.</p>
+          <span class="post-more" data-i18n="blog.read">Leer artículo</span>
         </div>
       </a>
       <a class="post-card reveal" href="pasaporte-italiano-espanol-antes-de-viajar.html" data-cat="pasaportes">
-        <div class="post-card-media"><span class="post-tag">Pasaportes</span><img src="../pasaporte-carpeta.jpg" alt="Pasaporte italiano o español: 10 cosas que deberías revisar antes de viajar" loading="lazy"></div>
+        <div class="post-card-media"><span class="post-tag" data-i18n="blog.cat.pasaportes">Pasaportes</span><img src="../pasaporte-carpeta.jpg" alt="Pasaporte italiano o español: 10 cosas que deberías revisar antes de viajar" loading="lazy"></div>
         <div class="post-card-body">
-          <p class="post-meta">2 de julio de 2026 · 7 min de lectura</p>
-          <h3>Pasaporte italiano o español: 10 cosas que deberías revisar antes de viajar</h3>
-          <p>Tener el pasaporte europeo en la mano no alcanza: hay requisitos de vigencia, hojas libres y detalles que, si no revisás a tiempo, pueden frenarte en el aeropuerto.</p>
-          <span class="post-more">Leer artículo</span>
+          <p class="post-meta" data-i18n="p.pasaporte-italiano-espanol-antes-de-viajar.meta">2 de julio de 2026 · 7 min de lectura</p>
+          <h3 data-i18n="p.pasaporte-italiano-espanol-antes-de-viajar.title">Pasaporte italiano o español: 10 cosas que deberías revisar antes de viajar</h3>
+          <p data-i18n="p.pasaporte-italiano-espanol-antes-de-viajar.excerpt">Tener el pasaporte europeo en la mano no alcanza: hay requisitos de vigencia, hojas libres y detalles que, si no revisás a tiempo, pueden frenarte en el aeropuerto.</p>
+          <span class="post-more" data-i18n="blog.read">Leer artículo</span>
         </div>
       </a>
       </div>
@@ -284,28 +308,28 @@
       <div class="footer-brand">
         <a class="brand" href="/">
           <img src="../logo.png" alt="Estudio Jurídico Pelegrina" class="brand-logo">
-          <span class="brand-text"><b>Estudio Jurídico</b><small>Pelegrina</small></span>
+          <span class="brand-text"><b data-i18n="brand.sub">Estudio Jurídico</b><small>Pelegrina</small></span>
         </a>
-        <p>Ciudadanías, visados, derecho migratorio y sucesiones. Asesoramiento legal cercano para vos y tu familia.</p>
+        <p data-i18n="footer.desc">Ciudadanías, visados, derecho migratorio y sucesiones. Asesoramiento legal cercano para vos y tu familia.</p>
       </div>
       <div class="footer-col">
-        <h4>Navegación</h4>
-        <a href="/#estudio">¿Quiénes somos?</a>
-        <a href="/#servicios">Servicios</a>
-        <a href="/blog/">Blog</a>
-        <a href="/#faq">Preguntas frecuentes</a>
-        <a href="/#contacto">Contacto</a>
+        <h4 data-i18n="footer.nav">Navegación</h4>
+        <a href="/#estudio" data-i18n="nav.quienes">¿Quiénes somos?</a>
+        <a href="/#servicios" data-i18n="nav.servicios">Servicios</a>
+        <a href="/blog/" data-i18n="nav.blog">Blog</a>
+        <a href="/#faq" data-i18n="footer.faq">Preguntas frecuentes</a>
+        <a href="/#contacto" data-i18n="nav.contacto">Contacto</a>
       </div>
       <div class="footer-col">
-        <h4>Servicios</h4>
-        <a href="/#contacto">Ciudadanía española</a>
-        <a href="/#contacto">Ciudadanía italiana</a>
-        <a href="/#contacto">Visados y migratorio</a>
-        <a href="/#contacto">Sucesiones</a>
-        <a href="/#contacto">Rectificación de actas</a>
+        <h4 data-i18n="footer.serv">Servicios</h4>
+        <a href="/#contacto" data-i18n="acc.ciud.esp">Ciudadanía española</a>
+        <a href="/#contacto" data-i18n="acc.ciud.ita">Ciudadanía italiana</a>
+        <a href="/#contacto" data-i18n="svc2.title">Visados y migratorio</a>
+        <a href="/#contacto" data-i18n="acc.suc">Sucesiones</a>
+        <a href="/#contacto" data-i18n="acc.rect">Rectificación de actas</a>
       </div>
       <div class="footer-col">
-        <h4>Contacto</h4>
+        <h4 data-i18n="nav.contacto">Contacto</h4>
         <a href="https://wa.me/5491154036933" target="_blank" rel="noopener">WhatsApp +54 9 11 5403 6933</a>
         <a href="mailto:legales.pelegrina@gmail.com">legales.pelegrina@gmail.com</a>
         <a href="https://www.instagram.com/estudiopelegrina/" target="_blank" rel="noopener">Instagram @estudiopelegrina</a>
@@ -313,8 +337,8 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© <span id="year"></span> Estudio Jurídico Pelegrina. Todos los derechos reservados.</p>
-      <a href="#inicio">Volver arriba ↑</a>
+      <p>© <span id="year"></span> <span data-i18n="footer.copy">Estudio Jurídico Pelegrina. Todos los derechos reservados.</span></p>
+      <a href="#inicio" data-i18n="footer.top">Volver arriba ↑</a>
     </div>
   </footer>
 
@@ -323,6 +347,8 @@
     <span class="float-wa-pulse"></span>
   </a>
   <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
-  <script src="blog.js?v=1"></script>
+  <script>window.PAGE_I18N={"en":{"p.ciudadania-espanola-quien-puede-hoy.title":"Spanish citizenship: which routes are still open today for Argentines","post.h1":"Spanish citizenship: which routes are still open today for Argentines","post.bc":"Spanish citizenship: which routes are still open today for Argentines","post.meta":"<span>April 22, 2026</span><i></i><span>7 min read</span>","post.body":"<p>In recent years, the Democratic Memory Law — popularly known as the \"grandchildren law\" — was the star of Spanish citizenship consultations. It opened an exceptional path for children, grandchildren and great-grandchildren of Spaniards. But that window had a closing date, and it has passed.</p>\n<p>The good news is that Democratic Memory was not the only route. Spanish citizenship remains possible through other paths that are fully in force. Let's look at the real picture, today.</p>\n\n<div class=\"callout\"><span class=\"callout-ico\">⚠️</span><p><strong>First, to avoid confusion:</strong> the special application period under the Democratic Memory Law has expired. If your information is based on posts from a while ago, you are probably looking at a window that is no longer open. That is why your case should be analyzed under the routes still in force.</p></div>\n\n<h2>Nationality of origin</h2>\n<p>Some people are Spanish by origin without knowing it or without ever having formalized it: for example, those who descend directly from a Spaniard under certain conditions. Determining whether you hold nationality of origin is always the first analysis, because it is the strongest route when it applies.</p>\n\n<h2>Nationality by option</h2>\n<p>The option route is designed, among other cases, for people under the parental authority of a Spaniard, or who descend from a father or mother who was originally Spanish and born in Spain, in the cases provided by law. It is a path that remains available and is worth reviewing in each family situation.</p>\n\n<h2>Nationality by residence</h2>\n<p>For those living in Spain, legal and continuous residence opens the door to nationality. The general period is long, but for <strong>nationals of Ibero-American countries — Argentina among them — it is reduced to two years</strong> of legal residence. It is one of the most relevant routes for anyone planning to settle in Spain.</p>\n\n<h2>Nationality for Sephardic Jews</h2>\n<p>There was a specific route for descendants of Sephardic Jews originally from Spain, with an application period that also had a closing date. As with Democratic Memory, it is important not to confuse an already-closed window with a route that is still open.</p>\n\n<h2>Carta de naturaleza (discretionary grant)</h2>\n<p>This is an exceptional route, granted at the government's discretion when particular circumstances concur. It is not a generally applicable path, but it exists and in certain very specific cases it can be the option.</p>\n\n<h2>So, where do I start?</h2>\n<p>The most common mistake is assuming the wrong route. The correct order is the reverse: first your case is analyzed — your line of descent, the dates, where you live and your plans — and from that analysis comes the route that actually applies to you today. Sometimes more than one is possible, and it pays to choose the strongest.</p>\n\n<div class=\"callout\"><span class=\"callout-ico\">💡</span><p><strong>In short:</strong> the closing of Democratic Memory does not mean you lost your chance. It means your case must be examined under the routes in force: origin, option, residence and the rest. The right analysis is what prevents both false hopes and unnecessary discouragement.</p></div>\n\n<div class=\"callout\"><span class=\"callout-ico\">⚖️</span><p><strong>Note:</strong> this article is general information only. Every case has particularities that can change the outcome. Before starting any procedure, consult a lawyer to analyze your specific situation.</p></div>","p.ciudadania-espanola-quien-puede-hoy.faq0.q":"Can I still apply under the Democratic Memory Law?","p.ciudadania-espanola-quien-puede-hoy.faq0.a":"The special period under that law (the \"grandchildren law\") has expired. Today your case must be analyzed under the routes still in force: nationality of origin, by option, by residence and the other cases provided by law.","p.ciudadania-espanola-quien-puede-hoy.faq1.q":"Is it true that Argentines have a shorter residence period?","p.ciudadania-espanola-quien-puede-hoy.faq1.a":"Yes. The general residence period for nationality is long, but for nationals of Ibero-American countries — Argentina included — it is reduced to two years of legal, continuous residence in Spain.","p.ciudadania-espanola-quien-puede-hoy.faq2.q":"The grandchildren law closed — did I lose my chance to be Spanish?","p.ciudadania-espanola-quien-puede-hoy.faq2.a":"Not necessarily. Democratic Memory was one of several routes. Depending on your descent and situation, nationality of origin, the option route or other routes in force may apply. It should be analyzed case by case.","p.ciudadania-espanola-quien-puede-hoy.faq3.q":"Can I hold Spanish and Argentine citizenship at the same time?","p.ciudadania-espanola-quien-puede-hoy.faq3.a":"Under the dual nationality treaty between Argentina and Spain, it is generally possible to keep both. Each situation should be reviewed, but Spanish-Argentine dual nationality is provided for.","p.errores-comunes-ciudadania-espanola.title":"Spanish citizenship: the most frequent mistakes that can sink your application","p.errores-comunes-ciudadania-espanola.excerpt":"Records with errors, incomplete documentation, missed deadlines and lost appointments. The most common stumbles in a Spanish citizenship case are almost always avoidable.","p.errores-comunes-ciudadania-espanola.meta":"April 8, 2026 · 6 min read","p.tengo-derecho-ciudadania-italiana.title":"Am I entitled to Italian citizenship? How to find out, step by step","p.tengo-derecho-ciudadania-italiana.excerpt":"Italian citizenship is passed down by descent, but the rules changed in 2025. We explain how to find out, step by step, whether your case qualifies today.","p.tengo-derecho-ciudadania-italiana.meta":"May 20, 2026 · 7 min read","p.pasaporte-italiano-espanol-antes-de-viajar.title":"Italian or Spanish passport: 10 things to check before you travel","p.pasaporte-italiano-espanol-antes-de-viajar.excerpt":"Holding your European passport is not enough: there are validity rules, blank-page requirements and details that, if you don't check them in time, can stop you at the airport.","p.pasaporte-italiano-espanol-antes-de-viajar.meta":"July 2, 2026 · 7 min read"},"it":{"p.ciudadania-espanola-quien-puede-hoy.title":"Cittadinanza spagnola: quali vie restano aperte oggi per gli argentini","post.h1":"Cittadinanza spagnola: quali vie restano aperte oggi per gli argentini","post.bc":"Cittadinanza spagnola: quali vie restano aperte oggi per gli argentini","post.meta":"<span>22 aprile 2026</span><i></i><span>7 min di lettura</span>","post.body":"<p>Negli ultimi anni, la Legge di Memoria Democratica — popolarmente nota come \"legge dei nipoti\" — è stata la grande protagonista delle consulenze sulla cittadinanza spagnola. Ha aperto un percorso eccezionale per figli, nipoti e pronipoti di spagnoli. Ma quella finestra aveva una data di chiusura, ed è già passata.</p>\n<p>La buona notizia è che la Memoria Democratica non era l'unica via. La cittadinanza spagnola resta possibile attraverso altri percorsi pienamente in vigore. Vediamo il panorama reale, oggi.</p>\n\n<div class=\"callout\"><span class=\"callout-ico\">⚠️</span><p><strong>Prima di tutto, per non confondersi:</strong> il termine speciale per presentare domanda con la Legge di Memoria Democratica è scaduto. Se le vostre informazioni si basano su pubblicazioni di qualche tempo fa, probabilmente state guardando una finestra che non è più aperta. Per questo conviene analizzare il vostro caso con le vie ancora in vigore.</p></div>\n\n<h2>Nazionalità di origine</h2>\n<p>Ci sono persone che sono spagnole di origine senza saperlo o senza averlo mai formalizzato: ad esempio, chi discende direttamente da uno spagnolo in determinate condizioni. Determinare se vi spetta la nazionalità di origine è sempre la prima analisi, perché è la via più solida quando si applica.</p>\n\n<h2>Nazionalità per opzione</h2>\n<p>La via dell'opzione è pensata, tra gli altri casi, per persone sotto la potestà genitoriale di uno spagnolo, o che discendono da padre o madre originariamente spagnoli e nati in Spagna, secondo i casi previsti dalla legge. È un percorso ancora disponibile che conviene esaminare in ogni situazione familiare.</p>\n\n<h2>Nazionalità per residenza</h2>\n<p>Per chi vive in Spagna, la residenza legale e continuativa apre la porta alla nazionalità. Il periodo generale è lungo, ma per i <strong>cittadini dei Paesi iberoamericani — Argentina compresa — si riduce a due anni</strong> di residenza legale. È una delle vie più rilevanti per chi progetta di stabilirsi in Spagna.</p>\n\n<h2>Nazionalità per i sefarditi</h2>\n<p>È esistita una via specifica per i discendenti di sefarditi originari della Spagna, con un termine di presentazione che ha avuto anch'esso una data di chiusura. Come per la Memoria Democratica, è importante non confondere una finestra già chiusa con una via ancora aperta.</p>\n\n<h2>Carta de naturaleza (concessione discrezionale)</h2>\n<p>È una via eccezionale, concessa in modo discrezionale quando concorrono circostanze particolari. Non è un percorso di applicazione generale, ma esiste e in certi casi molto specifici può essere l'opzione.</p>\n\n<h2>Quindi, da dove comincio?</h2>\n<p>L'errore più comune è presumere la via sbagliata. Il percorso corretto è l'inverso: prima si analizza il vostro caso — la linea di discendenza, le date, dove vivete e il vostro progetto — e da lì emerge quale di queste vie vi corrisponde davvero oggi. A volte ce n'è più di una possibile, e conviene scegliere la più solida.</p>\n\n<div class=\"callout\"><span class=\"callout-ico\">💡</span><p><strong>In sintesi:</strong> il fatto che la Memoria Democratica sia chiusa non significa che abbiate perso la possibilità. Significa che bisogna esaminare il vostro caso con le vie vigenti: origine, opzione, residenza e le altre. L'analisi corretta è ciò che evita sia illusioni sia rinunce senza motivo.</p></div>\n\n<div class=\"callout\"><span class=\"callout-ico\">⚖️</span><p><strong>Nota:</strong> questo articolo è informativo e generale. Ogni caso presenta particolarità che possono cambiare il risultato. Prima di avviare qualsiasi pratica, consultate un avvocato per analizzare la vostra situazione concreta.</p></div>","p.ciudadania-espanola-quien-puede-hoy.faq0.q":"Posso ancora richiedere la cittadinanza con la Legge di Memoria Democratica?","p.ciudadania-espanola-quien-puede-hoy.faq0.a":"Il termine speciale di quella legge (la \"legge dei nipoti\") è scaduto. Per questo oggi il caso va analizzato con le vie ancora in vigore: nazionalità di origine, per opzione, per residenza e gli altri casi previsti dalla legge.","p.ciudadania-espanola-quien-puede-hoy.faq1.q":"È vero che gli argentini hanno un periodo di residenza ridotto?","p.ciudadania-espanola-quien-puede-hoy.faq1.a":"Sì. Il periodo generale di residenza per la nazionalità è lungo, ma per i cittadini dei Paesi iberoamericani — Argentina compresa — si riduce a due anni di residenza legale e continuativa in Spagna.","p.ciudadania-espanola-quien-puede-hoy.faq2.q":"È chiusa la legge dei nipoti: ho perso la possibilità di diventare spagnolo?","p.ciudadania-espanola-quien-puede-hoy.faq2.a":"Non necessariamente. La Memoria Democratica era una delle varie vie. Secondo la vostra discendenza e situazione, possono corrispondervi la nazionalità di origine, l'opzione o altre vie vigenti. Va analizzato caso per caso.","p.ciudadania-espanola-quien-puede-hoy.faq3.q":"Posso avere la cittadinanza spagnola e argentina insieme?","p.ciudadania-espanola-quien-puede-hoy.faq3.a":"In base al trattato di doppia nazionalità tra Argentina e Spagna, in generale è possibile mantenerle entrambe. Ogni situazione va esaminata, ma la doppia nazionalità ispano-argentina è prevista.","p.errores-comunes-ciudadania-espanola.title":"Cittadinanza spagnola: gli errori più frequenti che possono far fallire la pratica","p.errores-comunes-ciudadania-espanola.excerpt":"Atti con errori, documentazione incompleta, termini scaduti e appuntamenti persi. Gli inciampi più comuni in una cittadinanza spagnola sono quasi sempre evitabili.","p.errores-comunes-ciudadania-espanola.meta":"8 aprile 2026 · 6 min di lettura","p.tengo-derecho-ciudadania-italiana.title":"Ho diritto alla cittadinanza italiana? Come scoprirlo passo dopo passo","p.tengo-derecho-ciudadania-italiana.excerpt":"La cittadinanza italiana si trasmette per discendenza, ma le regole sono cambiate nel 2025. Vi spieghiamo come sapere, passo dopo passo, se il vostro caso rientra oggi.","p.tengo-derecho-ciudadania-italiana.meta":"20 maggio 2026 · 7 min di lettura","p.pasaporte-italiano-espanol-antes-de-viajar.title":"Passaporto italiano o spagnolo: 10 cose da controllare prima di viaggiare","p.pasaporte-italiano-espanol-antes-de-viajar.excerpt":"Avere il passaporto europeo in mano non basta: ci sono requisiti di validità, pagine libere e dettagli che, se non controllati in tempo, possono fermarvi in aeroporto.","p.pasaporte-italiano-espanol-antes-de-viajar.meta":"2 luglio 2026 · 7 min di lettura"}};</script>
+  <script src="../i18n.js?v=11"></script>
+  <script src="blog.js?v=2"></script>
 </body>
 </html>

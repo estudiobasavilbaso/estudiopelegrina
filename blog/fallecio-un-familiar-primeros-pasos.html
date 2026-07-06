@@ -114,40 +114,51 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../styles.css?v=10">
-  <link rel="stylesheet" href="../responsive.css?v=10">
-  <link rel="stylesheet" href="blog.css?v=1">
+  <link rel="stylesheet" href="../styles.css?v=11">
+  <link rel="stylesheet" href="../responsive.css?v=11">
+  <link rel="stylesheet" href="blog.css?v=2">
 </head>
 <body>
   <div class="ticker" aria-hidden="true">
     <div class="ticker-track">
-      <span>Ciudadanía española e italiana</span><i></i>
-      <span>Acompañamiento de principio a fin</span><i></i>
-      <span>Atención a argentinos en el exterior</span><i></i>
-      <span>Asesoramiento personalizado</span><i></i>
-      <span>Seguridad jurídica en cada paso</span><i></i>
-      <span>Ciudadanía española e italiana</span><i></i>
-      <span>Acompañamiento de principio a fin</span><i></i>
-      <span>Atención a argentinos en el exterior</span><i></i>
-      <span>Asesoramiento personalizado</span><i></i>
-      <span>Seguridad jurídica en cada paso</span><i></i>
+      <span data-i18n="tk.1">Ciudadanía española e italiana</span><i></i>
+      <span data-i18n="tk.2">Acompañamiento de principio a fin</span><i></i>
+      <span data-i18n="tk.3">Atención a argentinos en el exterior</span><i></i>
+      <span data-i18n="tk.4">Asesoramiento personalizado</span><i></i>
+      <span data-i18n="tk.5">Seguridad jurídica en cada paso</span><i></i>
+      <span data-i18n="tk.1">Ciudadanía española e italiana</span><i></i>
+      <span data-i18n="tk.2">Acompañamiento de principio a fin</span><i></i>
+      <span data-i18n="tk.3">Atención a argentinos en el exterior</span><i></i>
+      <span data-i18n="tk.4">Asesoramiento personalizado</span><i></i>
+      <span data-i18n="tk.5">Seguridad jurídica en cada paso</span><i></i>
     </div>
   </div>
   <header class="nav-wrap">
     <div class="nav-shell">
       <a class="brand" href="/" aria-label="Estudio Jurídico Pelegrina · Inicio">
         <img src="../logo.png" alt="Estudio Jurídico Pelegrina" class="brand-logo">
-        <span class="brand-text"><b>Estudio Jurídico</b><small>Pelegrina</small></span>
+        <span class="brand-text"><b data-i18n="brand.sub">Estudio Jurídico</b><small>Pelegrina</small></span>
       </a>
       <nav class="nav-links" aria-label="Navegación principal">
-        <a href="/#servicios">Servicios</a>
-        <a href="/#estudio">¿Quiénes somos?</a>
-        <a href="/blog/" class="active">Blog</a>
-        <a href="/#faq">Preguntas</a>
-        <a href="/#contacto">Contacto</a>
-        <a class="nav-cta" href="/#consulta">Agendá tu consulta</a>
+        <a href="/#servicios" data-i18n="nav.servicios">Servicios</a>
+        <a href="/#estudio" data-i18n="nav.quienes">¿Quiénes somos?</a>
+        <a href="/blog/" class="active" data-i18n="nav.blog">Blog</a>
+        <a href="/#faq" data-i18n="nav.faq">Preguntas</a>
+        <a href="/#contacto" data-i18n="nav.contacto">Contacto</a>
+        <a class="nav-cta" href="/#consulta" data-i18n="nav.cta">Agendá tu consulta</a>
       </nav>
       <div class="nav-right">
+        <div class="lang-switch">
+          <button class="lang-btn" aria-haspopup="true" aria-expanded="false" aria-label="Cambiar idioma / Change language">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.8 5.7 3.8 9S14.5 18.5 12 21C9.5 18.5 8.2 15.3 8.2 12S9.5 5.5 12 3z"/></svg>
+            <span class="lang-current">ES</span>
+          </button>
+          <div class="lang-menu" role="menu">
+            <button data-lang="es" role="menuitem">🇪🇸 Español</button>
+            <button data-lang="en" role="menuitem">🇬🇧 English</button>
+            <button data-lang="it" role="menuitem">🇮🇹 Italiano</button>
+          </div>
+        </div>
         <button class="menu-btn" aria-expanded="false" aria-label="Abrir menú">
           <span></span><span></span><span></span>
         </button>
@@ -160,17 +171,18 @@
       <header class="article-hero">
         <img class="hero-photo" src="../oficina-1.jpg" alt="" aria-hidden="true">
         <div class="article-hero-inner">
-          <span class="article-cat">Sucesiones</span>
-          <h1>Falleció un familiar: cuáles son los primeros pasos que deberías dar</h1>
-          <p class="article-meta"><span>18 de marzo de 2026</span><i></i><span>6 min de lectura</span></p>
+          <span class="article-cat" data-i18n="blog.cat.sucesiones">Sucesiones</span>
+          <h1 data-i18n="post.h1">Falleció un familiar: cuáles son los primeros pasos que deberías dar</h1>
+          <p class="article-meta" data-i18n="post.meta"><span>18 de marzo de 2026</span><i></i><span>6 min de lectura</span></p>
         </div>
+        <div class="hero-fade" aria-hidden="true"></div>
       </header>
 
       <nav class="breadcrumb" aria-label="Ruta de navegación">
-        <a href="/">Inicio</a><span>›</span><a href="/blog/">Blog</a><span>›</span>Falleció un familiar: cuáles son los primeros pasos que deberías dar
+        <a href="/" data-i18n="blog.bc.home">Inicio</a><span>›</span><a href="/blog/">Blog</a><span>›</span><span class="bc-here" data-i18n="post.bc">Falleció un familiar: cuáles son los primeros pasos que deberías dar</span>
       </nav>
 
-      <div class="article-body">
+      <div class="article-body" data-i18n="post.body">
         <p>Cuando fallece un ser querido, lo último en lo que uno quiere pensar es en trámites. Sin embargo, hay decisiones legales y patrimoniales que conviene ordenar desde temprano, no por apuro, sino para evitar problemas más adelante. Esta guía busca darte claridad en un momento en que todo parece confuso.</p>
 <p>No hace falta resolver todo de golpe. Sí conviene saber por dónde empezar.</p>
 
@@ -211,80 +223,92 @@
 <div class="callout"><span class="callout-ico">⚖️</span><p><strong>Nota:</strong> este artículo es informativo y general. Cada caso tiene particularidades que pueden cambiar el resultado. Antes de iniciar cualquier trámite, consultá con una abogada para analizar tu situación concreta.</p></div>
       </div>
 
+      <div class="article-author-wrap">
+        <div class="article-author reveal">
+          <img src="../paloma-selfie.png" alt="Paloma Eugenia Pelegrina">
+          <div class="article-author-info">
+            <small data-i18n="blog.author.wrote">Escribió esta nota</small>
+            <b>Paloma Eugenia Pelegrina</b>
+            <span data-i18n="blog.author.role">Abogada · Titular del estudio</span>
+          </div>
+          <a class="btn btn-outline-wine" href="/#estudio" data-i18n="blog.author.more">Conocé el estudio →</a>
+        </div>
+      </div>
+
       <section class="article-faq">
-        <h2>Preguntas frecuentes</h2>
-        <div class="afaq-item">
-        <button aria-expanded="false"><span>¿Puedo usar el dinero de la cuenta del fallecido?</span><b>+</b></button>
-        <div class="afaq-panel"><div><p>En general no de forma automática. Los bancos suelen requerir que la sucesión esté iniciada y que se acredite quiénes son los herederos para liberar los fondos. Conviene no disponer de ese dinero sin asesoramiento.</p></div></div>
+        <h2 data-i18n="blog.faq.h2">Preguntas frecuentes</h2>
+        <div class="afaq-item reveal">
+        <button aria-expanded="false"><span data-i18n="p.fallecio-un-familiar-primeros-pasos.faq0.q">¿Puedo usar el dinero de la cuenta del fallecido?</span><b>+</b></button>
+        <div class="afaq-panel"><div><p data-i18n="p.fallecio-un-familiar-primeros-pasos.faq0.a">En general no de forma automática. Los bancos suelen requerir que la sucesión esté iniciada y que se acredite quiénes son los herederos para liberar los fondos. Conviene no disponer de ese dinero sin asesoramiento.</p></div></div>
       </div>
-      <div class="afaq-item">
-        <button aria-expanded="false"><span>¿Cuánto tiempo tengo para iniciar la sucesión?</span><b>+</b></button>
-        <div class="afaq-panel"><div><p>No siempre hay una urgencia inmediata, pero demorar demasiado tiene costos: impuestos y expensas que se acumulan, documentación más difícil de reunir y circunstancias que cambian. Lo prudente es iniciarla en un tiempo razonable.</p></div></div>
+      <div class="afaq-item reveal">
+        <button aria-expanded="false"><span data-i18n="p.fallecio-un-familiar-primeros-pasos.faq1.q">¿Cuánto tiempo tengo para iniciar la sucesión?</span><b>+</b></button>
+        <div class="afaq-panel"><div><p data-i18n="p.fallecio-un-familiar-primeros-pasos.faq1.a">No siempre hay una urgencia inmediata, pero demorar demasiado tiene costos: impuestos y expensas que se acumulan, documentación más difícil de reunir y circunstancias que cambian. Lo prudente es iniciarla en un tiempo razonable.</p></div></div>
       </div>
-      <div class="afaq-item">
-        <button aria-expanded="false"><span>¿Qué documentación necesito para empezar?</span><b>+</b></button>
-        <div class="afaq-panel"><div><p>Principalmente la partida de defunción, los documentos que acreditan el vínculo (partidas de nacimiento y matrimonio) y la documentación de los bienes (escrituras, títulos, datos de cuentas). Si hay testamento, también.</p></div></div>
+      <div class="afaq-item reveal">
+        <button aria-expanded="false"><span data-i18n="p.fallecio-un-familiar-primeros-pasos.faq2.q">¿Qué documentación necesito para empezar?</span><b>+</b></button>
+        <div class="afaq-panel"><div><p data-i18n="p.fallecio-un-familiar-primeros-pasos.faq2.a">Principalmente la partida de defunción, los documentos que acreditan el vínculo (partidas de nacimiento y matrimonio) y la documentación de los bienes (escrituras, títulos, datos de cuentas). Si hay testamento, también.</p></div></div>
       </div>
-      <div class="afaq-item">
-        <button aria-expanded="false"><span>¿Puedo vender o repartir los bienes antes de la sucesión?</span><b>+</b></button>
-        <div class="afaq-panel"><div><p>No conviene. Los bienes integran el acervo hereditario y hay un procedimiento para disponer de ellos. Repartir o vender antes de tener la sucesión en marcha suele generar problemas.</p></div></div>
+      <div class="afaq-item reveal">
+        <button aria-expanded="false"><span data-i18n="p.fallecio-un-familiar-primeros-pasos.faq3.q">¿Puedo vender o repartir los bienes antes de la sucesión?</span><b>+</b></button>
+        <div class="afaq-panel"><div><p data-i18n="p.fallecio-un-familiar-primeros-pasos.faq3.a">No conviene. Los bienes integran el acervo hereditario y hay un procedimiento para disponer de ellos. Repartir o vender antes de tener la sucesión en marcha suele generar problemas.</p></div></div>
       </div>
       </section>
 
       <section class="article-cta">
         <div class="article-cta-card reveal">
-          <p class="eyebrow">Sin compromiso</p>
-          <h2>¿Querés saber cómo sería tu caso en concreto?</h2>
-          <p>Cada situación es distinta. Te explicamos con claridad qué pasos corresponden en tu caso, sin tecnicismos y sin apuros.</p>
+          <p class="eyebrow" data-i18n="blog.cta.eyebrow">Sin compromiso</p>
+          <h2 data-i18n="blog.cta.h2">¿Querés saber cómo sería tu caso en concreto?</h2>
+          <p data-i18n="blog.cta.p">Cada situación es distinta. Te explicamos con claridad qué pasos corresponden en tu caso, sin tecnicismos y sin apuros.</p>
           <div class="article-cta-actions">
-            <a class="btn btn-whatsapp" href="https://wa.me/5491154036933" target="_blank" rel="noopener"><img src="../icono-whatsapp.png" class="wa-ico" alt=""> Consultar por WhatsApp</a>
-            <a class="btn btn-primary" href="/#consulta">Agendá tu consulta →</a>
+            <a class="btn btn-whatsapp" href="https://wa.me/5491154036933" target="_blank" rel="noopener"><img src="../icono-whatsapp.png" class="wa-ico" alt=""> <span data-i18n="blog.cta.wa">Consultar por WhatsApp</span></a>
+            <a class="btn btn-primary" href="/#consulta" data-i18n="blog.cta.btn">Agendá tu consulta →</a>
           </div>
-          <p class="note">Te respondemos a la brevedad · Consulta confidencial</p>
+          <p class="note" data-i18n="blog.cta.note">Te respondemos a la brevedad · Consulta confidencial</p>
         </div>
       </section>
 
       <section class="article-share">
         <div class="share-card reveal">
-          <h2>¿Conocés a alguien que le pueda servir esta nota?</h2>
-          <p>Compartila: a veces una lectura llega justo en el momento indicado.</p>
+          <h2 data-i18n="blog.share.h2">¿Conocés a alguien que le pueda servir esta nota?</h2>
+          <p data-i18n="blog.share.p">Compartila: a veces una lectura llega justo en el momento indicado.</p>
           <div class="share-actions">
-            <button class="share-btn wa" data-share="whatsapp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.8 14.01c-.24.68-1.42 1.32-1.95 1.36-.5.05-.95.24-3.2-.67-2.7-1.06-4.42-3.8-4.55-3.98-.13-.18-1.1-1.46-1.1-2.78 0-1.32.69-1.97.94-2.24.24-.27.53-.34.71-.34.18 0 .35 0 .5.01.16.01.38-.06.59.45.24.58.79 2 .86 2.14.07.14.12.31.02.5-.09.18-.14.29-.28.45-.14.16-.29.36-.42.48-.14.14-.28.29-.12.57.16.27.72 1.18 1.54 1.91 1.06.95 1.96 1.24 2.24 1.38.28.14.44.12.6-.07.16-.18.7-.81.88-1.09.18-.27.37-.23.62-.14.25.09 1.6.76 1.87.9.28.14.46.21.53.32.07.12.07.68-.17 1.36z"/></svg> Compartir por WhatsApp</button>
-            <button class="share-btn" data-share="copy"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg> <span>Copiar link</span></button>
-            <button class="share-btn" data-share="more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg> Más opciones</button>
+            <button class="share-btn wa" data-share="whatsapp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.8 14.01c-.24.68-1.42 1.32-1.95 1.36-.5.05-.95.24-3.2-.67-2.7-1.06-4.42-3.8-4.55-3.98-.13-.18-1.1-1.46-1.1-2.78 0-1.32.69-1.97.94-2.24.24-.27.53-.34.71-.34.18 0 .35 0 .5.01.16.01.38-.06.59.45.24.58.79 2 .86 2.14.07.14.12.31.02.5-.09.18-.14.29-.28.45-.14.16-.29.36-.42.48-.14.14-.28.29-.12.57.16.27.72 1.18 1.54 1.91 1.06.95 1.96 1.24 2.24 1.38.28.14.44.12.6-.07.16-.18.7-.81.88-1.09.18-.27.37-.23.62-.14.25.09 1.6.76 1.87.9.28.14.46.21.53.32.07.12.07.68-.17 1.36z"/></svg> <span data-i18n="blog.share.wa">Compartir por WhatsApp</span></button>
+            <button class="share-btn" data-share="copy"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg> <span data-i18n="blog.share.copy">Copiar link</span></button>
+            <button class="share-btn" data-share="more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg> <span data-i18n="blog.share.more">Más opciones</span></button>
           </div>
         </div>
       </section>
     </article>
 
     <section class="article-related">
-      <h2>Seguí leyendo</h2>
+      <h2 data-i18n="blog.related">Seguí leyendo</h2>
       <div class="related-grid">
       <a class="post-card reveal" href="vender-casa-heredada-sin-sucesion.html" data-cat="sucesiones">
-        <div class="post-card-media"><span class="post-tag">Sucesiones</span><img src="../oficina-3.jpg" alt="¿Se puede vender una casa heredada sin hacer la sucesión?" loading="lazy"></div>
+        <div class="post-card-media"><span class="post-tag" data-i18n="blog.cat.sucesiones">Sucesiones</span><img src="../oficina-3.jpg" alt="¿Se puede vender una casa heredada sin hacer la sucesión?" loading="lazy"></div>
         <div class="post-card-body">
-          <p class="post-meta">24 de febrero de 2026 · 6 min de lectura</p>
-          <h3>¿Se puede vender una casa heredada sin hacer la sucesión?</h3>
-          <p>Es una de las consultas más frecuentes. La respuesta corta es no, pero hay matices, riesgos y algunas alternativas que conviene conocer antes de comprometerte.</p>
-          <span class="post-more">Leer artículo</span>
+          <p class="post-meta" data-i18n="p.vender-casa-heredada-sin-sucesion.meta">24 de febrero de 2026 · 6 min de lectura</p>
+          <h3 data-i18n="p.vender-casa-heredada-sin-sucesion.title">¿Se puede vender una casa heredada sin hacer la sucesión?</h3>
+          <p data-i18n="p.vender-casa-heredada-sin-sucesion.excerpt">Es una de las consultas más frecuentes. La respuesta corta es no, pero hay matices, riesgos y algunas alternativas que conviene conocer antes de comprometerte.</p>
+          <span class="post-more" data-i18n="blog.read">Leer artículo</span>
         </div>
       </a>
       <a class="post-card reveal" href="herencia-sin-testamento-quien-hereda.html" data-cat="sucesiones">
-        <div class="post-card-media"><span class="post-tag">Sucesiones</span><img src="../oficina-2.jpg" alt="Herencia sin testamento: quién hereda y en qué orden" loading="lazy"></div>
+        <div class="post-card-media"><span class="post-tag" data-i18n="blog.cat.sucesiones">Sucesiones</span><img src="../oficina-2.jpg" alt="Herencia sin testamento: quién hereda y en qué orden" loading="lazy"></div>
         <div class="post-card-body">
-          <p class="post-meta">10 de febrero de 2026 · 6 min de lectura</p>
-          <h3>Herencia sin testamento: quién hereda y en qué orden</h3>
-          <p>Cuando una persona fallece sin dejar testamento, la ley define quién hereda y en qué orden. Te explicamos cómo funciona la sucesión intestada en Argentina.</p>
-          <span class="post-more">Leer artículo</span>
+          <p class="post-meta" data-i18n="p.herencia-sin-testamento-quien-hereda.meta">10 de febrero de 2026 · 6 min de lectura</p>
+          <h3 data-i18n="p.herencia-sin-testamento-quien-hereda.title">Herencia sin testamento: quién hereda y en qué orden</h3>
+          <p data-i18n="p.herencia-sin-testamento-quien-hereda.excerpt">Cuando una persona fallece sin dejar testamento, la ley define quién hereda y en qué orden. Te explicamos cómo funciona la sucesión intestada en Argentina.</p>
+          <span class="post-more" data-i18n="blog.read">Leer artículo</span>
         </div>
       </a>
       <a class="post-card reveal" href="nacionalidad-argentina-requisitos-tramite.html" data-cat="arg">
-        <div class="post-card-media"><span class="post-tag">Nacionalidad argentina</span><img src="../oficina-2.jpg" alt="Nacionalidad argentina: quién puede obtenerla, requisitos y cómo iniciar el trámite" loading="lazy"></div>
+        <div class="post-card-media"><span class="post-tag" data-i18n="blog.cat.arg">Nacionalidad argentina</span><img src="../oficina-2.jpg" alt="Nacionalidad argentina: quién puede obtenerla, requisitos y cómo iniciar el trámite" loading="lazy"></div>
         <div class="post-card-body">
-          <p class="post-meta">28 de junio de 2026 · 7 min de lectura</p>
-          <h3>Nacionalidad argentina: quién puede obtenerla, requisitos y cómo iniciar el trámite</h3>
-          <p>Por nacimiento, por opción o por naturalización: hay más de un camino hacia la nacionalidad argentina. Te contamos cuál corresponde en cada caso y qué necesitás para empezar.</p>
-          <span class="post-more">Leer artículo</span>
+          <p class="post-meta" data-i18n="p.nacionalidad-argentina-requisitos-tramite.meta">28 de junio de 2026 · 7 min de lectura</p>
+          <h3 data-i18n="p.nacionalidad-argentina-requisitos-tramite.title">Nacionalidad argentina: quién puede obtenerla, requisitos y cómo iniciar el trámite</h3>
+          <p data-i18n="p.nacionalidad-argentina-requisitos-tramite.excerpt">Por nacimiento, por opción o por naturalización: hay más de un camino hacia la nacionalidad argentina. Te contamos cuál corresponde en cada caso y qué necesitás para empezar.</p>
+          <span class="post-more" data-i18n="blog.read">Leer artículo</span>
         </div>
       </a>
       </div>
@@ -296,28 +320,28 @@
       <div class="footer-brand">
         <a class="brand" href="/">
           <img src="../logo.png" alt="Estudio Jurídico Pelegrina" class="brand-logo">
-          <span class="brand-text"><b>Estudio Jurídico</b><small>Pelegrina</small></span>
+          <span class="brand-text"><b data-i18n="brand.sub">Estudio Jurídico</b><small>Pelegrina</small></span>
         </a>
-        <p>Ciudadanías, visados, derecho migratorio y sucesiones. Asesoramiento legal cercano para vos y tu familia.</p>
+        <p data-i18n="footer.desc">Ciudadanías, visados, derecho migratorio y sucesiones. Asesoramiento legal cercano para vos y tu familia.</p>
       </div>
       <div class="footer-col">
-        <h4>Navegación</h4>
-        <a href="/#estudio">¿Quiénes somos?</a>
-        <a href="/#servicios">Servicios</a>
-        <a href="/blog/">Blog</a>
-        <a href="/#faq">Preguntas frecuentes</a>
-        <a href="/#contacto">Contacto</a>
+        <h4 data-i18n="footer.nav">Navegación</h4>
+        <a href="/#estudio" data-i18n="nav.quienes">¿Quiénes somos?</a>
+        <a href="/#servicios" data-i18n="nav.servicios">Servicios</a>
+        <a href="/blog/" data-i18n="nav.blog">Blog</a>
+        <a href="/#faq" data-i18n="footer.faq">Preguntas frecuentes</a>
+        <a href="/#contacto" data-i18n="nav.contacto">Contacto</a>
       </div>
       <div class="footer-col">
-        <h4>Servicios</h4>
-        <a href="/#contacto">Ciudadanía española</a>
-        <a href="/#contacto">Ciudadanía italiana</a>
-        <a href="/#contacto">Visados y migratorio</a>
-        <a href="/#contacto">Sucesiones</a>
-        <a href="/#contacto">Rectificación de actas</a>
+        <h4 data-i18n="footer.serv">Servicios</h4>
+        <a href="/#contacto" data-i18n="acc.ciud.esp">Ciudadanía española</a>
+        <a href="/#contacto" data-i18n="acc.ciud.ita">Ciudadanía italiana</a>
+        <a href="/#contacto" data-i18n="svc2.title">Visados y migratorio</a>
+        <a href="/#contacto" data-i18n="acc.suc">Sucesiones</a>
+        <a href="/#contacto" data-i18n="acc.rect">Rectificación de actas</a>
       </div>
       <div class="footer-col">
-        <h4>Contacto</h4>
+        <h4 data-i18n="nav.contacto">Contacto</h4>
         <a href="https://wa.me/5491154036933" target="_blank" rel="noopener">WhatsApp +54 9 11 5403 6933</a>
         <a href="mailto:legales.pelegrina@gmail.com">legales.pelegrina@gmail.com</a>
         <a href="https://www.instagram.com/estudiopelegrina/" target="_blank" rel="noopener">Instagram @estudiopelegrina</a>
@@ -325,8 +349,8 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© <span id="year"></span> Estudio Jurídico Pelegrina. Todos los derechos reservados.</p>
-      <a href="#inicio">Volver arriba ↑</a>
+      <p>© <span id="year"></span> <span data-i18n="footer.copy">Estudio Jurídico Pelegrina. Todos los derechos reservados.</span></p>
+      <a href="#inicio" data-i18n="footer.top">Volver arriba ↑</a>
     </div>
   </footer>
 
@@ -335,6 +359,8 @@
     <span class="float-wa-pulse"></span>
   </a>
   <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
-  <script src="blog.js?v=1"></script>
+  <script>window.PAGE_I18N={"en":{"p.fallecio-un-familiar-primeros-pasos.title":"A family member passed away: the first steps you should take","post.h1":"A family member passed away: the first steps you should take","post.bc":"A family member passed away: the first steps you should take","post.meta":"<span>March 18, 2026</span><i></i><span>6 min read</span>","post.body":"<p>When a loved one passes away, paperwork is the last thing anyone wants to think about. Yet there are legal and financial matters that are best organized early — not out of haste, but to avoid problems later. This guide aims to give you clarity at a time when everything feels confusing.</p>\n<p>You don't need to solve everything at once. You do need to know where to start.</p>\n\n<h2>What documentation to gather</h2>\n<p>The first concrete step is to collect the basic paperwork. Without rushing, but in an orderly way:</p>\n<ul>\n  <li>The <strong>death certificate</strong> of the family member.</li>\n  <li><strong>Documents proving the family bond:</strong> children's birth certificates, the spouse's marriage certificate, as applicable.</li>\n  <li><strong>Documentation of the assets:</strong> property deeds, vehicle titles, bank account details, investments, etc.</li>\n  <li>The <strong>will</strong>, if there is one, or any indication that the deceased left one.</li>\n</ul>\n\n<h2>What you should avoid doing</h2>\n<p>Some decisions, taken in haste, get complicated later:</p>\n<ul>\n  <li>Don't distribute or sell the deceased's assets before the succession is underway. Those assets are part of the estate and there is a procedure for disposing of them.</li>\n  <li>Don't close or empty accounts on your own without advice.</li>\n  <li>Don't make verbal agreements between heirs without giving them a proper legal framework.</li>\n</ul>\n\n<div class=\"callout\"><span class=\"callout-ico\">⚠️</span><p><strong>Careful:</strong> disposing of the deceased's assets before opening the succession usually creates more problems than it solves. The prudent path is to organize the process first and deal with the assets afterwards.</p></div>\n\n<h2>The assets</h2>\n<p>Everything that belonged to the deceased — real estate, cars, accounts, investments, and also debts — makes up what is called the estate. The succession is precisely the process that determines who the heirs are and how that patrimony is transferred. So the first task is knowing exactly what assets there are.</p>\n\n<h2>The banks</h2>\n<p>The deceased's accounts and fixed-term deposits are not automatically released to relatives. Banks usually require the succession to be underway and proof of who the heirs are before releasing those funds. Knowing this circuit from the start avoids frustration.</p>\n\n<h2>Real estate</h2>\n<p>A property in the deceased's name cannot be sold or transferred until the succession recognizes the heirs and that transfer is registered. It is one of the most common reasons not to delay starting the process.</p>\n\n<h2>Timelines</h2>\n<p>While there is not always an immediate urgency, letting too much time pass has costs: taxes and fees pile up, documents become harder to locate, and sometimes the heirs' circumstances change. Starting the succession within a reasonable time is the best way to protect the family patrimony.</p>\n\n<h2>Opening the succession</h2>\n<p>The succession is a judicial process that begins with the corresponding filing and culminates, in the most common cases, with the declaration of heirs: the act that recognizes who inherits. From there, the transfer of the assets can be registered and the assets disposed of. Professional guidance keeps every stage in order and prevents missteps.</p>\n\n<div class=\"callout\"><span class=\"callout-ico\">⚖️</span><p><strong>Note:</strong> this article is general information only. Every case has particularities that can change the outcome. Before starting any procedure, consult a lawyer to analyze your specific situation.</p></div>","p.fallecio-un-familiar-primeros-pasos.faq0.q":"Can I use the money in the deceased's account?","p.fallecio-un-familiar-primeros-pasos.faq0.a":"Generally not automatically. Banks usually require the succession to be underway and proof of who the heirs are before releasing the funds. It is best not to touch that money without advice.","p.fallecio-un-familiar-primeros-pasos.faq1.q":"How long do I have to open the succession?","p.fallecio-un-familiar-primeros-pasos.faq1.a":"There is not always an immediate urgency, but waiting too long has costs: accumulating taxes and fees, harder-to-find documents and changing circumstances. The prudent thing is to start within a reasonable time.","p.fallecio-un-familiar-primeros-pasos.faq2.q":"What documentation do I need to start?","p.fallecio-un-familiar-primeros-pasos.faq2.a":"Mainly the death certificate, the documents proving the family bond (birth and marriage certificates) and the documentation of the assets (deeds, titles, account details). If there is a will, that too.","p.fallecio-un-familiar-primeros-pasos.faq3.q":"Can I sell or distribute the assets before the succession?","p.fallecio-un-familiar-primeros-pasos.faq3.a":"Better not. The assets form part of the estate and there is a procedure for disposing of them. Distributing or selling before the succession is underway usually creates problems.","p.vender-casa-heredada-sin-sucesion.title":"Can you sell an inherited house without going through probate?","p.vender-casa-heredada-sin-sucesion.excerpt":"It is one of the most frequent questions. The short answer is no — but there are nuances, risks and some alternatives worth knowing before committing.","p.vender-casa-heredada-sin-sucesion.meta":"February 24, 2026 · 6 min read","p.herencia-sin-testamento-quien-hereda.title":"Inheritance without a will: who inherits and in what order","p.herencia-sin-testamento-quien-hereda.excerpt":"When a person dies without leaving a will, the law defines who inherits and in what order. We explain how intestate succession works in Argentina.","p.herencia-sin-testamento-quien-hereda.meta":"February 10, 2026 · 6 min read","p.nacionalidad-argentina-requisitos-tramite.title":"Argentine nationality: who can obtain it, requirements and how to start","p.nacionalidad-argentina-requisitos-tramite.excerpt":"By birth, by option or by naturalization: there is more than one path to Argentine nationality. We explain which applies in each case and what you need to get started.","p.nacionalidad-argentina-requisitos-tramite.meta":"June 28, 2026 · 7 min read"},"it":{"p.fallecio-un-familiar-primeros-pasos.title":"È mancato un familiare: quali sono i primi passi da fare","post.h1":"È mancato un familiare: quali sono i primi passi da fare","post.bc":"È mancato un familiare: quali sono i primi passi da fare","post.meta":"<span>18 marzo 2026</span><i></i><span>6 min di lettura</span>","post.body":"<p>Quando viene a mancare una persona cara, l'ultima cosa a cui si vuole pensare sono le pratiche. Eppure ci sono decisioni legali e patrimoniali che conviene ordinare fin da subito, non per fretta, ma per evitare problemi più avanti. Questa guida vuole darvi chiarezza in un momento in cui tutto sembra confuso.</p>\n<p>Non serve risolvere tutto in una volta. Conviene però sapere da dove cominciare.</p>\n\n<h2>Quale documentazione riunire</h2>\n<p>Il primo passo concreto è raccogliere la documentazione di base. Senza fretta, ma con ordine:</p>\n<ul>\n  <li>Il <strong>certificato di morte</strong> del familiare.</li>\n  <li><strong>Documenti che provino il legame:</strong> atti di nascita dei figli, atto di matrimonio del coniuge, secondo il caso.</li>\n  <li><strong>Documentazione dei beni:</strong> rogiti degli immobili, titoli dei veicoli, dati dei conti bancari, investimenti, ecc.</li>\n  <li>Il <strong>testamento</strong>, se esiste, o qualsiasi indizio che il defunto ne abbia lasciato uno.</li>\n</ul>\n\n<h2>Cosa conviene non fare</h2>\n<p>Ci sono decisioni che, prese in fretta, poi si complicano:</p>\n<ul>\n  <li>Non distribuite né vendete beni del defunto prima che la successione sia avviata. Quei beni fanno parte dell'asse ereditario e c'è un procedimento per disporne.</li>\n  <li>Non chiudete né svuotate conti di vostra iniziativa senza consulenza.</li>\n  <li>Non firmate accordi tra eredi \"a parole\" senza inquadrarli legalmente.</li>\n</ul>\n\n<div class=\"callout\"><span class=\"callout-ico\">⚠️</span><p><strong>Attenzione:</strong> disporre dei beni del defunto prima di avviare la successione genera di solito più problemi di quanti ne risolva. La cosa prudente è ordinare prima la pratica e poi occuparsi del patrimonio.</p></div>\n\n<h2>I beni</h2>\n<p>Tutto ciò che apparteneva al defunto — immobili, auto, conti, investimenti, e anche i debiti — costituisce quello che si chiama asse ereditario. La successione è, appunto, il processo che determina chi sono gli eredi e come si trasmette quel patrimonio. Per questo il primo lavoro è avere chiaro quali beni ci sono.</p>\n\n<h2>Le banche</h2>\n<p>I conti e i depositi del defunto non vengono liberati automaticamente ai familiari. Le banche richiedono di solito che la successione sia avviata e che si dimostri chi sono gli eredi per poter disporre di quei fondi. Conoscere questo percorso fin dall'inizio evita frustrazioni.</p>\n\n<h2>Gli immobili</h2>\n<p>Una proprietà intestata al defunto non può essere venduta né trasferita finché la successione non riconosce gli eredi e quella trasmissione non viene registrata. È uno dei motivi più frequenti per cui conviene non ritardare l'avvio della pratica.</p>\n\n<h2>I tempi</h2>\n<p>Anche se non sempre c'è un'urgenza immediata, lasciar passare troppo tempo ha dei costi: si accumulano imposte e spese, diventa più difficile reperire la documentazione, e a volte cambiano le circostanze degli eredi. Avviare la successione in un tempo ragionevole è il modo migliore per proteggere il patrimonio familiare.</p>\n\n<h2>L'avvio della successione</h2>\n<p>La successione è un processo giudiziario che si avvia con la presentazione corrispondente e culmina, nei casi più comuni, con la dichiarazione degli eredi: l'atto con cui si riconosce chi eredita. Da lì si può registrare la trasmissione dei beni e disporne. Un accompagnamento professionale ordina ogni fase ed evita passi falsi.</p>\n\n<div class=\"callout\"><span class=\"callout-ico\">⚖️</span><p><strong>Nota:</strong> questo articolo è informativo e generale. Ogni caso presenta particolarità che possono cambiare il risultato. Prima di avviare qualsiasi pratica, consultate un avvocato per analizzare la vostra situazione concreta.</p></div>","p.fallecio-un-familiar-primeros-pasos.faq0.q":"Posso usare il denaro del conto del defunto?","p.fallecio-un-familiar-primeros-pasos.faq0.a":"In generale non automaticamente. Le banche richiedono di solito che la successione sia avviata e che si dimostri chi sono gli eredi per liberare i fondi. Conviene non disporre di quel denaro senza consulenza.","p.fallecio-un-familiar-primeros-pasos.faq1.q":"Quanto tempo ho per avviare la successione?","p.fallecio-un-familiar-primeros-pasos.faq1.a":"Non sempre c'è un'urgenza immediata, ma ritardare troppo ha dei costi: imposte e spese che si accumulano, documentazione più difficile da reperire e circostanze che cambiano. La cosa prudente è avviarla in un tempo ragionevole.","p.fallecio-un-familiar-primeros-pasos.faq2.q":"Quale documentazione mi serve per iniziare?","p.fallecio-un-familiar-primeros-pasos.faq2.a":"Principalmente il certificato di morte, i documenti che provano il legame (atti di nascita e matrimonio) e la documentazione dei beni (rogiti, titoli, dati dei conti). Se c'è un testamento, anche quello.","p.fallecio-un-familiar-primeros-pasos.faq3.q":"Posso vendere o distribuire i beni prima della successione?","p.fallecio-un-familiar-primeros-pasos.faq3.a":"Meglio di no. I beni fanno parte dell'asse ereditario e c'è un procedimento per disporne. Distribuire o vendere prima che la successione sia avviata genera di solito problemi.","p.vender-casa-heredada-sin-sucesion.title":"Si può vendere una casa ereditata senza fare la successione?","p.vender-casa-heredada-sin-sucesion.excerpt":"È una delle domande più frequenti. La risposta breve è no, ma ci sono sfumature, rischi e alcune alternative che conviene conoscere prima di impegnarsi.","p.vender-casa-heredada-sin-sucesion.meta":"24 febbraio 2026 · 6 min di lettura","p.herencia-sin-testamento-quien-hereda.title":"Eredità senza testamento: chi eredita e in quale ordine","p.herencia-sin-testamento-quien-hereda.excerpt":"Quando una persona muore senza lasciare testamento, è la legge a definire chi eredita e in quale ordine. Vi spieghiamo come funziona la successione intestata in Argentina.","p.herencia-sin-testamento-quien-hereda.meta":"10 febbraio 2026 · 6 min di lettura","p.nacionalidad-argentina-requisitos-tramite.title":"Cittadinanza argentina: chi può ottenerla, requisiti e come avviare la pratica","p.nacionalidad-argentina-requisitos-tramite.excerpt":"Per nascita, per opzione o per naturalizzazione: c'è più di una strada verso la cittadinanza argentina. Vi spieghiamo quale corrisponde in ogni caso e cosa serve per iniziare.","p.nacionalidad-argentina-requisitos-tramite.meta":"28 giugno 2026 · 7 min di lettura"}};</script>
+  <script src="../i18n.js?v=11"></script>
+  <script src="blog.js?v=2"></script>
 </body>
 </html>

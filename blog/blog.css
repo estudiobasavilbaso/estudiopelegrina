@@ -130,6 +130,68 @@
 /* Botón volver */
 .back-bar{width:min(720px,100%);margin:0 auto;padding:0 clamp(1.2rem,4vw,2.5rem)}
 
+/* =====================================================
+   EFECTOS VISUALES
+   ===================================================== */
+
+/* Hero del listado: halo dorado + shimmer en el énfasis */
+.blog-hero{position:relative}
+.blog-hero::before{content:"";position:absolute;width:34rem;height:34rem;border-radius:50%;background:radial-gradient(circle,rgba(192,133,82,.14),transparent 62%);left:50%;top:-16rem;transform:translateX(-50%);pointer-events:none;z-index:-1}
+.blog-hero h1 em{background:linear-gradient(100deg,var(--wine-soft) 20%,var(--gold) 50%,var(--wine-soft) 80%);background-size:200% auto;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:heroShimmer 7s ease-in-out infinite}
+@keyframes heroShimmer{0%,100%{background-position:0% center}50%{background-position:100% center}}
+
+/* Entrada escalonada de las tarjetas */
+.post-grid .post-card:nth-child(3n+2),.related-grid .post-card:nth-child(2){transition-delay:.12s}
+.post-grid .post-card:nth-child(3n),.related-grid .post-card:nth-child(3){transition-delay:.24s}
+
+/* Tarjetas: borde que se enciende en dorado */
+.post-card,.blog-featured{transition:transform .25s ease,box-shadow .25s ease,border-color .3s ease,opacity .7s ease}
+.post-card:hover{border-color:rgba(192,133,82,.55)}
+
+/* Destacada: barrido de brillo al pasar el mouse */
+.blog-featured .feat-media::before{content:"";position:absolute;inset:0;z-index:2;background:linear-gradient(105deg,transparent 40%,rgba(255,255,255,.28) 50%,transparent 60%);transform:translateX(-130%);transition:transform .9s ease;pointer-events:none}
+.blog-featured:hover .feat-media::before{transform:translateX(130%)}
+.blog-featured:hover{transform:translateY(-4px);box-shadow:0 30px 70px -30px rgba(59,23,32,.55);border-color:rgba(192,133,82,.5)}
+.blog-featured .feat-media img{transition:transform 6s ease}
+.blog-featured:hover .feat-media img{transform:scale(1.05)}
+
+/* Hero del artículo: Ken Burns lento + fundido hacia el papel */
+.article-hero .hero-photo{animation:kenBurns 22s ease-in-out infinite alternate}
+@keyframes kenBurns{from{transform:scale(1) translateY(0)}to{transform:scale(1.09) translateY(-1.5%)}}
+.article-hero .hero-fade{position:absolute;left:0;right:0;bottom:0;height:70px;background:linear-gradient(to bottom,transparent,rgba(59,23,32,.28));pointer-events:none}
+.article-hero h1,.article-hero .article-cat,.article-hero .article-meta{animation:heroRise .9s ease both}
+.article-hero .article-cat{animation-delay:.05s}
+.article-hero h1{animation-delay:.15s}
+.article-hero .article-meta{animation-delay:.3s}
+@keyframes heroRise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+
+/* Subrayado dorado que se dibuja bajo los títulos al leer */
+.article-body h2{position:relative;padding-bottom:.45rem}
+.article-body h2::after{content:"";position:absolute;left:0;bottom:0;width:0;height:3px;border-radius:3px;background:linear-gradient(90deg,var(--gold),var(--gold-soft));transition:width .8s cubic-bezier(.22,.61,.36,1)}
+.article-body h2.lined::after{width:58px}
+
+/* Callouts: leve realce al pasar */
+.callout{transition:transform .25s ease,box-shadow .25s ease}
+.callout:hover{transform:translateX(4px);box-shadow:var(--shadow)}
+
+/* Chips de filtro: elevación sutil */
+.blog-chip{transition:background .2s,color .2s,border-color .2s,transform .2s,box-shadow .2s}
+.blog-chip:hover{transform:translateY(-2px);box-shadow:0 10px 22px -14px rgba(90,37,49,.5)}
+
+/* Botones compartir: ícono que saluda */
+.share-btn svg{transition:transform .25s ease}
+.share-btn:hover svg{transform:rotate(-8deg) scale(1.12)}
+
+/* ---- Firma de la autora ---- */
+.article-author-wrap{width:min(720px,100%);margin:clamp(2rem,4vw,2.6rem) auto 0;padding:0 clamp(1.2rem,4vw,2.5rem)}
+.article-author{display:flex;align-items:center;gap:1.1rem;background:linear-gradient(140deg,#fff,var(--cream));border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm);padding:1.3rem 1.5rem;flex-wrap:wrap}
+.article-author img{width:64px;height:64px;border-radius:50%;object-fit:cover;border:2px solid var(--gold);flex-shrink:0}
+.article-author-info{flex:1;min-width:200px;display:grid;gap:.1rem}
+.article-author-info small{text-transform:uppercase;letter-spacing:.12em;font-size:.66rem;font-weight:700;color:var(--gold)}
+.article-author-info b{font-family:var(--serif);font-size:1.25rem;color:var(--wine-dark)}
+.article-author-info span{color:var(--muted);font-size:.88rem}
+.article-author .btn{min-height:46px;padding:0 1.3rem;font-size:.9rem}
+
 /* ---- Responsive ---- */
 @media (max-width:1080px){
   .post-grid,.related-grid{grid-template-columns:repeat(2,1fr)}
@@ -142,5 +204,7 @@
   .article-related .related-grid .post-card:nth-child(n+3){display:none}
 }
 @media (prefers-reduced-motion:reduce){
-  .post-card,.post-card-media img{transition:none}
+  .post-card,.post-card-media img,.blog-featured .feat-media img,.callout,.blog-chip{transition:none}
+  .article-hero .hero-photo,.blog-hero h1 em,.article-hero h1,.article-hero .article-cat,.article-hero .article-meta{animation:none}
+  .article-body h2::after{transition:none}
 }

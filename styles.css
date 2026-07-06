@@ -353,6 +353,27 @@ section[id],div[id="cal"]{scroll-margin-top:6rem}
 .ico-inline{width:28px;height:28px;flex-shrink:0;object-fit:contain}
 .btn-ico{width:20px;height:20px;object-fit:contain}
 
+/* ===== DEL BLOG (home) ===== */
+.home-blog{width:min(1180px,100%);margin:0 auto;padding:clamp(2rem,5vw,4rem) clamp(1.2rem,4vw,2.5rem)}
+.home-blog-head{text-align:center;max-width:42rem;margin:0 auto 2.6rem}
+.home-blog-head h2{font-size:clamp(2rem,3.6vw,3.2rem);color:var(--wine-dark);margin:.3rem 0 1rem}
+.home-blog-head h2 em{color:var(--gold)}
+.home-blog-head p{color:var(--muted);margin:0}
+.home-blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem}
+.hb-card{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-sm);transition:transform .25s ease,box-shadow .25s ease,border-color .3s ease}
+.hb-card:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:rgba(192,133,82,.55)}
+.hb-media{position:relative;aspect-ratio:16/10;overflow:hidden;background:var(--wine)}
+.hb-media img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.hb-card:hover .hb-media img{transform:scale(1.06)}
+.hb-tag{position:absolute;left:.9rem;top:.9rem;background:rgba(251,248,243,.94);color:var(--wine);font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;padding:.35rem .7rem;border-radius:100px;z-index:2}
+.hb-body{display:flex;flex-direction:column;flex:1;padding:1.3rem 1.4rem 1.5rem}
+.hb-body h3{font-size:1.25rem;color:var(--wine-dark);line-height:1.15;margin:0 0 .6rem}
+.hb-body p{color:var(--muted);font-size:.93rem;line-height:1.6;margin:0 0 1.1rem;flex:1}
+.hb-more{display:inline-flex;align-items:center;gap:.4rem;font-weight:600;font-size:.92rem;color:var(--wine)}
+.hb-more::after{content:"→";transition:transform .2s}
+.hb-card:hover .hb-more::after{transform:translateX(4px)}
+.home-blog-actions{display:flex;justify-content:center;margin-top:2rem}
+
 /* Tarjeta destacada Carpeta de Ciudadanía */
 .carpeta-feature{display:flex;align-items:center;gap:1.3rem;background:#fff;color:var(--ink);border:2px solid var(--gold);border-radius:22px;padding:1.2rem 1.4rem;margin-top:2rem;max-width:27rem;box-shadow:0 22px 50px -24px rgba(192,133,82,.7)}
 .carpeta-img{flex-shrink:0;width:130px;height:130px;border-radius:16px;background:linear-gradient(160deg,#fff,var(--cream));display:grid;place-items:center;box-shadow:inset 0 0 0 1px rgba(192,133,82,.25)}

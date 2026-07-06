@@ -1,4 +1,5 @@
 /* ===== BLOG — ESTUDIO JURÍDICO PELEGRINA ===== */
+/* El selector de idioma y las traducciones las maneja ../i18n.js (PAGE_I18N). */
 
 // Menú móvil
 const menuBtn = document.querySelector('.menu-btn');
@@ -25,6 +26,27 @@ const observer = new IntersectionObserver(entries => entries.forEach(entry => {
   }
 }), { threshold: .12 });
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+// Subrayado dorado animado en los títulos del artículo
+const linedSeen = new WeakSet();
+const h2Obs = new IntersectionObserver(entries => entries.forEach(entry => {
+  if (entry.isIntersecting) {
+    entry.target.classList.add('lined');
+    h2Obs.unobserve(entry.target);
+  }
+}), { threshold: .6 });
+function initH2Lines() {
+  document.querySelectorAll('.article-body h2').forEach(h => {
+    if (linedSeen.has(h)) return;
+    linedSeen.add(h);
+    h2Obs.observe(h);
+  });
+}
+initH2Lines();
+// Al cambiar de idioma se reemplaza el cuerpo: re-observar los títulos nuevos
+document.querySelectorAll('.lang-menu button').forEach(b =>
+  b.addEventListener('click', () => setTimeout(initH2Lines, 80))
+);
 
 // Filtros de categoría (listado del blog)
 const chips = document.querySelectorAll('.blog-chip');
@@ -66,11 +88,13 @@ if (waShare) waShare.addEventListener('click', () => {
 });
 const copyBtn = document.querySelector('[data-share="copy"]');
 if (copyBtn) copyBtn.addEventListener('click', async () => {
+  const lang = document.documentElement.lang || 'es';
+  const copied = (lang !== 'es' && typeof I18N !== 'undefined' && I18N[lang] && I18N[lang]['blog.share.copied']) || '¡Link copiado!';
   try {
     await navigator.clipboard.writeText(location.href);
     const label = copyBtn.querySelector('span');
     const prev = label.textContent;
-    label.textContent = '¡Link copiado!';
+    label.textContent = copied;
     setTimeout(() => { label.textContent = prev; }, 2000);
   } catch (e) {
     prompt('Copiá el enlace:', location.href);

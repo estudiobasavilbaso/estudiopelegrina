@@ -114,40 +114,51 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../styles.css?v=10">
-  <link rel="stylesheet" href="../responsive.css?v=10">
-  <link rel="stylesheet" href="blog.css?v=1">
+  <link rel="stylesheet" href="../styles.css?v=11">
+  <link rel="stylesheet" href="../responsive.css?v=11">
+  <link rel="stylesheet" href="blog.css?v=2">
 </head>
 <body>
   <div class="ticker" aria-hidden="true">
     <div class="ticker-track">
-      <span>Ciudadanía española e italiana</span><i></i>
-      <span>Acompañamiento de principio a fin</span><i></i>
-      <span>Atención a argentinos en el exterior</span><i></i>
-      <span>Asesoramiento personalizado</span><i></i>
-      <span>Seguridad jurídica en cada paso</span><i></i>
-      <span>Ciudadanía española e italiana</span><i></i>
-      <span>Acompañamiento de principio a fin</span><i></i>
-      <span>Atención a argentinos en el exterior</span><i></i>
-      <span>Asesoramiento personalizado</span><i></i>
-      <span>Seguridad jurídica en cada paso</span><i></i>
+      <span data-i18n="tk.1">Ciudadanía española e italiana</span><i></i>
+      <span data-i18n="tk.2">Acompañamiento de principio a fin</span><i></i>
+      <span data-i18n="tk.3">Atención a argentinos en el exterior</span><i></i>
+      <span data-i18n="tk.4">Asesoramiento personalizado</span><i></i>
+      <span data-i18n="tk.5">Seguridad jurídica en cada paso</span><i></i>
+      <span data-i18n="tk.1">Ciudadanía española e italiana</span><i></i>
+      <span data-i18n="tk.2">Acompañamiento de principio a fin</span><i></i>
+      <span data-i18n="tk.3">Atención a argentinos en el exterior</span><i></i>
+      <span data-i18n="tk.4">Asesoramiento personalizado</span><i></i>
+      <span data-i18n="tk.5">Seguridad jurídica en cada paso</span><i></i>
     </div>
   </div>
   <header class="nav-wrap">
     <div class="nav-shell">
       <a class="brand" href="/" aria-label="Estudio Jurídico Pelegrina · Inicio">
         <img src="../logo.png" alt="Estudio Jurídico Pelegrina" class="brand-logo">
-        <span class="brand-text"><b>Estudio Jurídico</b><small>Pelegrina</small></span>
+        <span class="brand-text"><b data-i18n="brand.sub">Estudio Jurídico</b><small>Pelegrina</small></span>
       </a>
       <nav class="nav-links" aria-label="Navegación principal">
-        <a href="/#servicios">Servicios</a>
-        <a href="/#estudio">¿Quiénes somos?</a>
-        <a href="/blog/" class="active">Blog</a>
-        <a href="/#faq">Preguntas</a>
-        <a href="/#contacto">Contacto</a>
-        <a class="nav-cta" href="/#consulta">Agendá tu consulta</a>
+        <a href="/#servicios" data-i18n="nav.servicios">Servicios</a>
+        <a href="/#estudio" data-i18n="nav.quienes">¿Quiénes somos?</a>
+        <a href="/blog/" class="active" data-i18n="nav.blog">Blog</a>
+        <a href="/#faq" data-i18n="nav.faq">Preguntas</a>
+        <a href="/#contacto" data-i18n="nav.contacto">Contacto</a>
+        <a class="nav-cta" href="/#consulta" data-i18n="nav.cta">Agendá tu consulta</a>
       </nav>
       <div class="nav-right">
+        <div class="lang-switch">
+          <button class="lang-btn" aria-haspopup="true" aria-expanded="false" aria-label="Cambiar idioma / Change language">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.8 5.7 3.8 9S14.5 18.5 12 21C9.5 18.5 8.2 15.3 8.2 12S9.5 5.5 12 3z"/></svg>
+            <span class="lang-current">ES</span>
+          </button>
+          <div class="lang-menu" role="menu">
+            <button data-lang="es" role="menuitem">🇪🇸 Español</button>
+            <button data-lang="en" role="menuitem">🇬🇧 English</button>
+            <button data-lang="it" role="menuitem">🇮🇹 Italiano</button>
+          </div>
+        </div>
         <button class="menu-btn" aria-expanded="false" aria-label="Abrir menú">
           <span></span><span></span><span></span>
         </button>
@@ -160,17 +171,18 @@
       <header class="article-hero">
         <img class="hero-photo" src="../oficina-2.jpg" alt="" aria-hidden="true">
         <div class="article-hero-inner">
-          <span class="article-cat">Nacionalidad argentina</span>
-          <h1>Nacionalidad argentina: quién puede obtenerla, requisitos y cómo iniciar el trámite</h1>
-          <p class="article-meta"><span>28 de junio de 2026</span><i></i><span>7 min de lectura</span></p>
+          <span class="article-cat" data-i18n="blog.cat.arg">Nacionalidad argentina</span>
+          <h1 data-i18n="post.h1">Nacionalidad argentina: quién puede obtenerla, requisitos y cómo iniciar el trámite</h1>
+          <p class="article-meta" data-i18n="post.meta"><span>28 de junio de 2026</span><i></i><span>7 min de lectura</span></p>
         </div>
+        <div class="hero-fade" aria-hidden="true"></div>
       </header>
 
       <nav class="breadcrumb" aria-label="Ruta de navegación">
-        <a href="/">Inicio</a><span>›</span><a href="/blog/">Blog</a><span>›</span>Nacionalidad argentina: quién puede obtenerla, requisitos y cómo iniciar el trámite
+        <a href="/" data-i18n="blog.bc.home">Inicio</a><span>›</span><a href="/blog/">Blog</a><span>›</span><span class="bc-here" data-i18n="post.bc">Nacionalidad argentina: quién puede obtenerla, requisitos y cómo iniciar el trámite</span>
       </nav>
 
-      <div class="article-body">
+      <div class="article-body" data-i18n="post.body">
         <p>La nacionalidad argentina se puede obtener por distintas vías, y no todas exigen lo mismo ni siguen el mismo procedimiento. Entender a cuál pertenecés es el primer paso: de eso depende qué documentación vas a necesitar y ante qué organismo se tramita.</p>
 <p>En términos generales, la ley reconoce tres grandes caminos: la nacionalidad por nacimiento, la nacionalidad por opción y la naturalización para extranjeros. Veamos cada uno.</p>
 
@@ -206,80 +218,92 @@
 <div class="callout"><span class="callout-ico">⚖️</span><p><strong>Nota:</strong> este artículo es informativo y general. Cada caso tiene particularidades que pueden cambiar el resultado. Antes de iniciar cualquier trámite, consultá con una abogada para analizar tu situación concreta.</p></div>
       </div>
 
+      <div class="article-author-wrap">
+        <div class="article-author reveal">
+          <img src="../paloma-selfie.png" alt="Paloma Eugenia Pelegrina">
+          <div class="article-author-info">
+            <small data-i18n="blog.author.wrote">Escribió esta nota</small>
+            <b>Paloma Eugenia Pelegrina</b>
+            <span data-i18n="blog.author.role">Abogada · Titular del estudio</span>
+          </div>
+          <a class="btn btn-outline-wine" href="/#estudio" data-i18n="blog.author.more">Conocé el estudio →</a>
+        </div>
+      </div>
+
       <section class="article-faq">
-        <h2>Preguntas frecuentes</h2>
-        <div class="afaq-item">
-        <button aria-expanded="false"><span>¿Mi hijo que nació en el exterior puede ser argentino?</span><b>+</b></button>
-        <div class="afaq-panel"><div><p>Sí. Los hijos de argentinos nacidos fuera del país pueden acceder a la nacionalidad por opción, acreditando el vínculo filial con la madre o el padre argentino. No depende de dónde vivan hoy.</p></div></div>
+        <h2 data-i18n="blog.faq.h2">Preguntas frecuentes</h2>
+        <div class="afaq-item reveal">
+        <button aria-expanded="false"><span data-i18n="p.nacionalidad-argentina-requisitos-tramite.faq0.q">¿Mi hijo que nació en el exterior puede ser argentino?</span><b>+</b></button>
+        <div class="afaq-panel"><div><p data-i18n="p.nacionalidad-argentina-requisitos-tramite.faq0.a">Sí. Los hijos de argentinos nacidos fuera del país pueden acceder a la nacionalidad por opción, acreditando el vínculo filial con la madre o el padre argentino. No depende de dónde vivan hoy.</p></div></div>
       </div>
-      <div class="afaq-item">
-        <button aria-expanded="false"><span>¿Cuántos años de residencia necesita un extranjero para naturalizarse?</span><b>+</b></button>
-        <div class="afaq-panel"><div><p>La regla general es de dos años de residencia continua en el país, además de otros requisitos que evalúa la Justicia Federal. Ese plazo puede reducirse en algunos supuestos previstos por la ley.</p></div></div>
+      <div class="afaq-item reveal">
+        <button aria-expanded="false"><span data-i18n="p.nacionalidad-argentina-requisitos-tramite.faq1.q">¿Cuántos años de residencia necesita un extranjero para naturalizarse?</span><b>+</b></button>
+        <div class="afaq-panel"><div><p data-i18n="p.nacionalidad-argentina-requisitos-tramite.faq1.a">La regla general es de dos años de residencia continua en el país, además de otros requisitos que evalúa la Justicia Federal. Ese plazo puede reducirse en algunos supuestos previstos por la ley.</p></div></div>
       </div>
-      <div class="afaq-item">
-        <button aria-expanded="false"><span>¿La naturalización se pide en un juzgado?</span><b>+</b></button>
-        <div class="afaq-panel"><div><p>Sí. El trámite de naturalización de extranjeros se realiza ante los juzgados federales, que analizan la residencia, los antecedentes y demás requisitos del solicitante.</p></div></div>
+      <div class="afaq-item reveal">
+        <button aria-expanded="false"><span data-i18n="p.nacionalidad-argentina-requisitos-tramite.faq2.q">¿La naturalización se pide en un juzgado?</span><b>+</b></button>
+        <div class="afaq-panel"><div><p data-i18n="p.nacionalidad-argentina-requisitos-tramite.faq2.a">Sí. El trámite de naturalización de extranjeros se realiza ante los juzgados federales, que analizan la residencia, los antecedentes y demás requisitos del solicitante.</p></div></div>
       </div>
-      <div class="afaq-item">
-        <button aria-expanded="false"><span>¿Perder la nacionalidad de origen es requisito para ser argentino?</span><b>+</b></button>
-        <div class="afaq-panel"><div><p>No. Argentina admite la doble o múltiple nacionalidad, por lo que naturalizarse o ejercer la opción no exige renunciar a la nacionalidad de origen.</p></div></div>
+      <div class="afaq-item reveal">
+        <button aria-expanded="false"><span data-i18n="p.nacionalidad-argentina-requisitos-tramite.faq3.q">¿Perder la nacionalidad de origen es requisito para ser argentino?</span><b>+</b></button>
+        <div class="afaq-panel"><div><p data-i18n="p.nacionalidad-argentina-requisitos-tramite.faq3.a">No. Argentina admite la doble o múltiple nacionalidad, por lo que naturalizarse o ejercer la opción no exige renunciar a la nacionalidad de origen.</p></div></div>
       </div>
       </section>
 
       <section class="article-cta">
         <div class="article-cta-card reveal">
-          <p class="eyebrow">Sin compromiso</p>
-          <h2>¿Querés saber cómo sería tu caso en concreto?</h2>
-          <p>Cada situación es distinta. Te explicamos con claridad qué pasos corresponden en tu caso, sin tecnicismos y sin apuros.</p>
+          <p class="eyebrow" data-i18n="blog.cta.eyebrow">Sin compromiso</p>
+          <h2 data-i18n="blog.cta.h2">¿Querés saber cómo sería tu caso en concreto?</h2>
+          <p data-i18n="blog.cta.p">Cada situación es distinta. Te explicamos con claridad qué pasos corresponden en tu caso, sin tecnicismos y sin apuros.</p>
           <div class="article-cta-actions">
-            <a class="btn btn-whatsapp" href="https://wa.me/5491154036933" target="_blank" rel="noopener"><img src="../icono-whatsapp.png" class="wa-ico" alt=""> Consultar por WhatsApp</a>
-            <a class="btn btn-primary" href="/#consulta">Agendá tu consulta →</a>
+            <a class="btn btn-whatsapp" href="https://wa.me/5491154036933" target="_blank" rel="noopener"><img src="../icono-whatsapp.png" class="wa-ico" alt=""> <span data-i18n="blog.cta.wa">Consultar por WhatsApp</span></a>
+            <a class="btn btn-primary" href="/#consulta" data-i18n="blog.cta.btn">Agendá tu consulta →</a>
           </div>
-          <p class="note">Te respondemos a la brevedad · Consulta confidencial</p>
+          <p class="note" data-i18n="blog.cta.note">Te respondemos a la brevedad · Consulta confidencial</p>
         </div>
       </section>
 
       <section class="article-share">
         <div class="share-card reveal">
-          <h2>¿Conocés a alguien que le pueda servir esta nota?</h2>
-          <p>Compartila: a veces una lectura llega justo en el momento indicado.</p>
+          <h2 data-i18n="blog.share.h2">¿Conocés a alguien que le pueda servir esta nota?</h2>
+          <p data-i18n="blog.share.p">Compartila: a veces una lectura llega justo en el momento indicado.</p>
           <div class="share-actions">
-            <button class="share-btn wa" data-share="whatsapp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.8 14.01c-.24.68-1.42 1.32-1.95 1.36-.5.05-.95.24-3.2-.67-2.7-1.06-4.42-3.8-4.55-3.98-.13-.18-1.1-1.46-1.1-2.78 0-1.32.69-1.97.94-2.24.24-.27.53-.34.71-.34.18 0 .35 0 .5.01.16.01.38-.06.59.45.24.58.79 2 .86 2.14.07.14.12.31.02.5-.09.18-.14.29-.28.45-.14.16-.29.36-.42.48-.14.14-.28.29-.12.57.16.27.72 1.18 1.54 1.91 1.06.95 1.96 1.24 2.24 1.38.28.14.44.12.6-.07.16-.18.7-.81.88-1.09.18-.27.37-.23.62-.14.25.09 1.6.76 1.87.9.28.14.46.21.53.32.07.12.07.68-.17 1.36z"/></svg> Compartir por WhatsApp</button>
-            <button class="share-btn" data-share="copy"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg> <span>Copiar link</span></button>
-            <button class="share-btn" data-share="more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg> Más opciones</button>
+            <button class="share-btn wa" data-share="whatsapp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.8 14.01c-.24.68-1.42 1.32-1.95 1.36-.5.05-.95.24-3.2-.67-2.7-1.06-4.42-3.8-4.55-3.98-.13-.18-1.1-1.46-1.1-2.78 0-1.32.69-1.97.94-2.24.24-.27.53-.34.71-.34.18 0 .35 0 .5.01.16.01.38-.06.59.45.24.58.79 2 .86 2.14.07.14.12.31.02.5-.09.18-.14.29-.28.45-.14.16-.29.36-.42.48-.14.14-.28.29-.12.57.16.27.72 1.18 1.54 1.91 1.06.95 1.96 1.24 2.24 1.38.28.14.44.12.6-.07.16-.18.7-.81.88-1.09.18-.27.37-.23.62-.14.25.09 1.6.76 1.87.9.28.14.46.21.53.32.07.12.07.68-.17 1.36z"/></svg> <span data-i18n="blog.share.wa">Compartir por WhatsApp</span></button>
+            <button class="share-btn" data-share="copy"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg> <span data-i18n="blog.share.copy">Copiar link</span></button>
+            <button class="share-btn" data-share="more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg> <span data-i18n="blog.share.more">Más opciones</span></button>
           </div>
         </div>
       </section>
     </article>
 
     <section class="article-related">
-      <h2>Seguí leyendo</h2>
+      <h2 data-i18n="blog.related">Seguí leyendo</h2>
       <div class="related-grid">
       <a class="post-card reveal" href="pasaporte-italiano-espanol-antes-de-viajar.html" data-cat="pasaportes">
-        <div class="post-card-media"><span class="post-tag">Pasaportes</span><img src="../pasaporte-carpeta.jpg" alt="Pasaporte italiano o español: 10 cosas que deberías revisar antes de viajar" loading="lazy"></div>
+        <div class="post-card-media"><span class="post-tag" data-i18n="blog.cat.pasaportes">Pasaportes</span><img src="../pasaporte-carpeta.jpg" alt="Pasaporte italiano o español: 10 cosas que deberías revisar antes de viajar" loading="lazy"></div>
         <div class="post-card-body">
-          <p class="post-meta">2 de julio de 2026 · 7 min de lectura</p>
-          <h3>Pasaporte italiano o español: 10 cosas que deberías revisar antes de viajar</h3>
-          <p>Tener el pasaporte europeo en la mano no alcanza: hay requisitos de vigencia, hojas libres y detalles que, si no revisás a tiempo, pueden frenarte en el aeropuerto.</p>
-          <span class="post-more">Leer artículo</span>
+          <p class="post-meta" data-i18n="p.pasaporte-italiano-espanol-antes-de-viajar.meta">2 de julio de 2026 · 7 min de lectura</p>
+          <h3 data-i18n="p.pasaporte-italiano-espanol-antes-de-viajar.title">Pasaporte italiano o español: 10 cosas que deberías revisar antes de viajar</h3>
+          <p data-i18n="p.pasaporte-italiano-espanol-antes-de-viajar.excerpt">Tener el pasaporte europeo en la mano no alcanza: hay requisitos de vigencia, hojas libres y detalles que, si no revisás a tiempo, pueden frenarte en el aeropuerto.</p>
+          <span class="post-more" data-i18n="blog.read">Leer artículo</span>
         </div>
       </a>
       <a class="post-card reveal" href="tengo-derecho-ciudadania-italiana.html" data-cat="italiana">
-        <div class="post-card-media"><span class="post-tag">Ciudadanía italiana</span><img src="../oficina-1.jpg" alt="¿Tengo derecho a la ciudadanía italiana? Cómo saberlo paso a paso" loading="lazy"></div>
+        <div class="post-card-media"><span class="post-tag" data-i18n="blog.cat.italiana">Ciudadanía italiana</span><img src="../oficina-1.jpg" alt="¿Tengo derecho a la ciudadanía italiana? Cómo saberlo paso a paso" loading="lazy"></div>
         <div class="post-card-body">
-          <p class="post-meta">20 de mayo de 2026 · 7 min de lectura</p>
-          <h3>¿Tengo derecho a la ciudadanía italiana? Cómo saberlo paso a paso</h3>
-          <p>La ciudadanía italiana se transmite por sangre, pero las reglas cambiaron en 2025. Te explicamos cómo saber, paso a paso, si tu caso encuadra hoy.</p>
-          <span class="post-more">Leer artículo</span>
+          <p class="post-meta" data-i18n="p.tengo-derecho-ciudadania-italiana.meta">20 de mayo de 2026 · 7 min de lectura</p>
+          <h3 data-i18n="p.tengo-derecho-ciudadania-italiana.title">¿Tengo derecho a la ciudadanía italiana? Cómo saberlo paso a paso</h3>
+          <p data-i18n="p.tengo-derecho-ciudadania-italiana.excerpt">La ciudadanía italiana se transmite por sangre, pero las reglas cambiaron en 2025. Te explicamos cómo saber, paso a paso, si tu caso encuadra hoy.</p>
+          <span class="post-more" data-i18n="blog.read">Leer artículo</span>
         </div>
       </a>
       <a class="post-card reveal" href="ciudadania-espanola-quien-puede-hoy.html" data-cat="espanola">
-        <div class="post-card-media"><span class="post-tag">Ciudadanía española</span><img src="../pasaporte-carpeta.jpg" alt="Ciudadanía española: qué vías siguen abiertas hoy para argentinos" loading="lazy"></div>
+        <div class="post-card-media"><span class="post-tag" data-i18n="blog.cat.espanola">Ciudadanía española</span><img src="../pasaporte-carpeta.jpg" alt="Ciudadanía española: qué vías siguen abiertas hoy para argentinos" loading="lazy"></div>
         <div class="post-card-body">
-          <p class="post-meta">22 de abril de 2026 · 7 min de lectura</p>
-          <h3>Ciudadanía española: qué vías siguen abiertas hoy para argentinos</h3>
-          <p>La ventana de la Ley de Memoria Democrática ya cerró, pero la ciudadanía española sigue siendo posible por otras vías. Te explicamos cuáles siguen vigentes.</p>
-          <span class="post-more">Leer artículo</span>
+          <p class="post-meta" data-i18n="p.ciudadania-espanola-quien-puede-hoy.meta">22 de abril de 2026 · 7 min de lectura</p>
+          <h3 data-i18n="p.ciudadania-espanola-quien-puede-hoy.title">Ciudadanía española: qué vías siguen abiertas hoy para argentinos</h3>
+          <p data-i18n="p.ciudadania-espanola-quien-puede-hoy.excerpt">La ventana de la Ley de Memoria Democrática ya cerró, pero la ciudadanía española sigue siendo posible por otras vías. Te explicamos cuáles siguen vigentes.</p>
+          <span class="post-more" data-i18n="blog.read">Leer artículo</span>
         </div>
       </a>
       </div>
@@ -291,28 +315,28 @@
       <div class="footer-brand">
         <a class="brand" href="/">
           <img src="../logo.png" alt="Estudio Jurídico Pelegrina" class="brand-logo">
-          <span class="brand-text"><b>Estudio Jurídico</b><small>Pelegrina</small></span>
+          <span class="brand-text"><b data-i18n="brand.sub">Estudio Jurídico</b><small>Pelegrina</small></span>
         </a>
-        <p>Ciudadanías, visados, derecho migratorio y sucesiones. Asesoramiento legal cercano para vos y tu familia.</p>
+        <p data-i18n="footer.desc">Ciudadanías, visados, derecho migratorio y sucesiones. Asesoramiento legal cercano para vos y tu familia.</p>
       </div>
       <div class="footer-col">
-        <h4>Navegación</h4>
-        <a href="/#estudio">¿Quiénes somos?</a>
-        <a href="/#servicios">Servicios</a>
-        <a href="/blog/">Blog</a>
-        <a href="/#faq">Preguntas frecuentes</a>
-        <a href="/#contacto">Contacto</a>
+        <h4 data-i18n="footer.nav">Navegación</h4>
+        <a href="/#estudio" data-i18n="nav.quienes">¿Quiénes somos?</a>
+        <a href="/#servicios" data-i18n="nav.servicios">Servicios</a>
+        <a href="/blog/" data-i18n="nav.blog">Blog</a>
+        <a href="/#faq" data-i18n="footer.faq">Preguntas frecuentes</a>
+        <a href="/#contacto" data-i18n="nav.contacto">Contacto</a>
       </div>
       <div class="footer-col">
-        <h4>Servicios</h4>
-        <a href="/#contacto">Ciudadanía española</a>
-        <a href="/#contacto">Ciudadanía italiana</a>
-        <a href="/#contacto">Visados y migratorio</a>
-        <a href="/#contacto">Sucesiones</a>
-        <a href="/#contacto">Rectificación de actas</a>
+        <h4 data-i18n="footer.serv">Servicios</h4>
+        <a href="/#contacto" data-i18n="acc.ciud.esp">Ciudadanía española</a>
+        <a href="/#contacto" data-i18n="acc.ciud.ita">Ciudadanía italiana</a>
+        <a href="/#contacto" data-i18n="svc2.title">Visados y migratorio</a>
+        <a href="/#contacto" data-i18n="acc.suc">Sucesiones</a>
+        <a href="/#contacto" data-i18n="acc.rect">Rectificación de actas</a>
       </div>
       <div class="footer-col">
-        <h4>Contacto</h4>
+        <h4 data-i18n="nav.contacto">Contacto</h4>
         <a href="https://wa.me/5491154036933" target="_blank" rel="noopener">WhatsApp +54 9 11 5403 6933</a>
         <a href="mailto:legales.pelegrina@gmail.com">legales.pelegrina@gmail.com</a>
         <a href="https://www.instagram.com/estudiopelegrina/" target="_blank" rel="noopener">Instagram @estudiopelegrina</a>
@@ -320,8 +344,8 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© <span id="year"></span> Estudio Jurídico Pelegrina. Todos los derechos reservados.</p>
-      <a href="#inicio">Volver arriba ↑</a>
+      <p>© <span id="year"></span> <span data-i18n="footer.copy">Estudio Jurídico Pelegrina. Todos los derechos reservados.</span></p>
+      <a href="#inicio" data-i18n="footer.top">Volver arriba ↑</a>
     </div>
   </footer>
 
@@ -330,6 +354,8 @@
     <span class="float-wa-pulse"></span>
   </a>
   <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
-  <script src="blog.js?v=1"></script>
+  <script>window.PAGE_I18N={"en":{"p.nacionalidad-argentina-requisitos-tramite.title":"Argentine nationality: who can obtain it, requirements and how to start","post.h1":"Argentine nationality: who can obtain it, requirements and how to start","post.bc":"Argentine nationality: who can obtain it, requirements and how to start","post.meta":"<span>June 28, 2026</span><i></i><span>7 min read</span>","post.body":"<p>Argentine nationality can be obtained through different paths, and they don't all require the same things or follow the same procedure. Understanding which one applies to you is the first step: it determines what documentation you will need and before which authority the process runs.</p>\n<p>Broadly speaking, the law recognizes three main paths: nationality by birth, nationality by option, and naturalization for foreigners. Let's look at each.</p>\n\n<h2>Nationality by birth</h2>\n<p>Argentina applies the <em>ius soli</em> principle broadly: anyone born on national territory is Argentine, regardless of their parents' nationality. It is the most common case and is generally proven directly with the birth certificate and national ID.</p>\n<p>Those born on Argentine warships or military aircraft, and those born at Argentine missions abroad, among other cases provided by law, are also considered Argentine.</p>\n\n<h2>Nationality by option</h2>\n<p>This is the path designed for <strong>children of Argentines born abroad</strong>. Even though they were born outside the country, they can \"opt\" for Argentine nationality based on the bond with their Argentine mother or father.</p>\n<p>This procedure is very common in families who emigrated and had children abroad, and who now want those children to hold Argentine documents as well. The family bond and the parent's Argentine nationality must be proven.</p>\n\n<div class=\"callout\"><span class=\"callout-ico\">💡</span><p><strong>Important:</strong> nationality by option does not depend on where you live today, but on the bond with your Argentine mother or father. It is a right that can be exercised even many years later.</p></div>\n\n<h2>Naturalization for foreigners</h2>\n<p>This is the path for foreign nationals who want to become Argentine. As a general rule, the law requires being over 18 and proving a period of <strong>continuous residence in the country</strong> — usually two years — along with other requirements assessed by the Federal Courts.</p>\n<p>That period can be reduced in certain cases provided by law (for example, for those who rendered certain services to the Nation, or have an Argentine spouse or children, among others). Naturalization is processed before the federal courts.</p>\n\n<h2>General requirements</h2>\n<p>Requirements vary by path, but broadly you will need to prove:</p>\n<ul>\n  <li><strong>Identity:</strong> a valid ID and, depending on the case, a passport.</li>\n  <li><strong>Bond or residence:</strong> birth and marriage certificates for the option path; proof of continuous residence for naturalization.</li>\n  <li><strong>Background:</strong> in naturalization, the court assesses the applicant's conduct and record.</li>\n  <li><strong>Lawful means of living:</strong> proof of an honest occupation or livelihood is usually required.</li>\n</ul>\n\n<h2>Documentation</h2>\n<p>The documentation depends directly on the path. In nationality by option, the core is the certificates proving the bond with the Argentine parent. In naturalization, proof of residence, criminal-record certificates and evidence of ties to the country carry the most weight. Gathering these documents properly from the start is what avoids back-and-forth.</p>\n\n<h2>Timelines</h2>\n<p>Timeframes vary by path and by the authority involved. Procedures that go through the Federal Courts — such as naturalization — usually depend on the court's schedule and on how complete the file is. A tidy, complete file from day one is the best way to shorten the process.</p>\n\n<div class=\"callout\"><span class=\"callout-ico\">⚖️</span><p><strong>Note:</strong> this article is general information only. Every case has particularities that can change the outcome. Before starting any procedure, consult a lawyer to analyze your specific situation.</p></div>","p.nacionalidad-argentina-requisitos-tramite.faq0.q":"Can my child born abroad become Argentine?","p.nacionalidad-argentina-requisitos-tramite.faq0.a":"Yes. Children of Argentines born outside the country can access nationality by option, proving the family bond with their Argentine mother or father. It does not depend on where they live today.","p.nacionalidad-argentina-requisitos-tramite.faq1.q":"How many years of residence does a foreigner need to naturalize?","p.nacionalidad-argentina-requisitos-tramite.faq1.a":"The general rule is two years of continuous residence in the country, along with other requirements assessed by the Federal Courts. That period can be reduced in some cases provided by law.","p.nacionalidad-argentina-requisitos-tramite.faq2.q":"Is naturalization requested before a court?","p.nacionalidad-argentina-requisitos-tramite.faq2.a":"Yes. The naturalization procedure for foreigners runs before the federal courts, which review residence, background and the other requirements.","p.nacionalidad-argentina-requisitos-tramite.faq3.q":"Do I have to give up my original nationality to become Argentine?","p.nacionalidad-argentina-requisitos-tramite.faq3.a":"No. Argentina allows dual or multiple nationality, so naturalizing or exercising the option does not require renouncing your nationality of origin.","p.pasaporte-italiano-espanol-antes-de-viajar.title":"Italian or Spanish passport: 10 things to check before you travel","p.pasaporte-italiano-espanol-antes-de-viajar.excerpt":"Holding your European passport is not enough: there are validity rules, blank-page requirements and details that, if you don't check them in time, can stop you at the airport.","p.pasaporte-italiano-espanol-antes-de-viajar.meta":"July 2, 2026 · 7 min read","p.tengo-derecho-ciudadania-italiana.title":"Am I entitled to Italian citizenship? How to find out, step by step","p.tengo-derecho-ciudadania-italiana.excerpt":"Italian citizenship is passed down by descent, but the rules changed in 2025. We explain how to find out, step by step, whether your case qualifies today.","p.tengo-derecho-ciudadania-italiana.meta":"May 20, 2026 · 7 min read","p.ciudadania-espanola-quien-puede-hoy.title":"Spanish citizenship: which routes are still open today for Argentines","p.ciudadania-espanola-quien-puede-hoy.excerpt":"The Democratic Memory Law window has closed, but Spanish citizenship is still possible through other routes. We explain which ones remain in force.","p.ciudadania-espanola-quien-puede-hoy.meta":"April 22, 2026 · 7 min read"},"it":{"p.nacionalidad-argentina-requisitos-tramite.title":"Cittadinanza argentina: chi può ottenerla, requisiti e come avviare la pratica","post.h1":"Cittadinanza argentina: chi può ottenerla, requisiti e come avviare la pratica","post.bc":"Cittadinanza argentina: chi può ottenerla, requisiti e come avviare la pratica","post.meta":"<span>28 giugno 2026</span><i></i><span>7 min di lettura</span>","post.body":"<p>La cittadinanza argentina si può ottenere attraverso vie diverse, e non tutte richiedono le stesse cose né seguono lo stesso procedimento. Capire a quale appartenete è il primo passo: da questo dipende quale documentazione servirà e davanti a quale organismo si svolge la pratica.</p>\n<p>In termini generali, la legge riconosce tre grandi strade: la cittadinanza per nascita, la cittadinanza per opzione e la naturalizzazione per gli stranieri. Vediamole una per una.</p>\n\n<h2>Cittadinanza per nascita</h2>\n<p>L'Argentina applica in modo ampio il principio dello <em>ius soli</em>: sono argentini coloro che nascono nel territorio nazionale, indipendentemente dalla nazionalità dei genitori. È il caso più comune e, in generale, si dimostra direttamente con l'atto di nascita e il documento d'identità.</p>\n<p>Sono considerati argentini anche coloro che nascono su navi o aeromobili militari della Repubblica, e chi nasce presso le rappresentanze argentine all'estero, tra gli altri casi previsti dalla legge.</p>\n\n<h2>Cittadinanza per opzione</h2>\n<p>È la via pensata per i <strong>figli di argentini nati all'estero</strong>. Anche se nati fuori dal Paese, possono \"optare\" per la cittadinanza argentina in virtù del legame con la madre o il padre argentino.</p>\n<p>Questa pratica è molto frequente nelle famiglie emigrate che hanno avuto figli all'estero e che oggi vogliono che quei figli abbiano anche i documenti argentini. Si dimostra il legame di filiazione e la cittadinanza argentina del genitore.</p>\n\n<div class=\"callout\"><span class=\"callout-ico\">💡</span><p><strong>Importante:</strong> la cittadinanza per opzione non dipende da dove vivete oggi, ma dal legame con vostra madre o vostro padre argentino. È un diritto che si può esercitare anche a distanza di molti anni.</p></div>\n\n<h2>Naturalizzazione per stranieri</h2>\n<p>È la strada per le persone straniere che vogliono diventare argentine. La legge richiede, come regola generale, la maggiore età e un periodo di <strong>residenza continuativa nel Paese</strong> — di solito due anni — oltre ad altri requisiti valutati dalla Giustizia Federale.</p>\n<p>Quel periodo può ridursi in determinati casi previsti dalla legge (ad esempio, per chi ha prestato determinati servizi alla Nazione, ha coniuge o figli argentini, tra gli altri). La naturalizzazione si tramita davanti ai tribunali federali.</p>\n\n<h2>Requisiti generali</h2>\n<p>I requisiti variano secondo la via, ma in linea generale dovrete dimostrare:</p>\n<ul>\n  <li><strong>Identità:</strong> documento valido e, secondo il caso, passaporto.</li>\n  <li><strong>Legame o residenza:</strong> atti di nascita e matrimonio per le vie per opzione; certificato di residenza continuativa per la naturalizzazione.</li>\n  <li><strong>Precedenti:</strong> nella naturalizzazione, la Giustizia valuta la condotta e i precedenti del richiedente.</li>\n  <li><strong>Mezzi di vita leciti:</strong> di solito si richiede di dimostrare un'occupazione o un mezzo di sostentamento onesto.</li>\n</ul>\n\n<h2>Documentazione</h2>\n<p>La documentazione dipende direttamente dalla via. Nella cittadinanza per opzione, il fulcro sono gli atti che provano il legame con il genitore argentino. Nella naturalizzazione, pesano il certificato di residenza, i certificati dei precedenti penali e la prova del radicamento nel Paese. Riunire bene questi documenti fin dall'inizio è ciò che evita continui rinvii.</p>\n\n<h2>Tempi</h2>\n<p>I tempi variano secondo la via e l'organismo competente. Le pratiche che passano per la Giustizia Federale — come la naturalizzazione — dipendono di solito dall'agenda del tribunale e dalla completezza del fascicolo. Un fascicolo ordinato e completo dal primo giorno è il modo migliore per abbreviare i tempi.</p>\n\n<div class=\"callout\"><span class=\"callout-ico\">⚖️</span><p><strong>Nota:</strong> questo articolo è informativo e generale. Ogni caso presenta particolarità che possono cambiare il risultato. Prima di avviare qualsiasi pratica, consultate un avvocato per analizzare la vostra situazione concreta.</p></div>","p.nacionalidad-argentina-requisitos-tramite.faq0.q":"Mio figlio nato all'estero può diventare argentino?","p.nacionalidad-argentina-requisitos-tramite.faq0.a":"Sì. I figli di argentini nati fuori dal Paese possono accedere alla cittadinanza per opzione, dimostrando il legame di filiazione con la madre o il padre argentino. Non dipende da dove vivono oggi.","p.nacionalidad-argentina-requisitos-tramite.faq1.q":"Quanti anni di residenza servono a uno straniero per naturalizzarsi?","p.nacionalidad-argentina-requisitos-tramite.faq1.a":"La regola generale è di due anni di residenza continuativa nel Paese, oltre ad altri requisiti valutati dalla Giustizia Federale. Quel periodo può ridursi in alcuni casi previsti dalla legge.","p.nacionalidad-argentina-requisitos-tramite.faq2.q":"La naturalizzazione si richiede in tribunale?","p.nacionalidad-argentina-requisitos-tramite.faq2.a":"Sì. La pratica di naturalizzazione degli stranieri si svolge davanti ai tribunali federali, che analizzano la residenza, i precedenti e gli altri requisiti del richiedente.","p.nacionalidad-argentina-requisitos-tramite.faq3.q":"Devo rinunciare alla mia cittadinanza di origine per diventare argentino?","p.nacionalidad-argentina-requisitos-tramite.faq3.a":"No. L'Argentina ammette la doppia o multipla cittadinanza, quindi naturalizzarsi o esercitare l'opzione non richiede di rinunciare alla cittadinanza di origine.","p.pasaporte-italiano-espanol-antes-de-viajar.title":"Passaporto italiano o spagnolo: 10 cose da controllare prima di viaggiare","p.pasaporte-italiano-espanol-antes-de-viajar.excerpt":"Avere il passaporto europeo in mano non basta: ci sono requisiti di validità, pagine libere e dettagli che, se non controllati in tempo, possono fermarvi in aeroporto.","p.pasaporte-italiano-espanol-antes-de-viajar.meta":"2 luglio 2026 · 7 min di lettura","p.tengo-derecho-ciudadania-italiana.title":"Ho diritto alla cittadinanza italiana? Come scoprirlo passo dopo passo","p.tengo-derecho-ciudadania-italiana.excerpt":"La cittadinanza italiana si trasmette per discendenza, ma le regole sono cambiate nel 2025. Vi spieghiamo come sapere, passo dopo passo, se il vostro caso rientra oggi.","p.tengo-derecho-ciudadania-italiana.meta":"20 maggio 2026 · 7 min di lettura","p.ciudadania-espanola-quien-puede-hoy.title":"Cittadinanza spagnola: quali vie restano aperte oggi per gli argentini","p.ciudadania-espanola-quien-puede-hoy.excerpt":"La finestra della Legge di Memoria Democratica si è chiusa, ma la cittadinanza spagnola resta possibile per altre vie. Vi spieghiamo quali sono ancora in vigore.","p.ciudadania-espanola-quien-puede-hoy.meta":"22 aprile 2026 · 7 min di lettura"}};</script>
+  <script src="../i18n.js?v=11"></script>
+  <script src="blog.js?v=2"></script>
 </body>
 </html>
