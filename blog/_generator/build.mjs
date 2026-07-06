@@ -18,7 +18,7 @@ const BLOG = join(ROOT, 'blog');
 
 const SITE = 'https://estudiopelegrina.com.ar';
 const WA = '5491154036933';
-const V = '?v=3';
+const V = '?v=4';
 
 const esc = s => String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 const absImg = img => SITE + '/' + img.replace(/^\.\.\//, '');
@@ -33,8 +33,8 @@ const FONTS = `<link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Libre+Caslon+Display&display=swap" rel="stylesheet">`;
 
-const STYLES = `<link rel="stylesheet" href="../styles.css?v=11">
-  <link rel="stylesheet" href="../responsive.css?v=12">
+const STYLES = `<link rel="stylesheet" href="../styles.css?v=12">
+  <link rel="stylesheet" href="../responsive.css?v=13">
   <link rel="stylesheet" href="blog.css${V}">`;
 
 const TICKER = `<div class="ticker" aria-hidden="true">
@@ -126,7 +126,7 @@ const FOOTER = `<footer class="footer">
   <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>`;
 
 const scripts = (pageDict) => `<script>window.PAGE_I18N=${JSON.stringify(pageDict)};</script>
-  <script src="../i18n.js?v=11"></script>
+  <script src="../i18n.js?v=12"></script>
   <script src="blog.js${V}"></script>`;
 
 // Tarjeta de nota (grilla, destacada y relacionados) — claves p.<slug>.*

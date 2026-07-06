@@ -202,6 +202,14 @@
   .post-grid,.related-grid{grid-template-columns:1fr}
   .article-body>p:first-of-type::first-letter{font-size:3.2rem}
   .article-related .related-grid .post-card:nth-child(n+3){display:none}
+  /* Filtros en una sola línea deslizable */
+  .blog-filters{flex-wrap:nowrap;justify-content:flex-start;overflow-x:auto;scrollbar-width:none;margin:0 -1.2rem clamp(2rem,4vw,3rem);padding:0 1.2rem .4rem}
+  .blog-filters::-webkit-scrollbar{display:none}
+  .blog-chip{flex-shrink:0}
+  /* Título largo del artículo: la miga no desborda */
+  .breadcrumb .bc-here{display:inline-block;max-width:50vw;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;vertical-align:bottom}
+  .blog-hero h1{font-size:2.25rem}
+  .blog-hero{margin-bottom:1.6rem}
 }
 @media (prefers-reduced-motion:reduce){
   .post-card,.post-card-media img,.blog-featured .feat-media img,.callout,.blog-chip{transition:none}
