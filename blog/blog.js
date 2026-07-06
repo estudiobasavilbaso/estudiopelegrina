@@ -109,6 +109,14 @@ if (moreBtn) {
   }
 }
 
+// Nav compacto al scrollear
+const navWrap = document.querySelector('.nav-wrap');
+if (navWrap) {
+  window.addEventListener('scroll', () => {
+    navWrap.classList.toggle('scrolled', window.scrollY > 60);
+  }, { passive: true });
+}
+
 // Barra de progreso de scroll
 const progress = document.getElementById('scrollProgress');
 if (progress) {

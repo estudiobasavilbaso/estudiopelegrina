@@ -383,3 +383,50 @@ section[id],div[id="cal"]{scroll-margin-top:6rem}
 .carpeta-feature b{display:block;font-family:var(--serif);font-size:1.45rem;color:var(--wine-dark);margin-bottom:.3rem}
 .carpeta-desc{font-size:.92rem;color:var(--muted);line-height:1.5}
 @media (prefers-reduced-motion:reduce){.carpeta-img img{animation:none}}
+
+/* ===== EFECTOS ELEGANTES (home) ===== */
+/* Título del hero: brillo dorado que respira */
+.hero h1 em{background-size:200% auto;animation:goldShimmer 7s ease-in-out infinite}
+@keyframes goldShimmer{0%,100%{background-position:0% center}50%{background-position:100% center}}
+/* Punto de la píldora del hero: pulso suave */
+.hero-pill i{animation:pillPulse 2.4s ease-in-out infinite}
+@keyframes pillPulse{0%,100%{box-shadow:0 0 0 0 rgba(192,133,82,.55)}55%{box-shadow:0 0 0 7px rgba(192,133,82,0)}}
+/* CTA principal: barrido de brillo al pasar */
+.btn-primary,.nav-cta{position:relative;overflow:hidden}
+.btn-primary::after,.nav-cta::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,transparent 40%,rgba(255,255,255,.28) 50%,transparent 60%);transform:translateX(-130%);transition:transform .8s ease;pointer-events:none}
+.btn-primary:hover::after,.nav-cta:hover::after{transform:translateX(130%)}
+/* Entrada escalonada de tarjetas */
+.stats-grid .stat-card:nth-child(2),.steps .step-card:nth-child(2),.gallery-grid figure:nth-child(2),.home-blog-grid .hb-card:nth-child(2){transition-delay:.12s}
+.stats-grid .stat-card:nth-child(3),.steps .step-card:nth-child(3),.gallery-grid figure:nth-child(3),.home-blog-grid .hb-card:nth-child(3){transition-delay:.24s}
+.steps .step-card:nth-child(4){transition-delay:.36s}
+/* Tarjetas de números y pasos: línea dorada que se enciende */
+.stat-card,.step-card{position:relative;overflow:hidden}
+.stat-card::before,.step-card::before{content:"";position:absolute;left:0;top:0;height:3px;width:0;background:linear-gradient(90deg,var(--gold),var(--gold-soft));transition:width .5s ease}
+.stat-card:hover::before,.step-card:hover::before{width:100%}
+/* Servicios: deslizamiento sutil y número dorado al pasar */
+.service-list button{transition:padding-left .25s ease}
+.service-list button:hover{padding-left:.5rem}
+.service-list button:hover small{color:var(--gold)}
+/* FAQ y tarjetas del hero: borde que se enciende en dorado */
+.faq-item,.acc-card{transition:border-color .3s ease,box-shadow .25s ease}
+.faq-item:hover,.acc-card:hover{border-color:rgba(192,133,82,.5)}
+/* Galería: velo bordó que aparece al pasar */
+.gallery-grid figure::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(59,23,32,.38),transparent 45%);opacity:0;transition:opacity .4s ease;pointer-events:none}
+.gallery-grid figure:hover::after{opacity:1}
+.gallery-grid figcaption{z-index:2}
+/* Foto de "Quiénes somos": acercamiento lento */
+.about-media-main img{transition:transform 5s ease}
+.about-media:hover .about-media-main img{transform:scale(1.045)}
+/* Ticker: se pausa al pasar el mouse */
+.ticker:hover .ticker-track{animation-play-state:paused}
+/* Nav: se compacta y refuerza la sombra al scrollear */
+.nav-wrap{transition:padding .35s ease}
+.nav-shell{transition:box-shadow .35s ease,background .35s ease}
+.nav-wrap.scrolled{padding-top:.45rem;padding-bottom:.45rem}
+.nav-wrap.scrolled .nav-shell{box-shadow:0 18px 44px -20px rgba(59,23,32,.55);background:rgba(255,255,255,.96)}
+/* Accesibilidad */
+@media (prefers-reduced-motion:reduce){
+  .hero h1 em,.hero-pill i{animation:none}
+  .btn-primary::after,.nav-cta::after{display:none}
+  .stat-card::before,.step-card::before,.about-media-main img,.service-list button{transition:none}
+}
