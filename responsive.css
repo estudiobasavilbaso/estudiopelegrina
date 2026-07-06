@@ -11,6 +11,8 @@
   .steps{grid-template-columns:repeat(2,1fr)}
   .gallery-grid{grid-template-columns:1fr 1fr}
   .gallery-grid figure:last-child{grid-column:1/-1;aspect-ratio:16/9}
+  .home-blog-grid{grid-template-columns:1fr 1fr}
+  .home-blog-grid .hb-card:last-child{grid-column:1/-1}
 
   /* carrusel testimonios */
   .testi-nav{display:flex}
@@ -32,7 +34,11 @@
 
   /* nav móvil */
   .menu-btn{display:flex}
-  .nav-shell{border-radius:26px;padding:.6rem .7rem .6rem 1rem}
+  /* El blur crea un "containing block" que atrapa al menú fijo dentro de la
+     píldora del nav: en móvil se quita para que el menú cubra la pantalla */
+  .nav-shell{border-radius:26px;padding:.6rem .7rem .6rem 1rem;backdrop-filter:none;-webkit-backdrop-filter:none;background:rgba(255,255,255,.97)}
+  /* Botón de menú e idioma por encima del panel abierto (z 40) para poder cerrarlo */
+  .nav-right{position:relative;z-index:45}
   .nav-links{position:fixed;inset:0;flex-direction:column;justify-content:center;gap:1.4rem;background:linear-gradient(160deg,var(--wine),var(--wine-dark));font-size:1.3rem;transform:translateX(100%);transition:transform .35s ease;z-index:40}
   .nav-links.open{transform:none}
   .nav-links a{color:#fff;opacity:.95}
@@ -46,6 +52,8 @@
   .stats-grid{grid-template-columns:1fr}
   .steps{grid-template-columns:1fr}
   .gallery-grid{grid-template-columns:1fr}
+  .home-blog-grid{grid-template-columns:1fr}
+  .home-blog-grid .hb-card:last-child{grid-column:auto}
   .gallery-grid figure:last-child{aspect-ratio:4/5}
 
   .about-media{max-width:24rem}

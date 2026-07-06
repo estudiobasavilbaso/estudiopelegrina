@@ -132,5 +132,11 @@ window.addEventListener('scroll', () => {
   progress.style.width = (ratio * 100) + '%';
 }, { passive: true });
 
+// Nav compacto al scrollear
+const navWrap = document.querySelector('.nav-wrap');
+window.addEventListener('scroll', () => {
+  navWrap.classList.toggle('scrolled', window.scrollY > 60);
+}, { passive: true });
+
 // Año footer
 document.querySelector('#year').textContent = new Date().getFullYear();

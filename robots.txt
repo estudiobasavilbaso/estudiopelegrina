@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /blog/_generator/
+
+Sitemap: https://estudiopelegrina.com.ar/sitemap.xml
