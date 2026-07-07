@@ -29,7 +29,7 @@ export const ARTICLES = [
     date: '2026-07-02',
     dateLabel: '2 de julio de 2026',
     readTime: '7 min de lectura',
-    image: '../pasaportes-aeropuerto.png',
+    image: '../pasaportes-aeropuerto.jpg',
     title: 'Pasaporte italiano o español: 10 cosas que deberías revisar antes de viajar',
     excerpt: 'Tener el pasaporte europeo en la mano no alcanza: hay requisitos de vigencia, hojas libres y detalles que, si no revisás a tiempo, pueden frenarte en el aeropuerto.',
     body: `
@@ -93,7 +93,7 @@ ${DISCLAIMER}
     date: '2026-06-28',
     dateLabel: '28 de junio de 2026',
     readTime: '7 min de lectura',
-    image: '../nacionalidad-argentina-registro.png',
+    image: '../nacionalidad-argentina-registro.jpg',
     title: 'Nacionalidad argentina: quién puede obtenerla, requisitos y cómo iniciar el trámite',
     excerpt: 'Por nacimiento, por opción o por naturalización: hay más de un camino hacia la nacionalidad argentina. Te contamos cuál corresponde en cada caso y qué necesitás para empezar.',
     body: `
@@ -148,7 +148,7 @@ ${DISCLAIMER}
     date: '2026-06-15',
     dateLabel: '15 de junio de 2026',
     readTime: '6 min de lectura',
-    image: '../visa-esta-americana.png',
+    image: '../visa-esta-americana.jpg',
     title: '¿Visa B1/B2 o ESTA? Todo lo que necesitás saber antes de viajar a Estados Unidos',
     excerpt: 'Son dos formas distintas de entrar a Estados Unidos, y no todos pueden elegir entre ellas. Te explicamos las diferencias, quién necesita cada una y los errores que provocan rechazos.',
     body: `
@@ -209,7 +209,7 @@ ${DISCLAIMER}
     date: '2026-05-20',
     dateLabel: '20 de mayo de 2026',
     readTime: '7 min de lectura',
-    image: '../ciudadania-italiana-documentos.png',
+    image: '../ciudadania-italiana-documentos.jpg',
     title: '¿Tengo derecho a la ciudadanía italiana? Cómo saberlo paso a paso',
     excerpt: 'La ciudadanía italiana se transmite por sangre, pero las reglas cambiaron en 2025. Te explicamos cómo saber, paso a paso, si tu caso encuadra hoy.',
     body: `
@@ -273,7 +273,7 @@ ${DISCLAIMER}
     date: '2026-05-06',
     dateLabel: '6 de mayo de 2026',
     readTime: '6 min de lectura',
-    image: '../ciudadania-italiana-checklist.png',
+    image: '../ciudadania-italiana-checklist.jpg',
     title: 'Los 8 errores más comunes que retrasan una ciudadanía italiana',
     excerpt: 'La mayoría de las demoras en una ciudadanía italiana no vienen de Italia: vienen de errores en la documentación que se podían prevenir desde el primer día.',
     body: `
@@ -333,7 +333,7 @@ ${DISCLAIMER}
     date: '2026-04-22',
     dateLabel: '22 de abril de 2026',
     readTime: '7 min de lectura',
-    image: '../ciudadania-espanola-gobierno.png',
+    image: '../ciudadania-espanola-gobierno.jpg',
     title: 'Ciudadanía española: qué vías siguen abiertas hoy para argentinos',
     excerpt: 'La ventana de la Ley de Memoria Democrática ya cerró, pero la ciudadanía española sigue siendo posible por otras vías. Te explicamos cuáles siguen vigentes.',
     body: `
@@ -381,7 +381,7 @@ ${DISCLAIMER}
     date: '2026-04-08',
     dateLabel: '8 de abril de 2026',
     readTime: '6 min de lectura',
-    image: '../ciudadania-espanola-errores.png',
+    image: '../ciudadania-espanola-errores.jpg',
     title: 'Ciudadanía española: los errores más frecuentes que pueden hacer fracasar tu trámite',
     excerpt: 'Actas con errores, documentación incompleta, plazos vencidos y turnos perdidos. Los tropiezos más comunes en una ciudadanía española casi siempre son evitables.',
     body: `
@@ -435,7 +435,7 @@ ${DISCLAIMER}
     date: '2026-03-18',
     dateLabel: '18 de marzo de 2026',
     readTime: '6 min de lectura',
-    image: '../herencia-documentos.png',
+    image: '../herencia-documentos.jpg',
     title: 'Falleció un familiar: cuáles son los primeros pasos que deberías dar',
     excerpt: 'En medio del dolor, aparecen decisiones legales que conviene tomar con orden. Esta guía te ayuda a saber qué reunir, qué evitar y cómo se inicia una sucesión.',
     body: `
@@ -495,7 +495,7 @@ ${DISCLAIMER}
     date: '2026-02-24',
     dateLabel: '24 de febrero de 2026',
     readTime: '6 min de lectura',
-    image: '../casa-heredada-venta.png',
+    image: '../casa-heredada-venta.jpg',
     title: '¿Se puede vender una casa heredada sin hacer la sucesión?',
     excerpt: 'Es una de las consultas más frecuentes. La respuesta corta es no, pero hay matices, riesgos y algunas alternativas que conviene conocer antes de comprometerte.',
     body: `
@@ -551,7 +551,7 @@ ${DISCLAIMER}
     date: '2026-02-10',
     dateLabel: '10 de febrero de 2026',
     readTime: '6 min de lectura',
-    image: '../testamento-herencia.png',
+    image: '../testamento-herencia.jpg',
     title: 'Herencia sin testamento: quién hereda y en qué orden',
     excerpt: 'Cuando una persona fallece sin dejar testamento, la ley define quién hereda y en qué orden. Te explicamos cómo funciona la sucesión intestada en Argentina.',
     body: `
