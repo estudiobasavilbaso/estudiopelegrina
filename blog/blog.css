@@ -102,13 +102,19 @@
 
 /* CTA del artículo */
 .article-cta{width:min(720px,100%);margin:clamp(2.5rem,5vw,3.5rem) auto 0;padding:0 clamp(1.2rem,4vw,2.5rem)}
-.article-cta-card{position:relative;overflow:hidden;background:linear-gradient(150deg,var(--wine),var(--wine-dark));color:#fff;border-radius:var(--radius-lg);box-shadow:var(--shadow);padding:clamp(2rem,4vw,3rem);text-align:center}
+.article-cta-card{position:relative;overflow:hidden;background:linear-gradient(155deg,var(--wine),var(--wine-dark) 85%);color:#fff;border-radius:var(--radius-lg);box-shadow:var(--shadow);padding:clamp(2.2rem,5vw,3.4rem) clamp(1.5rem,4vw,3rem);text-align:center}
 .article-cta-card::before{content:"";position:absolute;width:30rem;height:30rem;border-radius:50%;background:radial-gradient(circle,rgba(192,133,82,.26),transparent 62%);right:-12rem;top:-12rem;pointer-events:none}
-.article-cta-card .eyebrow{color:var(--gold-soft);background:rgba(255,255,255,.1);position:relative}
-.article-cta-card h2{font-size:clamp(1.6rem,3vw,2.3rem);margin:.3rem auto .8rem;max-width:20ch;position:relative}
-.article-cta-card p{color:rgba(255,255,255,.82);max-width:32rem;margin:0 auto 1.6rem;position:relative}
-.article-cta-actions{display:flex;flex-wrap:wrap;gap:.8rem;justify-content:center;position:relative}
-.article-cta-card .note{margin-top:1.2rem;font-size:.85rem;color:rgba(255,255,255,.65)}
+.article-cta-card .eyebrow{display:inline-block;color:var(--gold-soft);letter-spacing:.18em;text-transform:uppercase;font-size:.74rem;font-weight:700;position:relative}
+.article-cta-card h2{font-family:var(--serif);font-weight:400;font-size:clamp(1.7rem,3.4vw,2.5rem);line-height:1.12;margin:.7rem auto .9rem;max-width:18ch;position:relative}
+.article-cta-card p{color:rgba(255,255,255,.82);max-width:34rem;margin:0 auto 1.8rem;line-height:1.7;position:relative}
+.article-cta-actions{display:flex;flex-direction:column;gap:.8rem;align-items:center;position:relative;max-width:26rem;margin:0 auto}
+.article-cta-actions .btn{width:100%}
+.article-cta-actions .btn-whatsapp{background:#25d366;color:#0b3d1e;border:0;font-weight:700;box-shadow:0 14px 30px -14px rgba(37,211,102,.85)}
+.article-cta-actions .btn-whatsapp:hover{background:#1fbe5a}
+.article-cta-actions .btn-whatsapp svg{width:22px;height:22px}
+.article-cta-actions .btn-ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.35)}
+.article-cta-actions .btn-ghost:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.6)}
+.article-cta-card .note{margin-top:1.3rem;font-size:.85rem;color:rgba(255,255,255,.65);position:relative}
 
 /* Compartir */
 .article-share{width:min(720px,100%);margin:clamp(2rem,4vw,3rem) auto 0;padding:0 clamp(1.2rem,4vw,2.5rem)}

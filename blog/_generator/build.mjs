@@ -18,7 +18,7 @@ const BLOG = join(ROOT, 'blog');
 
 const SITE = 'https://estudiopelegrina.com.ar';
 const WA = '5491154036933';
-const V = '?v=4';
+const V = '?v=5';
 
 const esc = s => String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 const absImg = img => SITE + '/' + img.replace(/^\.\.\//, '');
@@ -34,7 +34,7 @@ const FONTS = `<link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Libre+Caslon+Display&display=swap" rel="stylesheet">`;
 
 const STYLES = `<link rel="stylesheet" href="../styles.css?v=12">
-  <link rel="stylesheet" href="../responsive.css?v=13">
+  <link rel="stylesheet" href="../responsive.css?v=15">
   <link rel="stylesheet" href="blog.css${V}">`;
 
 const TICKER = `<div class="ticker" aria-hidden="true">
@@ -59,7 +59,7 @@ const NAV = `<header class="nav-wrap">
         <a href="/blog/" class="active" data-i18n="nav.blog">Blog</a>
         <a href="/#faq" data-i18n="nav.faq">Preguntas</a>
         <a href="/#contacto" data-i18n="nav.contacto">Contacto</a>
-        <a class="nav-cta" href="/#consulta" data-i18n="nav.cta">Agendá tu consulta</a>
+        <a class="nav-cta" href="https://wa.me/${WA}" target="_blank" rel="noopener" data-i18n="nav.cta">Comunicate con nosotros</a>
       </nav>
       <div class="nav-right">
         <div class="lang-switch">
@@ -126,7 +126,7 @@ const FOOTER = `<footer class="footer">
   <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>`;
 
 const scripts = (pageDict) => `<script>window.PAGE_I18N=${JSON.stringify(pageDict)};</script>
-  <script src="../i18n.js?v=12"></script>
+  <script src="../i18n.js?v=13"></script>
   <script src="blog.js${V}"></script>`;
 
 // Tarjeta de nota (grilla, destacada y relacionados) — claves p.<slug>.*
@@ -290,13 +290,13 @@ function articlePage(a, related) {
       <section class="article-cta">
         <div class="article-cta-card reveal">
           <p class="eyebrow" data-i18n="blog.cta.eyebrow">Sin compromiso</p>
-          <h2 data-i18n="blog.cta.h2">¿Querés saber cómo sería tu caso en concreto?</h2>
-          <p data-i18n="blog.cta.p">Cada situación es distinta. Te explicamos con claridad qué pasos corresponden en tu caso, sin tecnicismos y sin apuros.</p>
+          <h2 data-i18n="blog.cta.h2">Hablemos de tu caso, sin apuros</h2>
+          <p data-i18n="blog.cta.p">No hace falta que tengas una decisión tomada. A veces alcanza con conversar y entender cómo sería tu caso en concreto. Te escuchamos con claridad, en privado y sin presiones.</p>
           <div class="article-cta-actions">
-            <a class="btn btn-whatsapp" href="https://wa.me/${WA}" target="_blank" rel="noopener"><img src="../icono-whatsapp.png" class="wa-ico" alt=""> <span data-i18n="blog.cta.wa">Consultar por WhatsApp</span></a>
-            <a class="btn btn-primary" href="/#consulta" data-i18n="blog.cta.btn">Agendá tu consulta →</a>
+            <a class="btn btn-whatsapp" href="https://wa.me/${WA}" target="_blank" rel="noopener">${WA_ICON} <span data-i18n="blog.cta.wa">Consultar por WhatsApp</span></a>
+            <a class="btn btn-ghost" href="/#consulta" data-i18n="blog.cta.btn">Evaluá tu caso gratis</a>
           </div>
-          <p class="note" data-i18n="blog.cta.note">Te respondemos a la brevedad · Consulta confidencial</p>
+          <p class="note" data-i18n="blog.cta.note">Te respondemos en menos de 24 h · Consulta confidencial</p>
         </div>
       </section>
 
