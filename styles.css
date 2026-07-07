@@ -82,7 +82,7 @@ em{font-style:normal}
 .menu-btn[aria-expanded=true] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
 
 /* ===== HERO ===== */
-.hero{padding:clamp(2rem,5vw,4.5rem) clamp(1rem,4vw,2.5rem) clamp(3rem,6vw,5rem)}
+.hero{padding:clamp(1.6rem,4vw,3.2rem) clamp(1rem,4vw,2.5rem) clamp(2rem,4vw,3.2rem)}
 .hero-inner{position:relative;width:min(1180px,100%);margin:0 auto;background:linear-gradient(150deg,var(--wine) 0%,var(--wine-dark) 78%);border-radius:var(--radius-lg);box-shadow:var(--shadow);color:#fff;display:grid;grid-template-columns:1.08fr .92fr;gap:clamp(2rem,4vw,4rem);align-items:center;padding:clamp(2.4rem,5vw,4.6rem);overflow:hidden}
 .hero-bg{display:none}
 .hero-inner:before{content:"";position:absolute;width:46rem;height:46rem;border-radius:50%;background:radial-gradient(circle at center,rgba(192,133,82,.28),transparent 62%);right:-16rem;top:-18rem;pointer-events:none}
@@ -116,14 +116,14 @@ em{font-style:normal}
 .acc-card.simple:hover{transform:translateY(-2px);transition:transform .2s}
 
 /* ===== TRUST ===== */
-.trust{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;width:min(820px,100%);margin:0 auto;padding:2rem 1.2rem;text-align:center}
+.trust{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;width:min(820px,100%);margin:0 auto;padding:1.5rem 1.2rem;text-align:center}
 .trust-item{position:relative}
 .trust-item+.trust-item::before{content:"";position:absolute;left:-.55rem;top:50%;transform:translateY(-50%);width:1px;height:2.6rem;background:var(--line)}
 .trust-item b{display:block;font-family:var(--serif);font-weight:400;font-size:clamp(1.8rem,3.2vw,2.5rem);color:var(--wine);line-height:1.1}
 .trust-item small{display:block;margin-top:.35rem;font-size:.78rem;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.11em}
 
 /* ===== SECTION SHELL ===== */
-.about,.stats,.services,.process,.testi,.faq,.contact{width:min(1180px,100%);margin:0 auto;padding:clamp(3.5rem,7vw,6.5rem) clamp(1.2rem,4vw,2.5rem)}
+.about,.stats,.services,.process,.testi,.faq,.contact{width:min(1180px,100%);margin:0 auto;padding:clamp(2.6rem,5vw,4.2rem) clamp(1.2rem,4vw,2.5rem)}
 
 /* ===== ABOUT ===== */
 .about{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(2rem,5vw,4.5rem);align-items:stretch}
@@ -269,7 +269,7 @@ section[id]{scroll-margin-top:6rem}
 .contact-map iframe{width:100%;height:100%;border:0;display:block;filter:saturate(.9)}
 
 /* ===== FOOTER ===== */
-.footer{background:linear-gradient(160deg,var(--wine),var(--wine-dark));color:var(--cream);padding:clamp(3rem,6vw,4.5rem) clamp(1.2rem,4vw,2.5rem) 2rem;margin-top:2rem}
+.footer{background:linear-gradient(160deg,var(--wine),var(--wine-dark));color:var(--cream);padding:clamp(2.4rem,5vw,3.4rem) clamp(1.2rem,4vw,2.5rem) 1.6rem;margin-top:1.5rem}
 .footer-grid{width:min(1180px,100%);margin:0 auto;display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:2.5rem}
 .footer .brand-text{color:var(--cream)}
 .footer-brand p{margin:1.1rem 0 0;color:rgba(243,236,225,.7);max-width:20rem;font-size:.95rem}

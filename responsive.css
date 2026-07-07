@@ -73,15 +73,15 @@
   .footer-bottom{flex-direction:column;text-align:center;gap:.6rem}
 
   .float-wa{width:52px;height:52px;right:1rem;bottom:1rem}
-  .trust{gap:.6rem;padding:1.5rem 1rem}
+  .trust{gap:.6rem;padding:1.1rem 1rem}
   .trust-item b{font-size:1.45rem}
   .trust-item small{font-size:.6rem;letter-spacing:.07em}
   .trust-item+.trust-item::before{height:2rem;left:-.35rem}
 
   /* ---- Disposición móvil optimizada ---- */
   /* Menos aire vertical: la página se recorre más rápido */
-  .about,.stats,.services,.process,.testi,.faq,.contact{padding:2.6rem 1.2rem}
-  .ig-cta,.home-blog,.consulta-section{padding:1.8rem 1.2rem}
+  .about,.stats,.services,.process,.testi,.faq,.contact{padding:2rem 1.2rem}
+  .ig-cta,.home-blog,.consulta-section{padding:1.4rem 1.2rem}
 
   /* Números: tarjetas compactas en fila (ícono + número + texto) */
   .stat-card{display:grid;grid-template-columns:auto 1fr;column-gap:1.1rem;align-items:center;padding:1.15rem 1.25rem}

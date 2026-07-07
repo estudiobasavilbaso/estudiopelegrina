@@ -5,7 +5,7 @@
 // Traducciones EN/IT: tr-en.mjs y tr-it.mjs (se inyectan vía PAGE_I18N
 // y las aplica i18n.js, el mismo sistema del sitio principal).
 // ==========================================================================
-import { writeFileSync } from 'node:fs';
+import { writeFileSync, readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 import { ARTICLES, CATEGORIES } from './articles.mjs';
@@ -18,10 +18,30 @@ const BLOG = join(ROOT, 'blog');
 
 const SITE = 'https://estudiopelegrina.com.ar';
 const WA = '5491154036933';
-const V = '?v=8';
+const V = '?v=9';
 
 const esc = s => String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 const absImg = img => SITE + '/' + img.replace(/^\.\.\//, '');
+
+// Dimensiones reales del JPEG (marcador SOF) para width/height en <img>
+// y evitar saltos de layout mientras carga la imagen
+function jpegSize(rel) {
+  const buf = readFileSync(join(BLOG, rel));
+  let i = 2;
+  while (i < buf.length - 9) {
+    if (buf[i] !== 0xFF) { i++; continue; }
+    const m = buf[i + 1];
+    if (m >= 0xC0 && m <= 0xCF && m !== 0xC4 && m !== 0xC8 && m !== 0xCC) {
+      return { h: buf.readUInt16BE(i + 5), w: buf.readUInt16BE(i + 7) };
+    }
+    i += 2 + buf.readUInt16BE(i + 2);
+  }
+  return null;
+}
+const imgAttrs = (img) => {
+  const d = jpegSize(img);
+  return d ? ` width="${d.w}" height="${d.h}"` : '';
+};
 
 // Fechas y tiempo de lectura localizados
 const dateFor = (iso, locale) => new Intl.DateTimeFormat(locale, { year: 'numeric', month: 'long', day: 'numeric' }).format(new Date(iso + 'T12:00:00'));
@@ -33,8 +53,8 @@ const FONTS = `<link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Libre+Caslon+Display&display=swap" rel="stylesheet">`;
 
-const STYLES = `<link rel="stylesheet" href="../styles.css?v=16">
-  <link rel="stylesheet" href="../responsive.css?v=16">
+const STYLES = `<link rel="stylesheet" href="../styles.css?v=17">
+  <link rel="stylesheet" href="../responsive.css?v=17">
   <link rel="stylesheet" href="blog.css${V}">`;
 
 const TICKER = `<div class="ticker" aria-hidden="true">
@@ -126,12 +146,12 @@ const FOOTER = `<footer class="footer">
   <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>`;
 
 const scripts = (pageDict) => `<script>window.PAGE_I18N=${JSON.stringify(pageDict)};</script>
-  <script src="../i18n.js?v=13"></script>
+  <script src="../i18n.js?v=14"></script>
   <script src="blog.js${V}"></script>`;
 
 // Tarjeta de nota (grilla, destacada y relacionados) — claves p.<slug>.*
 const postCard = (a) => `<a class="post-card reveal" href="${a.slug}.html" data-cat="${a.cat}">
-        <div class="post-card-media"><span class="post-tag" data-i18n="blog.cat.${a.cat}">${esc(a.category)}</span><img src="${a.image}" alt="${esc(a.title)}" loading="lazy"></div>
+        <div class="post-card-media"><span class="post-tag" data-i18n="blog.cat.${a.cat}">${esc(a.category)}</span><img src="${a.image}" alt="${esc(a.title)}" loading="lazy"${imgAttrs(a.image)}></div>
         <div class="post-card-body">
           <p class="post-meta" data-i18n="p.${a.slug}.meta">${a.dateLabel} · ${a.readTime}</p>
           <h3 data-i18n="p.${a.slug}.title">${esc(a.title)}</h3>
@@ -141,7 +161,7 @@ const postCard = (a) => `<a class="post-card reveal" href="${a.slug}.html" data-
       </a>`;
 
 const featuredCard = (a) => `<a class="blog-featured reveal" href="${a.slug}.html" data-cat="${a.cat}">
-      <div class="feat-media"><img src="${a.image}" alt="${esc(a.title)}" loading="lazy"></div>
+      <div class="feat-media"><img src="${a.image}" alt="${esc(a.title)}" loading="lazy"${imgAttrs(a.image)}></div>
       <div class="feat-body">
         <span class="feat-kicker"><i></i> <span data-i18n="blog.featured">Destacado</span>&nbsp;·&nbsp;<span data-i18n="blog.cat.${a.cat}">${esc(a.category)}</span></span>
         <h2 data-i18n="p.${a.slug}.title">${esc(a.title)}</h2>

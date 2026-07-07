@@ -5,7 +5,7 @@
 .blog-main{width:min(1180px,100%);margin:0 auto;padding:clamp(1.5rem,4vw,3rem) clamp(1.2rem,4vw,2.5rem)}
 
 /* ---- Cabecera del listado ---- */
-.blog-hero{text-align:center;max-width:44rem;margin:clamp(1rem,3vw,2.5rem) auto clamp(2rem,4vw,3rem)}
+.blog-hero{text-align:center;max-width:44rem;margin:clamp(.6rem,2vw,1.6rem) auto clamp(1.5rem,3vw,2.2rem)}
 .blog-hero h1{font-size:clamp(2.5rem,5vw,4rem);color:var(--wine-dark);margin:.4rem 0 1rem;line-height:1.02}
 .blog-hero h1 em{color:var(--wine-soft)}
 .blog-hero p{color:var(--muted);font-size:1.08rem;margin:0 auto;max-width:34rem}
@@ -130,7 +130,7 @@
 .share-btn svg{width:20px;height:20px}
 
 /* Seguí leyendo */
-.article-related{width:min(1180px,100%);margin:clamp(3rem,6vw,4.5rem) auto 0;padding:0 clamp(1.2rem,4vw,2.5rem)}
+.article-related{width:min(1180px,100%);margin:clamp(2.2rem,4vw,3.2rem) auto 0;padding:0 clamp(1.2rem,4vw,2.5rem)}
 .article-related h2{font-size:clamp(1.6rem,3vw,2.3rem);color:var(--wine-dark);text-align:center;margin:0 0 1.8rem}
 .related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
 
