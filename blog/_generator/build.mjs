@@ -33,7 +33,7 @@ const FONTS = `<link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Libre+Caslon+Display&display=swap" rel="stylesheet">`;
 
-const STYLES = `<link rel="stylesheet" href="../styles.css?v=13">
+const STYLES = `<link rel="stylesheet" href="../styles.css?v=14">
   <link rel="stylesheet" href="../responsive.css?v=15">
   <link rel="stylesheet" href="blog.css${V}">`;
 
