@@ -38,7 +38,6 @@ em{font-style:normal}
 .btn-outline-wine{background:transparent;color:var(--wine);border:1.5px solid var(--line)}
 .btn-outline-wine:hover{background:var(--wine);color:#fff;border-color:var(--wine)}
 .btn.block{width:100%}
-.wa-dot{width:12px;height:12px;border-radius:50%;background:#25d366;box-shadow:0 0 0 4px rgba(37,211,102,.22)}
 .under{display:inline-flex;align-items:center;font-weight:600;font-size:.92rem;color:var(--wine);border-bottom:1.5px solid var(--gold);padding-bottom:3px}
 
 /* reveal animation */

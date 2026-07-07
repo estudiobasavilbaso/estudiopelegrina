@@ -125,8 +125,8 @@
 .share-actions{display:flex;flex-wrap:wrap;gap:.7rem;justify-content:center}
 .share-btn{display:inline-flex;align-items:center;gap:.5rem;min-height:48px;padding:0 1.3rem;border-radius:100px;border:1.5px solid var(--line);background:#fff;color:var(--wine);font-weight:600;font-size:.92rem;cursor:pointer;transition:background .2s,transform .2s}
 .share-btn:hover{background:var(--cream);transform:translateY(-2px)}
-.share-btn.wa{background:#25d366;color:#0b3d1e;border-color:#25d366}
-.share-btn.wa:hover{background:#1fbe5a}
+.share-btn.wa{background:var(--wine);color:#fff;border-color:var(--wine)}
+.share-btn.wa:hover{background:var(--wine-dark);border-color:var(--wine-dark)}
 .share-btn svg{width:20px;height:20px}
 
 /* Seguí leyendo */
