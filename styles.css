@@ -424,9 +424,30 @@ section[id]{scroll-margin-top:6rem}
 .nav-shell{transition:box-shadow .35s ease,background .35s ease}
 .nav-wrap.scrolled{padding-top:.45rem;padding-bottom:.45rem}
 .nav-wrap.scrolled .nav-shell{box-shadow:0 18px 44px -20px rgba(59,23,32,.55);background:rgba(255,255,255,.96)}
+/* ===== EFECTOS DE IMAGEN ===== */
+/* Entrada cinematográfica: la foto llega con un zoom y color suaves
+   que se asientan cuando el bloque entra en pantalla (usa .reveal/.visible) */
+.about-media .about-media-main img,
+figure.reveal img,
+.hb-card .hb-media img,
+.testi-card .testi-photo img{transform:scale(1.09);filter:saturate(.7) brightness(.97);transition:transform 1.4s cubic-bezier(.2,.65,.3,1),filter 1.2s ease}
+.about-media.visible .about-media-main img,
+figure.reveal.visible img,
+.hb-card.visible .hb-media img,
+.testi-card.visible .testi-photo img{transform:scale(1);filter:none}
+/* Los zooms al pasar el mouse siguen funcionando después de asentarse */
+.gallery-grid figure.visible:hover img{transform:scale(1.06)}
+.hb-card.visible:hover .hb-media img{transform:scale(1.05)}
+.about-media.visible:hover .about-media-main img{transform:scale(1.03)}
+
+/* Marco dorado interior en las fotos de la galería */
+.gallery-grid figure::before{content:"";position:absolute;inset:10px;border:1px solid rgba(231,201,168,.55);border-radius:14px;z-index:2;pointer-events:none;transition:inset .35s ease,border-color .35s ease}
+.gallery-grid figure:hover::before{inset:7px;border-color:rgba(231,201,168,.85)}
+
 /* Accesibilidad */
 @media (prefers-reduced-motion:reduce){
   .hero h1 em,.hero-pill i{animation:none}
   .btn-primary::after,.nav-cta::after{display:none}
   .stat-card::before,.step-card::before,.about-media-main img,.service-list button{transition:none}
+  .about-media .about-media-main img,figure.reveal img,.hb-card .hb-media img,.testi-card .testi-photo img{transform:none;filter:none;transition:none}
 }

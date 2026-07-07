@@ -18,7 +18,7 @@ const BLOG = join(ROOT, 'blog');
 
 const SITE = 'https://estudiopelegrina.com.ar';
 const WA = '5491154036933';
-const V = '?v=9';
+const V = '?v=10';
 
 const esc = s => String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 const absImg = img => SITE + '/' + img.replace(/^\.\.\//, '');
@@ -53,7 +53,7 @@ const FONTS = `<link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Libre+Caslon+Display&display=swap" rel="stylesheet">`;
 
-const STYLES = `<link rel="stylesheet" href="../styles.css?v=17">
+const STYLES = `<link rel="stylesheet" href="../styles.css?v=18">
   <link rel="stylesheet" href="../responsive.css?v=17">
   <link rel="stylesheet" href="blog.css${V}">`;
 

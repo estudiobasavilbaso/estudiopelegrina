@@ -218,8 +218,23 @@
   .blog-hero h1{font-size:2.25rem}
   .blog-hero{margin-bottom:1.6rem}
 }
+/* ===== EFECTOS DE IMAGEN ===== */
+/* Entrada cinematográfica de las fotos de tarjetas (usa .reveal/.visible) */
+.post-card .post-card-media img,
+.blog-featured .feat-media img{transform:scale(1.08);filter:saturate(.72) brightness(.97);transition:transform 1.4s cubic-bezier(.2,.65,.3,1),filter 1.2s ease}
+.post-card.visible .post-card-media img,
+.blog-featured.visible .feat-media img{transform:scale(1);filter:none}
+.post-card.visible:hover .post-card-media img{transform:scale(1.06)}
+
+/* Marco dorado interior en la imagen destacada */
+.feat-media::before{content:"";position:absolute;inset:12px;border:1px solid rgba(231,201,168,.5);border-radius:14px;z-index:2;pointer-events:none}
+
+/* Retrato de la autora con anillo dorado doble */
+.article-author img{border:0;box-shadow:0 0 0 2px #fff,0 0 0 4px var(--gold),0 6px 16px -6px rgba(59,23,32,.4)}
+
 @media (prefers-reduced-motion:reduce){
   .post-card,.post-card-media img,.blog-featured .feat-media img,.callout,.blog-chip{transition:none}
   .article-hero .hero-photo,.blog-hero h1 em,.article-hero h1,.article-hero .article-cat,.article-hero .article-meta{animation:none}
   .article-body h2::after{transition:none}
+  .post-card .post-card-media img,.blog-featured .feat-media img{transform:none;filter:none}
 }
