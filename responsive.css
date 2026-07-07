@@ -73,7 +73,10 @@
   .footer-bottom{flex-direction:column;text-align:center;gap:.6rem}
 
   .float-wa{width:52px;height:52px;right:1rem;bottom:1rem}
-  .trust{font-size:1.05rem;gap:.7rem 1.4rem}
+  .trust{gap:.6rem;padding:1.5rem 1rem}
+  .trust-item b{font-size:1.45rem}
+  .trust-item small{font-size:.6rem;letter-spacing:.07em}
+  .trust-item+.trust-item::before{height:2rem;left:-.35rem}
 
   /* ---- Disposición móvil optimizada ---- */
   /* Menos aire vertical: la página se recorre más rápido */

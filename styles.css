@@ -116,8 +116,11 @@ em{font-style:normal}
 .acc-card.simple:hover{transform:translateY(-2px);transition:transform .2s}
 
 /* ===== TRUST ===== */
-.trust{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:clamp(1rem,4vw,3rem);padding:1.6rem;color:var(--wine);font-family:var(--serif);font-size:clamp(1.1rem,1.6vw,1.45rem)}
-.trust i{width:6px;height:6px;border-radius:50%;background:var(--gold)}
+.trust{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;width:min(820px,100%);margin:0 auto;padding:2rem 1.2rem;text-align:center}
+.trust-item{position:relative}
+.trust-item+.trust-item::before{content:"";position:absolute;left:-.55rem;top:50%;transform:translateY(-50%);width:1px;height:2.6rem;background:var(--line)}
+.trust-item b{display:block;font-family:var(--serif);font-weight:400;font-size:clamp(1.8rem,3.2vw,2.5rem);color:var(--wine);line-height:1.1}
+.trust-item small{display:block;margin-top:.35rem;font-size:.78rem;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.11em}
 
 /* ===== SECTION SHELL ===== */
 .about,.stats,.services,.process,.testi,.faq,.contact{width:min(1180px,100%);margin:0 auto;padding:clamp(3.5rem,7vw,6.5rem) clamp(1.2rem,4vw,2.5rem)}
