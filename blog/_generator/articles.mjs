@@ -495,7 +495,7 @@ ${DISCLAIMER}
     date: '2026-02-24',
     dateLabel: '24 de febrero de 2026',
     readTime: '6 min de lectura',
-    image: '../herencia-documentos.png',
+    image: '../casa-heredada-venta.png',
     title: '¿Se puede vender una casa heredada sin hacer la sucesión?',
     excerpt: 'Es una de las consultas más frecuentes. La respuesta corta es no, pero hay matices, riesgos y algunas alternativas que conviene conocer antes de comprometerte.',
     body: `
@@ -551,7 +551,7 @@ ${DISCLAIMER}
     date: '2026-02-10',
     dateLabel: '10 de febrero de 2026',
     readTime: '6 min de lectura',
-    image: '../herencia-documentos.png',
+    image: '../testamento-herencia.png',
     title: 'Herencia sin testamento: quién hereda y en qué orden',
     excerpt: 'Cuando una persona fallece sin dejar testamento, la ley define quién hereda y en qué orden. Te explicamos cómo funciona la sucesión intestada en Argentina.',
     body: `
