@@ -111,7 +111,7 @@
 .article-cta-actions .btn{flex:0 1 auto}
 .article-cta-actions .btn-whatsapp{background:var(--cream);color:var(--wine);border:0;font-weight:700}
 .article-cta-actions .btn-whatsapp:hover{background:#fff;transform:translateY(-2px)}
-.article-cta-actions .btn-whatsapp svg{width:20px;height:20px;color:#25d366}
+.article-cta-actions .btn-whatsapp svg{width:20px;height:20px;color:var(--wine)}
 .article-cta-actions .btn-ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.4);font-weight:600}
 .article-cta-actions .btn-ghost:hover{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.65)}
 @media (max-width:520px){.article-cta-actions{flex-direction:column}.article-cta-actions .btn{width:100%}}
