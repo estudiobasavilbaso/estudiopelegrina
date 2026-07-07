@@ -107,13 +107,14 @@
 .article-cta-card .eyebrow{display:inline-block;color:var(--gold-soft);letter-spacing:.18em;text-transform:uppercase;font-size:.74rem;font-weight:700;position:relative}
 .article-cta-card h2{font-family:var(--serif);font-weight:400;font-size:clamp(1.7rem,3.4vw,2.5rem);line-height:1.12;margin:.7rem auto .9rem;max-width:18ch;position:relative}
 .article-cta-card p{color:rgba(255,255,255,.82);max-width:34rem;margin:0 auto 1.8rem;line-height:1.7;position:relative}
-.article-cta-actions{display:flex;flex-direction:column;gap:.8rem;align-items:center;position:relative;max-width:26rem;margin:0 auto}
-.article-cta-actions .btn{width:100%}
-.article-cta-actions .btn-whatsapp{background:#25d366;color:#0b3d1e;border:0;font-weight:700;box-shadow:0 14px 30px -14px rgba(37,211,102,.85)}
-.article-cta-actions .btn-whatsapp:hover{background:#1fbe5a}
-.article-cta-actions .btn-whatsapp svg{width:22px;height:22px}
-.article-cta-actions .btn-ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.35)}
-.article-cta-actions .btn-ghost:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.6)}
+.article-cta-actions{display:flex;flex-wrap:wrap;gap:.9rem;align-items:center;justify-content:center;position:relative}
+.article-cta-actions .btn{flex:0 1 auto}
+.article-cta-actions .btn-whatsapp{background:var(--cream);color:var(--wine);border:0;font-weight:700}
+.article-cta-actions .btn-whatsapp:hover{background:#fff;transform:translateY(-2px)}
+.article-cta-actions .btn-whatsapp svg{width:20px;height:20px;color:#25d366}
+.article-cta-actions .btn-ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.4);font-weight:600}
+.article-cta-actions .btn-ghost:hover{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.65)}
+@media (max-width:520px){.article-cta-actions{flex-direction:column}.article-cta-actions .btn{width:100%}}
 .article-cta-card .note{margin-top:1.3rem;font-size:.85rem;color:rgba(255,255,255,.65);position:relative}
 
 /* Compartir */

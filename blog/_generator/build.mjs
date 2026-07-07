@@ -18,7 +18,7 @@ const BLOG = join(ROOT, 'blog');
 
 const SITE = 'https://estudiopelegrina.com.ar';
 const WA = '5491154036933';
-const V = '?v=5';
+const V = '?v=6';
 
 const esc = s => String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 const absImg = img => SITE + '/' + img.replace(/^\.\.\//, '');
